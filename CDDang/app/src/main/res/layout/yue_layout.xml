@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yue_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/yue_head_rl"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/new_blue"
+        android:gravity="bottom" >
+
+        <ImageButton
+            android:id="@+id/sub_header_bar_left_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/header_bar_btn_xbg"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/backbutton"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/sub_header_bar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/sub_header_bar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip"
+            android:layout_toLeftOf="@id/sub_header_bar_tv"
+            android:drawableLeft="@drawable/yue_item_address"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="2dip"
+            android:scaleType="fitCenter"
+            android:text="发现"
+            android:textColor="@color/white"
+            android:textSize="13.0sp"
+            android:visibility="visible" >
+        </TextView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/yue_header_rl"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/yue_head_rl" >
+
+                <FrameLayout
+                    android:id="@+id/img_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                        android:id="@+id/serviceviewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/circle_page_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="#00000000" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </RelativeLayout>
+            <com.viewpagerindicator.TabPageIndicator
+                android:id="@+id/yue_pager_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_fl"
+                style="@style/Widget.TabPageIndicatorDefaults"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/yue_pager_tab_bottom_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yue_header_rl"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ProgressBar
+                    android:id="@+id/yue_tab_bottom_gravity_right_pb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dip"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_drawable_gravity_right" />
+
+                <ProgressBar
+                    android:id="@+id/yue_tab_bottom_gravity_left_pb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dip"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_drawable" />
+            </LinearLayout>
+
+            <com.chewuwuyou.app.widget.CurrentViewPager
+                android:id="@+id/yue_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_yue_ll"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="#15A6F8"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/new_yue_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_party"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="发起活动"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

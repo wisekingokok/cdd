@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/common_head" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="160dp"
+                 android:gravity="center"
+                 android:orientation="vertical" >
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginRight="20dp"
+                     android:gravity="center"
+                     android:orientation="horizontal" >
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_height="1dp"
+                         android:layout_weight="1"
+                         android:background="#eeeeee" />
+
+                     <TextView
+                         android:id="@+id/order_evaluate_identity"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="2"
+                         android:gravity="center"
+                         android:text="星级评价"
+                         android:textColor="#909090"
+                         android:textSize="18sp" />
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_height="1dp"
+                         android:layout_weight="1"
+                         android:background="#eeeeee" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginTop="10dp"
+                     android:gravity="center"
+                     android:orientation="vertical" >
+
+                     <RatingBar
+                         android:id="@+id/order_rating"
+                         style="@style/Evaluate"
+                         android:layout_width="wrap_content"
+                         android:layout_height="38dp"
+                         android:clickable="false"
+                         android:isIndicator="true"
+                         android:numStars="5"
+                         android:rating="1" />
+                 </LinearLayout>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@drawable/order_evalua_bg"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/evaluate_time"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:gravity="center_vertical"
+                     android:text="2016-3-28"
+                     android:textColor="#909090"
+                     android:textSize="16sp" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="vertical" >
+
+                     <TextView
+                         android:id="@+id/order_context_valuate"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginTop="4dp"
+                         android:background="@null"
+                         android:gravity="top"
+                         android:textSize="16sp" >
+                     </TextView>
+                 </LinearLayout>
+             </LinearLayout>
+
+         </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

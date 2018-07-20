@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 顶部圆角 底部圆角  白色背景 灰色边框 长方体 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/release_xuanzhong" android:state_checked="true" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/release_weixuanzhong" android:state_checked="false" android:state_enabled="true"></item>
+</selector>

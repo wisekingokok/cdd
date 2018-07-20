@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/business_details_gogn"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/common_head" />
+
+
+        <include layout="@layout/network_request"/>
+
+        <include layout="@layout/network_abnormal"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.barcode.view.PullableScrollView
+            android:id="@+id/business_pullable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/portrait_background_gradient"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/business_bg_img"
+                    android:layout_height="146dp">
+
+                    <ImageView
+                        android:id="@+id/business_personal_collection"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="right|bottom"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/business_collection" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/business_portrait"
+                            android:layout_width="86dp"
+                            android:layout_height="86dp"
+                            android:layout_marginLeft="7dp"
+                            android:src="@drawable/user_fang_icon"
+                            android:scaleType="centerCrop" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/business_renz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="品牌商家"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/shop_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/business_enterprise"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:orientation="horizontal" >
+
+                                <RatingBar
+                                    android:id="@+id/businierss_grade"
+                                    style="@style/MyRatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:rating="0.5" />
+
+                                <TextView
+                                    android:id="@+id/business_branch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="1.4分"
+                                    android:textColor="#fcac00" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/business_collection_store"
+                            android:layout_width="86dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginRight="7dp"
+                            android:layout_height="86dp"
+                            android:src="@drawable/default_busi" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/business_address"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.4"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/imageView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/business_dz" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="门店地址"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+                                <TextView
+                                    android:id="@+id/business_province"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="#616060"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:id="@+id/linear_bao"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/common_layout_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:drawableLeft="@drawable/business_an"
+                        android:gravity="center"
+                        android:text="  资金担保"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/busiuness_bao"
+                        android:gravity="center"
+                        android:text="  服务担保"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/busiuness_pei"
+                        android:gravity="center"
+                        android:text="  先行赔偿"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:drawableRight="@drawable/btn_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/service_on_illegal"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:background="@drawable/message_proname_z"
+                            android:gravity="center"
+                            android:text="违章代缴"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/point" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/service_on_vehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:background="@drawable/message_proname_h"
+                            android:gravity="center"
+                            android:text="车辆服务" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/point" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/service_on_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:background="@drawable/message_proname_h"
+                            android:gravity="center"
+                            android:text="驾证服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <!-- 好评 -->
+
+                    <fragment
+                        android:id="@+id/highpraise"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        class="com.chewuwuyou.app.fragment.HighPraiseFragment" />
+                    <!-- 中评 -->
+
+                    <fragment
+                        android:id="@+id/evaluation"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        class="com.chewuwuyou.app.fragment.EvaluationFragment" />
+                    <!-- 差评 -->
+
+                    <fragment
+                        android:id="@+id/badreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        class="com.chewuwuyou.app.fragment.BadReviewFragment" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.barcode.view.PullableScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="top"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/business_title_ba"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/sub_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/header_bar_btn_xbg"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:src="@drawable/backbutton"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/business_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/sub_business"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:background="#000000"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/business_order_onclick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bodadianh"
+                    android:gravity="center"
+                    android:text="  给TA电话"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/business_details_onclick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/business_xiadan_details"
+                    android:gravity="center"
+                    android:text="  详情咨询"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

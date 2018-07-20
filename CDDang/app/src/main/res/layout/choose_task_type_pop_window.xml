@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/popwindow_btn_width"
+    android:layout_height="wrap_content"
+    android:background="#323232"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/all_task_type_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center"
+        android:text="@string/all_task_type"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c3c3c" />
+
+    <Button
+        android:id="@+id/illegal_task_type_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center"
+        android:text="@string/illegal_task_type"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c3c3c" />
+
+    <Button
+        android:id="@+id/vehicle_task_type_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center"
+        android:text="@string/vehicle_task_type"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c3c3c" />
+
+    <Button
+        android:id="@+id/licence_task_type_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center"
+        android:text="@string/licence_task_type"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" />
+
+</LinearLayout>

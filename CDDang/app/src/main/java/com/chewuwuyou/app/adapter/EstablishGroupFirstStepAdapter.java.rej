@@ -1,0 +1,10 @@
+diff a/CDDang/app/src/main/java/com/chewuwuyou/app/adapter/EstablishGroupFirstStepAdapter.java b/CDDang/app/src/main/java/com/chewuwuyou/app/adapter/EstablishGroupFirstStepAdapter.java	(rejected hunks)
+@@ -34,6 +34,8 @@
+ 
+     private Context mContext;
+ //    private List<String> mFatherGroup;
++
++
+     private List<AllGroup> mGroupList;
+ 
+     public EstablishGroupFirstStepAdapter(Context mContext,List<AllGroup> mGroupList) {

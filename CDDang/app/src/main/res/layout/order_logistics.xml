@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/logistics"
+    android:background="@color/wallet_background"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/fill_logisics"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:layout_marginBottom="4dp"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:textColor="@color/new_blue"
+            android:text="填写物流信息"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/wallet_person_item_iv"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/logisics_serial"
+       android:layout_width="match_parent"
+       android:layout_marginTop="4dp"
+       android:visibility="gone"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:background="@color/white"
+           android:layout_height="44dp">
+
+           <TextView
+               android:id="@+id/order_logisics_name"
+               android:layout_width="match_parent"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:drawableRight="@drawable/wallet_person_item_iv"
+               android:textSize="14sp"
+               android:text="申通快递"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/logistics_details_lay"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:background="@color/white"
+           android:layout_height="70dp">
+
+           <TextView
+               android:id="@+id/logisics_flowing"
+               android:layout_width="match_parent"
+               android:textSize="14sp"
+               android:layout_marginTop="6dp"
+               android:textColor="#f53704"
+               android:text="正在查询物流信息"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/logisics_time"
+               android:layout_width="match_parent"
+               android:textSize="12sp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="6dp"
+               android:textColor="#f53704"
+               android:layout_marginLeft="10dp"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#eeeeee"/>
+    <LinearLayout
+        android:id="@+id/return_logisics"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:textColor="@color/new_blue"
+            android:text="填写回寄信息"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/wallet_person_item_iv"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>

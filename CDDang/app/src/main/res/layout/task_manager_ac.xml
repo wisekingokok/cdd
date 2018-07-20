@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/common_head" />
+
+    <LinearLayout
+        android:id="@+id/task_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_bar"
+        android:background="@drawable/common_layout_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/task_type_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="@dimen/common_num_three_textSize" />
+
+        <TextView
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="#0080FF"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/task_status_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="@dimen/common_num_three_textSize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/task_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_ll"
+        android:layout_marginTop="80.0dip"
+        android:gravity="center"
+        android:textColor="#cccccc"
+        android:textSize="18sp"
+        android:visibility="visible"/>
+
+    <com.chewuwuyou.app.widget.PullToRefreshListView
+        android:id="@+id/task_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/task_ll"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" >
+    </com.chewuwuyou.app.widget.PullToRefreshListView>
+
+</RelativeLayout>

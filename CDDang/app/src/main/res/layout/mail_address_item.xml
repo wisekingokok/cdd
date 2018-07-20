@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_background"
+    android:orientation="vertical" >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:background="@color/white"
+       android:layout_marginBottom="4dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+
+           android:layout_height="110dp">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="76dp">
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_marginLeft="6dp"
+                   android:layout_marginTop="6dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal">
+
+                   <TextView
+                       android:id="@+id/address_name"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="16sp"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:id="@+id/address_phone"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="6dp"
+                       android:textSize="16sp"
+                       android:layout_marginRight="10dp"
+                       android:textColor="@color/black"/>
+
+
+               </LinearLayout>
+               <TextView
+                   android:id="@+id/detailed_address"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="14sp"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textColor="#737373"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="#e3e3e3"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:gravity="center_vertical"
+               android:layout_height="34dp">
+
+               <LinearLayout
+                   android:id="@+id/default_selected_layou"
+                   android:orientation="horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:gravity="center_vertical"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:id="@+id/default_selected"
+                       android:layout_width="wrap_content"
+                       android:src="@drawable/checkbox_uncheck"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:id="@+id/default_address"
+                       android:layout_width="wrap_content"
+                       android:layout_marginLeft="6dp"
+                       android:layout_height="wrap_content"
+                       android:textSize="14sp"
+                       android:text="默认地址"
+                       android:textColor="#737373"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:gravity="right|center"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:id="@+id/address_edit"
+                       android:layout_width="64dp"
+                       android:layout_height="24dp"
+                       android:textSize="14sp"
+                       android:background="@drawable/business_jiuwu"
+                       android:gravity="center"
+                       android:text="编辑"
+                       android:layout_marginRight="10dp"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:id="@+id/address_delete"
+                       android:layout_width="64dp"
+                       android:layout_height="24dp"
+                       android:textSize="14sp"
+                       android:background="@drawable/business_red"
+                       android:text="删除"
+                       android:gravity="center"
+                       android:layout_marginRight="10dp"
+                       android:textColor="@color/red"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

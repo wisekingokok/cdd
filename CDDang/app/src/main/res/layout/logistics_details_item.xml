@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp" >
+
+    <com.chewuwuyou.app.widget.CustomTextView
+        android:id="@+id/info_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="张三"
+
+        android:textSize="14sp" 
+        android:layout_marginBottom="5dp"/>
+
+    <com.chewuwuyou.app.widget.CustomTextView
+        android:id="@+id/dateTime_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="2015-1-1"
+
+        android:textSize="12sp" 
+        android:visibility="visible"/>
+</LinearLayout>

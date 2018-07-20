@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/common_head" />
+
+    <ImageView
+        android:id="@+id/hot_ties_header_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_bar"
+        android:scaleType="fitXY" />
+
+    <com.chewuwuyou.app.widget.PullToRefreshListView
+        android:id="@+id/hot_tie_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hot_ties_header_iv"
+        android:divider="@color/car_dingle_bg"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" >
+    </com.chewuwuyou.app.widget.PullToRefreshListView>
+
+</RelativeLayout>

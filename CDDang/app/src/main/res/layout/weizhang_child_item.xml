@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_layout_bg"
+    android:gravity="center_vertical"
+    android:padding="8dip" >
+
+    <CheckBox
+        android:id="@+id/choose_service_cb"
+        android:layout_width="wrap_content"
+        android:focusable="false"
+        android:layout_height="fill_parent"
+        android:button="@drawable/my_radio_button_xbg"
+        android:checked="true" />
+
+    <LinearLayout
+        android:id="@+id/weizhang_info_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/weizhang_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015年04月05日 星期六 18:33"
+            android:textColor="@color/common_text_color"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/weizhang_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="春熙路步行街道口"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@+id/weizhang_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="机动车违反禁令标"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/weizhang_fakuan_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="罚款"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="10.0sp" />
+
+                <TextView
+                    android:id="@+id/weizhang_fakuan_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300"
+                    android:textColor="@color/red"
+                    android:textSize="10.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/weizhang_koufen_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="扣分"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="10.0sp" />
+
+                <TextView
+                    android:id="@+id/weizhang_koufen_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textColor="@color/red"
+                    android:textSize="10.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weizhang_more_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dip"
+        android:drawablePadding="8dip"
+        android:drawableRight="@drawable/common_right"
+        android:gravity="center_vertical"
+        android:text="未处理"
+        android:focusable="false"
+        android:textColor="@color/orange"
+        android:textSize="14sp" />
+
+</LinearLayout>

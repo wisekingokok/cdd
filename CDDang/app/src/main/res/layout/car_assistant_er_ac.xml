@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear_bg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/driving_background"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <com.chewuwuyou.app.extras.FancyCoverFlow
+                        android:id="@+id/driving_option"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="34dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/driving_word_bg"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textnameoption"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center"
+                                android:text="停车场"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_lower"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/driving_bg_upper" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/drivinglocation"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/drivingocation" />
+
+                    <LinearLayout
+                        android:layout_width="54dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/narrowenlarge"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/drivingenlarge"
+                            android:layout_width="54dp"
+                            android:layout_height="48dp" />
+                        
+                        <ImageView
+                            android:id="@+id/drivingennarrow"
+                            android:layout_width="54dp"
+                            android:layout_height="48dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/layout_list"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/drivinglist"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_drop"
+                    android:layout_width="54dp"
+                    android:layout_height="40dp"
+                    android:padding="14dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/map_lower" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/address_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/map_icon_driving" />
+
+                        <TextView
+                            android:id="@+id/driving_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:text="TextView"
+                            android:textColor="@color/driving"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@color/driving" />
+
+                        <TextView
+                            android:id="@+id/driving_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textColor="@color/driving"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

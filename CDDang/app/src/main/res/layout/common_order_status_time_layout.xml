@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="订单状态"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_height="40dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/wallet_background"/>
+
+    <com.chewuwuyou.app.tools.MyListView
+        android:id="@+id/list_time_shaft"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content" >
+    </com.chewuwuyou.app.tools.MyListView>
+
+    <TextView
+        android:id="@+id/abnormal_reason"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/dotted"
+           android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+        
+        <ImageView
+            android:id="@+id/order_state_open"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           android:src="@drawable/order_state_open_img"
+            android:layout_weight="1.2" />
+         
+        <ImageView
+            android:layout_width="0dp"
+             android:src="@drawable/dotted"
+             android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</LinearLayout>

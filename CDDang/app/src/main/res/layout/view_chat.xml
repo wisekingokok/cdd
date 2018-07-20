@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line_color" />
+
+
+    <!-- 输入内容发起 -->
+    <include layout="@layout/chat_send_layout" />
+
+    <LinearLayout
+        android:id="@+id/layout_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 点击+好出现的布局 -->
+
+            <include layout="@layout/chat_add_layout" />
+            <!-- 表情布局 -->
+
+            <include layout="@layout/chat_face_layout" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

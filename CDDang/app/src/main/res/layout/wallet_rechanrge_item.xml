@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="42dp" >
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/business_white"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/money_selected"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/rechang_money" />
+    </FrameLayout>
+
+</LinearLayout>

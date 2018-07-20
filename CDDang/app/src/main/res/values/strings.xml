@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_version">1.1.0</string>
+    <string name="app_version1">当前版本：2.0.1</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="common_head_title">标题</string>
+    <string name="common_head_back">返回</string>
+    <string name="common_head_func">代驾</string>
+    <string name="group_position">group</string>
+    <string name="child_position">child</string>
+    <string name="child_position_null">child_null</string>
+
+    <!-- 请求数据失败 -->
+    <string name="net_request_failure">网络请求失败，请检查网络是否连接。</string>
+    <!-- 登录 -->
+    <string name="login_title">用户登录</string>
+    <string name="login_failure">用户名或密码不正确</string>
+    <string name="login_please_input_username">请输入手机号</string>
+    <string name="login_please_input_password">请输入密码</string>
+    <string name="login_password_len_error">密码长度必须大于6位</string>
+    <string name="login_net_false">当前网络不可用，请检查您的网络</string>
+    <string name="user_unregister">账户未注册，请先注册</string>
+    <string name="username_or_password_error">用户名或密码错误</string>
+    <!-- 注册 -->
+    <string name="user_register_title">用户注册</string>
+    <string name="please_input_true_telephone">请输入正确的手机号</string>
+    <string name="phone_early_register">该电话号码已注册</string>
+    <string name="please_input_telephone">请输入手机号码</string>
+    <string name="please_input_authcode">请输入验证码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_two_input_password">请输入确认密码</string>
+    <string name="authcode_erro">请输入验证码</string>
+    <string name="password_is_refrences">两次输入密码不一致,请重新输入</string>
+    <string name="password_length_error">密码长度不能小于6位</string>
+    <string name="register_success">恭喜您,注册成功!</string>
+    <string name="register_phone_bind_code_error">手机号与获取验证码的手机号不一致</string>
+    <string name="password_gs_error">密码不能包含特殊字符</string>
+    <!-- 找回密码 -->
+    <string name="forget_password_title">找回密码</string>
+    <string name="phone_no_register">电话号码未注册</string>
+
+    <!-- 账户管理 -->
+    <string name="account_manager_ac">账户管理</string>
+    <!-- 绑定邮箱 -->
+    <string name="email_bind_title">绑定邮箱</string>
+    <string name="email_is_not_null">邮箱地址不能为空</string>
+    <string name="email_geshi_error">邮箱格式不正确</string>
+    <string name="email_early_bind">该邮箱已绑定</string>
+    <string name="email_early_use">该邮箱已使用</string>
+    <string name="eamil_unbind">未绑定</string>
+    <string name="email_send_success">我们已发送一封邮件至您的邮箱，请登录您的邮箱进行验证</string>
+    <string name="update_email_bind_title">修改邮箱绑定</string>
+    <string name="update_email_bind_success">修改邮箱绑定成功</string>
+    <!-- 修改手机绑定 -->
+    <string name="phone_bind_title">修改手机绑定</string>
+    <string name="phone_early_bind">新手机号码已注册</string>
+    <string name="please_input_old_phone">请输入原手机号码</string>
+    <string name="old_phone_error">原手机号码不正确</string>
+    <string name="new_phone_empty">请输入新手机号码</string>
+    <string name="new_phone_error">新手机号码格式不正确</string>
+    <string name="phone_bind_success">修改绑定手机成功</string>
+    <string name="password_error">密码不能包含特殊字符</string>
+    <!-- 爱车账本 -->
+    <string name="car_refuel">加油</string>
+    <string name="wash_car">洗车</string>
+    <string name="car_maintenance">保养</string>
+    <string name="car_maintain">维修</string>
+    <string name="park">停车</string>
+
+    <!-- 设置支付密码 -->
+    <string name="prompt_input_ps">请设置密码，用于在线支付和提现</string>
+    <string name="prompt_six_ps">输入六位数字作为支付密码</string>
+    <string name="prompt_consistent">两次输入的密码不相符，请重新输入</string>
+    <string name="confirm_password">请再次输入密码</string>
+    <string name="prompt_balance_password">请输入您的密码</string>
+    <string name="prompt_set_password_problemyi">问题一</string>
+    <string name="prompt_set_password_problemer">问题二</string>
+    <string name="prompt_set_password_problemsan">问题三</string>
+    <string name="prompt_set_password_problem_default">请选择问题</string>
+    <string name="prompt_set_password_answer">答案</string>
+    <string name="prompt_set_password_input_answer">请填你的答案</string>
+    <string name="prompt_set_password_button_submit">提交</string>
+
+    <!-- 车辆服务 -->
+    <!-- 服务类型 -->
+    <string name="service_menu">服务选项</string>
+    <string name="local_car">本地车辆</string>
+    <string name="nonlocal_car">异地车辆</string>
+    <string name="carservice_type_nj">车辆年检</string>
+    <string name="carservice_type_gh">车辆过户</string>
+    <string name="carservice_type_sp">车辆上牌</string>
+    <string name="carservice_type_tdzj">提档转籍</string>
+    <string name="carservice_type_bbpz">补办牌照</string>
+    <string name="carservice_type_xszbb">行驶证补办</string>
+    <string name="carservice_type_dkwts">代开委托书</string>
+    <string name="carservice_other_service">其他服务</string>
+    <string name="vehicle_service_title">车辆服务</string>
+    <string name="vehicle_platenum_type">号牌类型</string>
+    <string name="vehicle_platenum">车牌号码</string>
+    <string name="vehicle_enginenum">发动机号</string>
+    <string name="vehicle_type">\t\t\t车型</string>
+    <string name="vehicle_nj_remind">年检提醒</string>
+    <string name="vehicle_bx_remind">保险提醒</string>
+    <string name="vehicle_remark">\t备注名</string>
+    <string name="choose_vehicle_service_type">选择服务类型</string>
+    <string name="please_add_vehicle">请先添加一辆车</string>
+    <string name="please_choose_service_type">请选择服务类型</string>
+    <string name="please_input_contact">请输入联系人</string>
+    <string name="please_input_contactphont">请输入联系电话</string>
+    <string name="contactphone_error">电话号码不正确</string>
+    <string name="choose_carbrand_title">品牌选车</string>
+    <string name="please_input_nickname">请输入昵称</string>
+    <!-- 违章服务 -->
+    <string name="illegal_service_title">违章服务</string>
+    <string name="local_illegal">本地违章</string>
+    <string name="nonlocal_illegal">异地违章</string>
+    <string name="illegalservice_type_jjwz">交警违章</string>
+    <string name="illegalservice_type_gswz">高速违章</string>
+    <string name="illegalservice_type_cgwz">城管违章</string>
+    <!-- 驾证服务 -->
+    <!-- 驾证信息item -->
+    <string name="license_number">证号</string>
+    <string name="file_number">档案编号</string>
+    <string name="license_date">领证日期</string>
+    <string name="license_vehicle_type">准驾车型</string>
+    <string name="license_valid_for">有效期限</string>
+    <string name="license_service_title">驾证服务</string>
+    <string name="please_add_license_num">请先添加您的驾证</string>
+    <string name="release_task_success">发布任务成功!</string>
+    <string name="release_task_failure">发布任务失败!</string>
+    <string name="task_early_release">该任务已发布，不能重复发布!</string>
+    <!-- 违章查询 -->
+    <string name="illegal_emg_info_title">违章信息</string>
+    <!-- 添加车辆 -->
+    <string name="add_vehicle_title">添加车辆</string>
+    <string name="please_input_plate_num">请输入车牌号码</string>
+    <string name="please_choose_vehicle_type">请选择车辆类型</string>
+    <string name="please_choose_vehicle_brand">请选择车辆品牌</string>
+    <string name="please_input_engine_num">请输入发动机号</string>
+    <string name="please_input_frame_num">请输入车架号</string>
+    <string name="please_choose_register_time">请选择车辆登记时间</string>
+    <string name="register_time_error">车辆登记时间不能大于当前时间</string>
+    <string name="please_choose_insure_time">请选择保险提醒时间</string>
+    <string name="insure_time_error">保险有效时间不能大于当前时间</string>
+    <string name="platenum_error">车牌号不正确</string>
+    <string name="enginenum_error">发动机号不正确</string>
+    <string name="framenum_error">车辆识别代码不正确</string>
+    <!-- <string name="register_time_error">车辆登记时间不小于当前时间的15年，且不大于当前时间</string> -->
+    <string name="small_vehile">小型汽车</string>
+    <string name="big_vehicle">大型汽车</string>
+    <string name="wj_vehile">外籍汽车</string>
+    <string name="lsl_mtc">两三轮摩托车</string>
+    <string name="qb_mtc">轻便摩托车</string>
+    <string name="guache">挂车</string>
+    <string name="teaching_vehicle">教练车</string>
+    <string name="please_choose_vehicle">请选择车辆</string>
+    <!-- 车辆管理 -->
+    <string name="vehicle_manager_title">车辆管理</string>
+    <string name="please_choose_illegal_by_car">请选择要查询违章的车辆</string>
+    <!-- 驾证管理 -->
+    <string name="license_manager_title">驾证管理</string>
+    <string name="add_license_title">添加驾证</string>
+    <string name="choose_license_title">选择驾证</string>
+    <string name="please_input_license_num">请输入驾证号</string>
+    <string name="please_choice_license_city">请选择驾证签发地区</string>
+    <string name="please_input_filenum">请输入档案编号</string>
+    <string name="please_choose_license_date">请选择驾证签发日期</string>
+    <string name="please_choose_vehivle_type">请选择准驾车型</string>
+    <string name="please_input_valid_for">请输入有效期限</string>
+    <string name="filenum_error">档案编号不正确</string>
+    <string name="license_register_time_error_hint">驾证签发时间不大于当前时间</string>
+    <string name="valid_for_error_hint">有效期只能为1&#8211;99年</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_center_title">个人中心</string>
+    <string name="personal_data_bj_title">编辑个人信息</string>
+    <!-- 任务管理 -->
+    <string name="task_manager_title">我的订单</string>
+    <string name="task_search_title">订单查找</string>
+    <string name="task_details_title">订单详情</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="order_confirm_finish">确认完成</string>
+    <string name="all_task_type">全部</string>
+    <string name="illegal_task_type">违章服务</string>
+    <string name="vehicle_task_type">车辆服务</string>
+    <string name="licence_task_type">驾证服务</string>
+    <string name="all_task_status">全部</string>
+    <string name="unfinished_task_status">未完成</string>
+    <string name="finished_task_status">已完成</string>
+    <!-- 订单管理 -->
+    <string name="all_order_role">全部</string>
+    <string name="user_order_role">用户订单</string>
+    <string name="business_order_role">商家订单</string>
+    <string name="assign_order_role">外派订单</string>
+    <string name="all_order_type">全部</string>
+    <string name="illegal_order_type">违章服务</string>
+    <string name="vehicle_order_type">车辆服务</string>
+    <string name="licence_order_type">驾证服务</string>
+    <string name="all_order_status">全部</string>
+    <string name="unfinished_order_status">未完成</string>
+    <string name="finished_order_status">已完成</string>
+
+    <!-- 密码管理 -->
+    <string name="password_manager_title">密码管理</string>
+    <string name="please_input_old_password">请输入旧密码</string>
+    <string name="old_password_error">原密码错误</string>
+    <string name="please_input_newpassword">请输入新密码</string>
+    <string name="please_input_newpassword_ok">请输入确认密码</string>
+    <string name="password_uninclude_space">密码不能包含空格</string>
+    <string name="password_length">密码长度为6&#8211;16位</string>
+    <string name="twice_password_error">两次输入的密码不一致，请重新输入</string>
+    <string name="update_password_success">修改密码成功!</string>
+    <!-- 选择城市 -->
+    <string name="Choose_city_title">地区城市</string>
+
+    <!-- 商家中心 -->
+    <string name="business_center_title">我的名片</string>
+    <string name="cwjjr_title">车务经纪人</string>
+    <string name="cwjjr_details_title">经纪人详情</string>
+    <string name="my_store_title">我的店铺</string>
+    <string name="business_db_title">商家代办</string>
+    <string name="please_input_business_name">商家名称不能为空</string>
+    <string name="please_input_business_phone">商家电话不能为空</string>
+    <string name="please_input_yz_phone">电话格式无效</string>
+    <string name="please_input_update_name">请输入您要修改的名称</string>
+    <!-- listview刷新 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载更多&#8230;&#8230;&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 订单管理 -->
+    <string name="order_manager">订单管理</string>
+    <string name="user_order">用户订单</string>
+    <string name="business_order">商家订单</string>
+    <string name="me_to_other_order">发出去的订单</string>
+    <string name="unfinish_order">未完成订单</string>
+    <string name="finish_order">已完成订单</string>
+    <string name="business_order_details_title">商家订单详情</string>
+    <string name="pay_ammount_error">支付金额为空，不能支付</string>
+    <string name="pay_description_error">支付描述为空，不能支付</string>
+    <string name="close_order_success">关闭订单成功</string>
+    <string name="order_finish_service">完成服务</string>
+    <!-- vip会员 -->
+
+    <string name="vip_member">VIP会员</string>
+    <string name="please_choose_apply_vip_vehicle">请选择申请VIP的车辆</string>
+    <string name="please_choose_apply_vip_license">请选择申请VIP的驾证</string>
+    <string name="choose_vehicle_and_license">请选择要升级为VIP的车辆及绑定驾证</string>
+
+    <!-- 经纪人业务办理 -->
+    <string name="btbhanding_title">业务办理</string>
+    <string name="btbthanding_pay_success">支付成功</string>
+    <string name="please_input_pay_money">请输入支付金额</string>
+    <string name="please_input_pay_description">请输入支付描述</string>
+    <string name="vip_apply_choose_vehicle">选择车辆</string>
+
+    <!-- 我的名片 -->
+    <string name="my_card_title">我的名片</string>
+    <string name="please_input_info">请完善您的名片信息</string>
+    <!-- 违章服务 -->
+    <string name="please_sc_xszfyj">请上传完整的行驶证复印件</string>
+    <string name="please_sc_jszfyj">请上传完整的驾驶证复印件</string>
+    <string name="please_choose_yysj">请选择预约时间</string>
+    <string name="please_input_yydz">请填写预约地址</string>
+    <string name="contact_error">联系人姓名不能包含特殊字符</string>
+    <string name="yysj_erro">预约时间不能小于当前时间</string>
+    <string name="load_ing">努力加载中&#8230;&#8230;&#8230;</string>
+    <string name="please_choose_illegal_service_vehicle">请选择您要办理违章服务的车辆</string>
+    <string name="no_violation_of">暂未查到您爱车的违章记录，请稍候再试。。</string>
+    <string name="choose_one_service">请至少选择一项服务</string>
+    <!-- 车辆服务 -->
+    <string name="please_choose_vehicle_service_vehicle">请选择您要办理车辆服务的车辆</string>
+    <string name="please_sc_jqxfb">请上传交强险副本</string>
+    <string name="please_choose_license_service_license">请选择您要办理服务的驾证</string>
+    <string name="please_choose_service">请至少选择一项服务</string>
+    <!-- 驾证服务 -->
+    <string name="please_sc_idcard">请上传完整的身份证复印件</string>
+    <!-- 我的关注 -->
+    <string name="my_attention_title">我的收藏</string>
+    <!-- 商家订单 -->
+    <!-- <string name="please_choose_service">请至少选择一项服务选项</string> -->
+    <string name="please_input_price">报价信息不能为空</string>
+    <string name="bj_error">报价信息错误</string>
+    <string name="choose_cf_order">请选择您要拆分的服务条目</string>
+    <string name="order_evaluate_title">订单评价</string>
+    <string name="no_license_txt">没有驾证，请新增驾证</string>
+    <!-- 专人上门服务 -->
+    <string name="smfw_title">上门服务</string>
+    <string name="zjzl_title">证件资料</string>
+    <!-- 设置 -->
+    <string name="setting_title">系统设置</string>
+    <string name="no_vehicle_txt">没有车辆，请新增车辆</string>
+    <string name="please_waite">请稍等&#8230;&#8230;</string>
+    <string name="setting_yssm_title">车当当服务协议</string>
+    <string name="about_us_title">关于我们</string>
+    <string name="exit_app_notify">再按一次退出车当当</string>
+    <!-- 爱车账本 -->
+    <string name="car_bottom">爱车账本</string>
+    <string name="car_bottom_ac_adv">爱车账本：</string>
+    <string name="car_bottom_adv_ac_adv">爱车账本：此数据仅供参考，不作为任何法律依据&#8230;&#8230;&#8230;</string>
+    <string name="car_bottom_adv_ac_car_cost_details_tv">爱车消费详情</string>
+    <string name="car_bottom_ac_record">记一笔</string>
+    <string name="car_bottom_ac_btn_chart_data">查看数据图表</string>
+    <string name="car_bottom_ac_monthly_cost_tv">本月消费:</string>
+    <string name="car_bottom_ac_total_cost_tv">总计费用:</string>
+    <!-- 记一笔 -->
+    <string name="record">记一笔</string>
+    <string name="record_ac_car_cost_details">请输入消费信息</string>
+    <string name="record_ac_amount_of_money_tv">金额</string>
+    <string name="record_ac_input_rmb_hint">小数点后限一位</string>
+    <string name="record_ac_rmb">元</string>
+    <string name="record_ac_category_tv">类型</string>
+    <string name="record_ac_category">必填</string>
+    <string name="record_ac_date_tv">日期</string>
+    <string name="record_ac_remark_tv">备注</string>
+    <string name="record_ac_remark_content">限20字以内</string>
+    <string name="record_ac_btn_save">记一笔</string>
+    <string name="record_ac_btn_del">删除</string>
+    <string name="add_success">记录成功!</string>
+    <!-- 选择类别 -->
+    <string name="select_category">选择类别 </string>
+    <string name="record_select_category_ac_top_info">请选择消费类别</string>
+
+    <!-- 账本明细 -->
+    <string name="details">账本明细</string>
+    <!-- 消费详情 -->
+    <string name="consumption_details">消费详情</string>
+    <!-- 数据图表 -->
+    <string name="data_chart">数据图表</string>
+    <!-- 经纪人详情中的关注信息 -->
+    <string name="user_attention">收藏</string>
+    <string name="user_attentied">已收藏</string>
+    <string name="please_input_suggestion_nr">请输入建议内容</string>
+    <string name="thank_suggestion">您的建议我们已收到，将尽快处理。</string>
+    <string name="suggestion_title">意见反馈</string>
+    <string name="no_guoq">未过期</string>
+    <string name="early_guoq">已过期</string>
+    <string name="annualSurveyTime1_error">年审时间不能小于当前时间</string>
+    <string name="insuranceTime1_error">保险时间不能小于当前时间</string>
+    <string name="good_comment">好评\n(%1$s)</string>
+    <string name="average_comment">中评\n(%1$s)</string>
+    <string name="negative_comment">差评\n(%1$s)</string>
+    <string name="user_comment">评价%%1$s</string>
+    <string name="request_server_failure">网络异常，请稍后再试</string>
+    <!-- 通知 -->
+    <string name="notification_title">通知中心</string>
+    <string name="no_order_txt">亲，没有订单喔</string>
+    <string name="no_order_common">亲，暂无驾校</string>
+    <string name="no_tas_txt">暂无商家喔</string>
+    <string name="no_traffic_broker_txt">亲，您还没有收藏的商家喔</string>
+    <string name="please_choose_caif_order">亲,请选择要拆分的订单</string>
+    <string name="update_name">修改昵称</string>
+
+    <!-- 保险服务 -->
+    <string name="insure_compulsory_item">选项</string>
+    <string name="insure_thirdpart_item">请选择第三者责任险投保数额</string>
+    <string name="insure_glass_item">请选择玻璃产地</string>
+    <string name="insure_bodyscratches_item">请选择第三者责任险投保数额</string>
+    <string name="service_location">服务地区</string>
+    <!-- 业务办理所需资料 -->
+    <string name="sxcl_title">资料</string>
+    <string name="dqhz_title">到期换证</string>
+    <string name="dqhz_data">1、驾驶证原件\n2、身份证原件\n3、身份证复印件\n4、外地户口需居住原件\n小一寸白底彩色相片5张，相片回执</string>
+    <string name="bbjz_title">补办驾证</string>
+    <string name="bbjz_data">1、身份证原件\n2、小一寸彩色白底相片3张和照片回执（如果刚好到期年审的话就要3张）\n3、外地户口需要居住证原件\n4、副证遗失需提交驾驶证正本\n需本人到场</string>
+    <string name="jzns_title">驾证年审</string>
+    <string name="jzns_data">1、驾驶证原件\n2、身份证原件\n3、小一寸彩色相片1张\n4、本人必须到场</string>
+    <string name="ydzr_title">异地转入</string>
+    <string name="ydzr_data">1、驾使证原件\n2、身份证原件\n3、小一寸彩色白底相片3张和照片回执\n4、外地户口需要居住原件\n声明:黑名单城市的驾驶证不办理迁入，或被列入黑名单的、违章状态的、未归档的。请下单咨询（本人必须到场）</string>
+    <string name="jzzx_title"> 驾证注销</string>
+    <string name="jzzx_content">1、申请人的身份证明原件\n2、行驶证（原件和复印件\n3、驾驶证（原件和复印件\n4、机动车驾驶人相片1张（相片要求为：申请人申请机动车驾驶证前6个月内的直边正面免冠彩色本人单人半身证件照。背景颜色为白色；不着制式服装；人像要清晰，层次丰富，神态自然，无明显畸变。照片尺寸为32mm×22mm相当于1英寸，头部宽度14mm～16mm，头部长度19mm～22mm）。</string>
+    <string name="jzwz_title">驾证违章</string>
+    <string name="jzwz_data">1、	行驶证（原件和复印件）\n2、	驾驶证（原件和复印件）\n3、	身份证（原件和复印件）\n4、	驾驶违章罚单</string>
+    <string name="sgzdb_title">上岗证代办</string>
+    <string name="sgzdb_data">1、合格证\n2、购车发票\n3、身份证\n4、交强险\n5、购置税\n6、代理人身份证（原件和复印件）\n7、双方签字的委托书</string>
+    <string name="bbdjz_title">补办登记证</string>
+    <string name="bbdjz_data">1、行驶证   原件+复印件\n2、身份证    原件+复印件\n3、外地户口需要居住证原件\n4、车要到场，本人到场</string>
+    <string name="clnj_title">车辆年审</string>
+    <string name="clnj_data">1、	行驶证原件\n2、交强险第三联、三角架、灭火器\n3、车要到场（要领环保标志请带登记证书原件，违章必须要处理完）</string>
+    <string name="dlhbbz_title">代领环保标志</string>
+    <string name="dlhbbz_data">1、身份证复印件\n2、行驶证原件\n3、车辆登记原件（公司车需要提供组织机构代码证且加盖公章）</string>
+    <string name="clgh_title">车辆过户</string>
+    <string name="clgh_data">1、	行驶证、机动车登记证书原件、双方（新旧）车主身份证\n2、	新车主非广州户口需要提供有效期内居住证（单位车还需要提供组织机构代码证原件，委托人证明（代办人如非广州户口琮需要居住证），IC卡或U盘，单位公章）\n3、	新、旧车主都需要到现场\n4、	牌照15工作日</string>
+    <string name="bbpz_title"> 补办牌照</string>
+    <string name="bbpz_data">1、	行驶证原件\n2、机动车登记证书原件\n3、	身份证原件（处地人员需有效期内居住证）\n4、先领临时牌照，15个工作日后领正式牌照\n5、	车要到现场</string>
+    <string name="clsp_title">车辆上牌</string>
+    <string name="clsp_data">1、	车主身份证（居住证）；购车发票（第四联）\n2、	合格证或进出口凭证（进口车）\n3、交强险（第三联）\n4、	购置税本。需要车主到现场\n5、购置税本。需要车主到现场\n6、单位车：单位组织机构代码证+U盘（数字证书）及加盖公章的委托证明和代办人</string>
+    <string name="cdcjh_title">重打车架号</string>
+    <string name="cdcjh_data">1、车主身份证原件\n2、居住证（非本市）原件\n3、行驶证原件\n4、登记证原件\n5、车要到现场，本人到场</string>
+    <string name="dkwts_title">代开委托书</string>
+    <string name="dkwts_data">1、行驶证（原件+复印件）\n2、身份证（原件+复印件）\n3、有效期内交强险，需注明年审所在市车管所名称（下单前先把违章处理完）</string>
+    <string name="bbxsz_title">补办行驶证</string>
+    <string name="bbxsz_data">1、行驶证（原件+复印件）\n2、身份证（原件+复印件）\n3、外地户口需要居住证原件\n4、车要到场，本人到场</string>
+    <string name="tdzj_title">提档转籍</string>
+    <string name="tdzj_data">1、行驶证（原件+复印件）\n2、驾驶证（原件+复印件）\n3、身份证（原+复印件）\n4、车辆档案</string>
+    <string name="qit_title">其他服务</string>
+    <string name="qit_data">其他服务所需资料我们的客服将与你联系确认</string>
+    <string name="wzfw_title">违章办理流程及注意事项</string>
+    <string name="wzfw_data">1、行驶证（原件+复印件）\n2、驾驶证（原件+复印件）\n3、身份证（原+复印件）</string>
+    <!-- 投诉建议 -->
+    <string name="please_input_tsnr">请输入投诉内容</string>
+    <string name="please_input_busi_phone">请输入商家电话</string>
+    <string name="please_input_kef_num">请输入客服编号</string>
+    <string name="complain_successs">投诉成功，我们将严肃处理!</string>
+    <string name="no_query_busi">未查到该商家</string>
+    <string name="UMENG_APPKEY">549d2263fd98c5deed000de2</string>
+    <string name="Channel_ID">Wandoujia</string>
+    <string name="BAIDU_APPKEY">71324dd38e</string>
+    <string name="new_app_version">当前应用已是最新版本</string>
+    <!-- 车标大全 -->
+    <string name="car_logof_title">车标大全</string>
+    <string name="car_logof_introduce_title">车标介绍</string>
+    <string name="select_brand">品牌</string>
+    <string name="select_model">车型</string>
+    <!-- add by xh -->
+    <string name="price_contain_suffix">%1$s元</string>
+    <string name="price_contain_prefix_and_suffix">￥%1$s元</string>
+    <string name="price_contain_prefix">￥%1$s</string>
+    <string name="wzkf_num">%1$s分</string>
+    <!-- 抵用券 -->
+    <string name="input_voucher_error">输入抵用券不正确</string>
+    <string name="use_voucher_success">使用抵用券成功</string>
+    <string name="use_voucher_failure">使用抵用券失败</string>
+
+    <!-- IM 即时通讯 -->
+    <string name="message_title">消息</string>
+    <string name="save_checkbox">保存账户</string>
+    <string name="login_btn">登录</string>
+    <string name="reset_btn">重置</string>
+    <string name="loginName">账户</string>
+    <string name="password">密码</string>
+    <string name="remember_password">记住密码</string>
+    <string name="hide_login">隐身登录</string>
+    <string name="auto_login">自动登录</string>
+    <string name="name">姓名:</string>
+    <string name="depart">部门:</string>
+    <string name="mobile">手机号:</string>
+    <string name="phone">固定电话:</string>
+    <string name="email">邮箱:</string>
+    <string name="menu_contacts_add">添加联系人</string>
+    <string name="menu_contacts_group_add">添加联系人分组</string>
+    <string name="menu_contacts_group_rename">重命名联系人分组</string>
+    <string name="menu_contacts_group_move">移动联系人分组</string>
+    <string name="add">添加</string>
+    <string name="save">保存</string>
+    <string name="group">分组</string>
+    <string name="group_name">分组名称</string>
+    <string name="company_name">公司名称</string>
+    <string name="position">职位</string>
+    <string name="remark">备注</string>
+    <string name="move_to">移动到</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="pcontacts_info">联系人信息</string>
+    <string name="my_folder">个人文件夹</string>
+    <string name="menu_contacts_modify">联系人修改</string>
+    <!-- 登录提示 -->
+    <string name="message_invalid_username_password">错误的用户名或密码</string>
+    <string name="message_server_unavailable">无法连接到服务器</string>
+    <string name="message_user_disabled">用户被禁用</string>
+    <string name="message_user_expired">账户已过期</string>
+    <string name="message_userip_no_access">IP不合法,已被禁用</string>
+    <string name="unrecoverable_error">未知异常！</string>
+    <!-- 网络和内存卡提示 -->
+    <string name="prompt">提示</string>
+    <string name="check_connection">无可用网络连接，请检查网络设置！</string>
+    <string name="check_sdcard">请检查内存卡！</string>
+    <string name="menu_settings">设置</string>
+    <string name="close">关闭</string>
+    <string name="exit">退出</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <!-- 聊天记录 -->
+    <string name="failedconnection">网络连接不可用，请检查网络设置</string>
+    <string name="chat_exprot">导出</string>
+    <string name="chat_delete">删除</string>
+    <string name="chat_clear">清空</string>
+    <string name="chat_check_history">查看聊天记录</string>
+    <string name="chat_his_with_sb">与%1$s的聊天记录</string>
+    <!-- 我的消息 -->
+    <string name="check_sys_msg">查看系统消息</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="delete_user_confim">删除用户会将该用户所有聊天记录一并删除，是否继续?</string>
+    <string name="new_message">车当当新消息</string>
+    <!-- 添加好友 -->
+    <string name="input_username">输入用户名</string>
+    <string name="set_nickname">设置昵称</string>
+    <string name="username_not_null">用户名不允许为空</string>
+    <string name="username_exist">好友已存在</string>
+    <!-- 系统消息列表 -->
+    <string name="at_the_last">已经到达最后一页</string>
+    <!-- 首次登录向导 -->
+    <string name="text1">随着Windows Phone逐步渗入中国智能手机市场，Windows Phone作为移动操作平台的新锐，自然不会失宠。Windows Phone 7在中国没有流行的原因，很大程度上是因为在中国并没有上市。现在，诺基亚和微软宣布达成紧密战略合作之后，沉寂许久的Windows Phone操作系统再次走入了人们关注的视野，成了移动应用开发者继iOS和Android之外的另一选择。</string>
+    <string name="text2">好友曾向我展示了最新的iPhone和iPad版《极品飞车》。游戏的渲染效果令人印象深刻，是款蓄势待发的优秀游戏。但是，游戏的前端是典型的UI设计偏差案例。但界面中有大量的属性数据等内容，它在玩家没有时间做决定时提供了过多的内容。这些内容能够显著改变他们的游戏体验，但却在玩家往往感受不到变化的时候呈现。</string>
+    <string name="text3">3月31日，第四届CocoaChina游戏开发者大会暨Cocos2D-X技术研讨会在北京举行。来自全世界的移动互联网精英在此交流经验、相互学习。同时这次我们有幸也采访到了CocoaChina的CEO陈昊芝先生。他将为我们揭秘苹果新榜单的算法秘密，并未我们带来捕鱼达人成功的推广经验，对微软Windows Phone平台的吐槽和对未来3D技术趋势的前瞻。</string>
+    <string name="text4">北京时间4月1日消息，谷歌虽然一直以来都在地图产品上提供和完善各种各样的系统接口，但是迄今为止却一直忽略了广受欢迎的NES游戏。然而也就是今天搜索巨头谷歌利用愚人节的机会，“调皮”地推出流行的NES八位地图产品。</string>
+    <string name="text5">在NASA和美国国家地理的参与下，这群小鸟摆脱了地球引力，跑到了太空，这就是即将在2012年3月22日公测的《愤怒的小鸟：太空版》。为了让小鸟们成功解救出它们珍贵的“无价之蛋”，美国国家地理为此出版了一本书，来提供完成任务所需的关于行星、卫星、银河系等关于外太空的知识，并将于3月20日开始发售。</string>
+    <string name="text6">Google搜索引擎已经赢得全球范围的赞誉，而这一切都要归功于Google开创性的MapReduce。Google搜索引擎算法只是其搜索引擎的一部分，在后台支持Google算法的基础设施才是真正的幕后英雄，其基础设施可快速的索引链接成千上万台普通服务器。MapReduce的成功也直接推动了Hadoop的发展。</string>
+
+    <!-- 缺省的服务器配置 -->
+    <integer name="xmpp_port">5222</integer>
+
+    <!-- <string name="xmpp_host">121.40.87.16</string> -->
+    <!-- <string name="xmpp_host">192.168.8.4</string> -->
+    <string name="xmpp_service_name">iz232jtyxeoz</string>
+
+    <bool name="is_remember">true</bool>
+    <bool name="is_autologin">false</bool>
+    <bool name="is_novisible">false</bool>
+
+    <!-- 数据库和文件路径 -->
+    <string name="dir">/eim</string>
+    <string name="app_dir">/app</string>
+    <string name="db_dir">/database</string>
+    <string name="img_dir">/img</string>
+
+    <!-- 查找好友 -->
+    <string name="barcode_scan_add_friend">扫一扫加好友</string>
+    <string name="search_friend_title">新的好友</string>
+    <string name="phone_error">电话号码输入不正确</string>
+    <string name="wait_friend_agree">添加好友请求已发出，等待好友同意。</string>
+    <string name="add_friend_title">添加好友</string>
+    <string name="yue_person_num">%1$d/%2$d人</string>
+    <string name="yue_empty_notify_text">抱歉，没有活动</string>
+    <string name="tie_empty_notify_text">抱歉，没有帖子</string>
+    <string name="yue_remain_days">还剩%1$d天</string>
+    <string name="yue_joint_person_num">已参团%1$d人</string>
+    <string name="yue_charge">￥%1$d元/人</string>
+    <string name="yue_begin_and_end_date">%1$s-%2$s</string>
+    <string name="yue_detail_title">活动详情</string>
+    <string name="yues_title">车友活动</string>
+
+    <!-- 发布新的活动 -->
+
+    <string name="new_yue_title">车友活动发布</string>
+    <string name="yue_publish">发布</string>
+    <string name="release_yue_title_hint">标题</string>
+    <string name="yue_configuration">活动配置</string>
+    <string name="unfinish_yue_configuration">未完成活动配置</string>
+    <string name="finished_yue_configuration">已完成活动配置</string>
+    <string name="yue_details_describe_hint">详细描述&#8230;&#8230;</string>
+
+    <!-- 活动配置 -->
+    <string name="yue_configuration_title">活动配置</string>
+    <string name="yue_configuration_save">保存</string>
+    <string name="yue_number_of_people">活动人数</string>
+    <string name="yue_explain">参与人数下限是您活动成功举办的最低人数要求</string>
+    <string name="yue_number_of_people_floor">参与人数下限</string>
+    <string name="yue_participation_way">参与方式</string>
+    <string name="yue_participation_way_explain">活动发起人承担全部费用</string>
+    <string name="yue_limiting_condition">限制条件</string>
+    <string name="limiting_condition_explain">该活动只允许男性参加</string>
+    <string name="yue_time">活动时间</string>
+    <string name="yue_start">开始</string>
+    <string name="yue_end">结束</string>
+    <string name="shows_the_number_of_days">展示天数</string>
+    <!-- 活动类型 -->
+
+    <string name="yue_pet_type">遛宠</string>
+    <string name="yue_travell_type">旅游</string>
+    <string name="yue_dinner_type">聚餐</string>
+    <string name="yue_movie_type">观影</string>
+    <string name="yue_shopping_type">购物</string>
+    <string name="yue_bar_type">泡吧</string>
+    <string name="yue_mahjong_type">麻将</string>
+    <string name="yue_sports_type">运动</string>
+    <string name="yue_limiting_only_male">仅男</string>
+    <string name="yue_limiting_only_female">仅女</string>
+    <string name="yue_limiting_no_limit">不限男女</string>
+    <string name="yue_participation_way_freeload">求请客</string>
+    <string name="yue_participation_way_AA">AA制</string>
+    <string name="yue_participation_way_mytreat">我请客</string>
+
+    <!-- 申请加入一个活动 -->
+    <string name="apply_yue_content_word_limit">%1$d/%2$d</string>
+    <!-- 主页     车助手 -->
+    <string name="car_assistant_title">服务</string>
+    <string name="car_assistant_service">车主服务</string>
+    <string name="illegal_service">违章服务</string>
+    <string name="car_service">车辆服务</string>
+    <string name="license_service">驾证服务</string>
+    <string name="buy_new_car">新车导购</string>
+    <string name="car_wish_and_beauty">洗车美容</string>
+    <string name="car_service_maintenance">维修保养</string>
+    <string name="auto_spare_parts">汽车配件</string>
+    <string name="car_assistant">车辆助手</string>
+    <string name="insure_assistant">保险助手</string>
+    <string name="park_assistant">停车助手</string>
+    <string name="gas_station_query">加油助手</string>
+    <string name="vehicles_with_books">爱车账本</string>
+    <string name="used_car_online">二手车在线</string>
+    <string name="driving_school_service">驾校服务</string>
+    <string name="new_car_query_price">新车查价</string>
+    <string name="driving_assistant_title">行车助手</string>
+    <!-- 主页 车友圈 -->
+    <string name="my_ring_title">车圈</string>
+    <string name="my_ring_news">互动社区</string>
+    <string name="my_ring">好友车圈</string>
+    <string name="car_friend_activity">车友活动</string>
+    <string name="car_friend_spitslot">车友吐槽</string>
+    <string name="car_friend_manage">搜索添加</string>
+    <string name="nearby_car">附近车友</string>
+    <string name="homology_car_friend">同系车友</string>
+    <string name="new_car_friend">新的好友</string>
+    <string name="barcode_scanner">扫二维码</string>
+    <string name="my_car_friend">我的车友</string>
+    <string name="car_friend_group">车友群组</string>
+    <string name="address_book">通讯录</string>
+
+    <!-- 活动提示 -->
+    <string name="yue_title_must_not_empty">请输入活动标题</string>
+    <string name="yue_title_too_long">活动标题过长</string> <!-- 活动标题不能超过18个字节 -->
+    <string name="yue_content_must_not_empty">请输入活动详情</string>
+    <string name="yue_content_too_short">活动详情不能少于10个字节</string> <!-- 活动标题不能超过200个字节 -->
+    <string name="yue_photo_size">活动图片%1$d/%2$d</string>
+
+    <!-- 活动详情 -->
+    <string name="yue_detail_apply">申请加入</string>
+
+    <!-- datetimediaolog -->
+    <string name="dialog_time_picker_dialog_title">请选择日期和时间</string>
+
+    <!-- 我的活动 -->
+    <string name="my_yue_list_title">我的活动</string>
+    <!-- 4s店 -->
+    <string name="four_shop_query_title">4S店查询</string>
+    <string name="carbeauty_title">洗车美容</string>
+    <string name="maintenance_title">维修保养</string>
+    <string name="autoparts_title">汽车配件</string>
+    <string name="search_query_shop_hint">搜商铺</string>
+    <string name="search_query_jiaxiao_hint">搜驾校</string>
+    <!-- 店铺说明 -->
+    <string name="shop_state">申明</string>
+    <string name="fours_shop_description">此功能针对车当当用户在不熟悉新车购买及使用的情况下可以通过地区品牌及4S店与商家取得联系及咨询.</string>
+    <string name="carbeauty_description">此功能针对车当当车主搜索附近洗车店，方便车辆洗车美容。</string>
+    <string name="maintenance_description">此功能针对车当当车主在需要实施救援、车辆维修、车辆保养的情况下可以查找附近商家了解咨询</string>
+    <string name="autoparts_descriptin">此功能针对车当当车主在不熟悉汽车零配件价格的情况下可以通过地区品牌查找地区供应商，了解咨询</string>
+
+    <!-- 停车助手 -->
+    <string name="park_lable">停车签</string>
+    <string name="park_bud_title">停车助手</string>
+    <string name="gas_station_title">加油站查询</string>
+    <string name="driving_school_query">驾校查询</string>
+    <!-- 保险助手 -->
+    <string name="insure_buy_new_car">购买新车</string>
+    <string name="insure_compute_title">保险计算器</string>
+    <string name="time_of_the_accident">事故发生时</string>
+    <string name="on_location">现场拍摄</string>
+    <string name="preserve_the_sence">保护现场</string>
+    <string name="emergency_rescue">紧急救援</string>
+    <string name="notify_the_insurance_company">通知保险公司</string>
+    <string name="after_the_accident">事故发生后</string>
+    <string name="confirmation_of_responsibility">责任认定</string>
+    <string name="maim_authenticate">伤残鉴定</string>
+    <string name="accident_indemnity">事故赔偿</string>
+    <string name="insurance_claims">保险理赔</string>
+    <string name="other">其他</string>
+    <string name="drunk_driving">酒后驾车</string>
+    <string name="the_accident_settle">事故私了</string>
+
+    <!-- BBS -->
+    <string name="reply">回复</string>
+
+    <!-- 社区 -->
+    <string name="reply_to_who">回复&#160;&#160;</string>
+    <!-- 我的心情 -->
+    <string name="quan_item_content_more_text">全文</string>
+    <string name="quan_item_delete_text">删除</string>
+
+    <!-- 个人主页 -->
+    <string name="my_car_img">爱车墙</string>
+    <string name="car_friend_mood">心&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;情</string>
+    <string name="car_friend_basic_information">基本资料</string>
+    <string name="car_jingle_number">当&#160;&#160;当&#160;&#160;号</string>
+    <string name="nick_name">昵&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;称</string>
+    <string name="user_sex">性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别</string>
+    <string name="user_age">年&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;龄</string>
+    <string name="user_star_seat">星&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;座</string>
+    <string name="user_work">职&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;业</string>
+    <string name="user_address">家&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;乡</string>
+    <string name="user_love_car">爱&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;车</string>
+    <string name="user_hobbies">兴趣爱好</string>
+    <string name="user_person_note">个人说明</string>
+    <string name="user_register_time">注册时间</string>
+    <string name="to_chat">发消息</string>
+    <string name="add_car_friend">加为好友</string>
+
+    <!-- 更新个人信息 -->
+    <string name="edit_person_info">编辑个人信息</string>
+    <string name="update_person_info_success">更新个人信息成功</string>
+    <string name="update_person_info_failure">更新个人信息失败</string>
+    <string name="bankuai_count">话题&#160;&#160;%1$d</string>
+    <!-- 我的好友 -->
+    <string name="my_friend_title">我的好友</string>
+    <!-- 聊天 -->
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_voice_call">语音电话</string>
+    <string name="attach_video_call">视频通话</string>
+    <string name="user_card">名片</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="send_fail">发送消息失败,</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新&#8230;</string>
+    <string name="pull_to_refresh_release_label">放开以刷新&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入&#8230;</string>
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="Network_error">网络出错</string>
+    <string name="Making_sure_your_location">正在确定你的位置&#8230;</string>
+    <string name="please_check">key 验证出错! 请在 AndroidManifest.xml 文件中检查 key 设置</string>
+    <string name="unable_to_get_loaction">无法获取到您的位置信息!</string>
+    <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
+    <string name="cant_find_pictures">找不到图片</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">正在加载&#8230;</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开以加载&#8230;</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载&#8230;</string>
+    <string name="tie_publish">发布</string>
+    <string name="item_zan_ping_cnt">%1$d</string>
+    <string name="quan_reply_ping">回复%1$s:</string>
+    <string name="add_quotes">&#34;</string>
+    <string name="add_contacts_friend_title">添加手机联系人</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+    <!-- 商家新的下单流程 -->
+    <string name="order_content_hint">快速描述任务，如:南京，电子眼违章，扣3分</string>
+    <string name="order_description_hint">任务详情，备注说明&#8230;</string>
+    <string name="new_order_title">新建订单</string>
+    <string name="down_order">下单</string>
+    <string name="order_content_no_empty">订单内容不能为空</string>
+    <string name="order_contact_et_hint">如：张先生</string>
+    <string name="order_contact">联系人*</string>
+    <string name="order_contact_phone">联系电话*</string>
+    <string name="please_input_contact_phone">请输入联系电话</string>
+    <string name="apply_tuikuan_title">申请退款</string>
+    <string name="warning_of_max_count">字数不能超过 %1$s个字符</string>
+    <string name="warning_of_min_count">字数不能少于 %1$s个字符</string>
+    <string name="tie_ping_title">评论</string>
+    <string name="illegal_introduce">\n违章缴费是什么？\n
+违章缴费是车当当为满足广大车主处理车辆违章需求，而推出的一项全新代理服务。\n
+让您在家就可以完成车辆的违章处理，方便、快捷。\n
+违章缴费安全么？\n
+车当当作为车主服务平台，严格考察服务提供商的资历、能力，并和对方签署严格的合作协议。\n
+百分百保证车当当用户的利益。\n
+我为什么要用？\n
+传统缴费方式不仅费时、还费力，处理一次排队叫号、东跑西跑算上油钱都不值当!\n
+使用车当当违章缴费，只需点几下手机屏幕，轻松完成缴费过程。\n
+我该怎么使用？\n
+只需4步，违章缴费轻松搞定\n
+1 在车当当中添加您的爱车，完成违章查询\n
+2 进入缴费页面，选择您要缴费的违章\n
+3 与商家沟通，完成缴费\n
+4 等待处理(2-7个工作日)，完成\n
+在线缴费一般多久能够处理完毕？\n
+一般已经缴费的违章，会在2-7个工作日后处理完毕。\n
+如果处理过程中有任何情况，商家会第一时间与您沟通、确认。您有任何问题，随时与车当当客服联系。\n
+我的违章已经缴费并处理，为什么还能查到？\n
+全国各地方交管局的数据录入和数据更新会有不同程度的延时。\n
+一般已经缴费的违章，需要在1-14个工作日后状态才能同步更新，请您耐心等待。\n
+我确定有违章，但在车当当平台查不到怎么办？\n
+如果您已收到明确的违章信息提醒，但在车当当平台上查询不到，可能是交管局数据录入和同步存在延时。\n
+一般新违章的数据会在 1-14个工作日内录入并同步完毕。建议您到当地交管局网站进行核实。\n
+通过车当当平台缴费和去交管部门缴费的费用一样吗？\n
+是一样的。违章缴费的标准由当地交管部门制定，所以无论在车当当平台还是交管部门，缴费的费用是一样的。\n
+但通过车当当平台缴费，第三方服务商需要收取一定的服务费。\n
+在车当当平台缴费为何要收取服务费？\n
+交通违章缴费是由车当当平台中第三方商家提供的线下服务，服务费是由第三方商家收取，并非车当当平台收取。\n
+“滞纳金”是什么？\n
+“滞纳金”是车主接到交罚处罚通知书后，超过规定缴费期限后产生的惩罚性质的款项。\n
+- 现场违章：从车主收到处罚通知书当日算起，在 15天之内未缴纳违章罚款，会从第 16 天开始计算滞纳金\n
+- 非现场违章：如果车主主动到交管部门认领《公安交通管理简易程序处罚决定书》(即：罚单)，从当日算起，在 15 天之内未缴纳违章罚款，会从第 16 天开始计算滞纳金。如果您没有去交管部门认领“非现场违章”罚单，是不会产生滞纳金的。\n
+滞纳金是如何计算的？\n
+1. 现场罚单，15 天内未缴纳罚款\n
+2. 非现场罚单，到交通部门接受处罚后，15 天内未缴纳罚款\n
+3. 逾期未缴纳，交通部门每天按罚款数额的 3% 加处罚款\n
+4. 滞纳金上限为罚款数额的一倍\n
+现场罚单是什么？\n
+现场交通罚款，是指车辆驾驶员违反交通法规，交警现场开具交通违法罚款单，车辆驾驶员可直接到罚款所在地指定的交通罚款代收银行缴纳罚款。\n
+我不想缴费了怎么办？\n
+请直接在订单管理取消订单。\n
+已缴费如何退费？\n
+可在订单管理页面，提交该订单的退费申请，或与车当当客服联系。\n
+车当当客服热线：400-8333-955\n
+车当当客服服务时间：8:00-18:00\n\n以上业务办理材料只作参考，业务办理时与各地服务商联系后按各地车管所要求提供。</string>
+    <string name="vehicle_service_introduce">车辆服务是什么？\n
+车辆服务是车当当为满足广大车主处理车辆一系列需求，而推出的一项全新代理服务。\n
+让您方便、快捷的办理车辆相关的年审，代开委托书，补办等。\n
+缴费安全么？\n
+车当当作为车主服务平台，严格考察服务提供商的资历、能力，并和对方签署严格的合作协议。
+百分百保证车当当用户的利益。\n
+我为什么要用？\n
+传统缴费方式不仅费时、还费力，处理一次排队叫号、东跑西跑算上油钱都不值当!\n
+而车辆服务门道众多，步骤繁琐，车主一般缺乏相关经验。。\n
+使用车当当办理车务，只需点几下手机屏幕，轻松完成缴费过程，享受有质量的服务。\n
+我该怎么使用？\n
+只需3步，车辆服务轻松搞定\n
+1 在车当当中选择服务商，同商家进行即时通讯，发起服务\n
+2 进入缴费页面，支付您和商家确定好的服务费\n
+3 等待处理(2-7个工作日)，完成\n
+在线缴费一般多久能够处理完毕？\n
+以国家规定工作日为准，会在2-7个工作日后处理完毕。\n
+如果处理过程中有任何情况，商家会第一时间与您沟通、确认。您有任何问题，随时与车当当客服联系。\n
+通过车当当平台缴费和去交管部门缴费的费用一样吗？\n
+是一样的。车务实际项目的标准由当地交管部门制定，所以无论在车当当平台还是交管部门，缴费的费用是一样的。\n
+但通过车当当平台缴费，第三方服务商需要收取一定的服务费。\n
+在车当当平台缴费为何要收取服务费？\n
+交通违章缴费是由车当当平台中第三方商家提供的线下服务，服务费是由第三方商家收取，并非车当当平台收取。\n
+现场罚单是什么？\n
+现场交通罚款，是指车辆驾驶员违反交通法规，交警现场开具交通违法罚款单，车辆驾驶员可直接到罚款所在地指定的交通罚款代收银行缴纳罚款。\n
+我不想缴费了怎么办？\n
+请直接在订单管理取消订单。\n
+已缴费如何退费？\n
+可在订单管理页面，提交该订单的退费申请，或与车当当客服联系。\n
+车当当客服热线：400-8333-955\n
+车当当客服服务时间：8:00-18:00\n
+
+车辆相关各类服务，需要的资料如下：\n
+车辆年检:\n
+1、行驶证原件\n  
+2、交强险第三联、三角架、灭火器\n  
+3、车要到场（要领环保标志请带登记证书原件，违章必须要处理完）\n
+
+车辆过户:\n
+1、行驶证、机动车登记证书原件、双方（新旧）车主身份证\n  
+2、新车主非广州户口需要提供有效期内居住证（单位车还需要提供组织机构代码证原件，委托人证明（代办人如非广州户口琮需要居住证），IC卡或U盘，单位公章） \n
+3、新、旧车主都需要到现场  \n
+4、牌照15工作日\n
+
+车辆上牌:\n
+1、车主身份证（居住证）；购车发票（第四联）\n 
+2、合格证或进出口凭证（进口车） \n
+3、交强险（第三联） \n
+4、购置税本。需要车主到现场\n  
+5、购置税本。需要车主到现场\n
+6、单位车：单位组织机构代码证+U盘（数字证书）及加盖公章的委托证明和代办人\n
+
+提档转籍:\n
+１、行驶证（原件+复印件）\n 
+２、驾驶证（原件+复印件）\n 
+３、身份证（原+复印件）\n 
+４、车辆档案\n
+
+补办登记证:\n
+1、行驶证  原件+复印件\n  
+2、身份证  原件+复印件\n  
+3、外地户口需要居住证原件\n  
+4、车要到场，本人到场\n
+
+补办牌照:\n
+1、行驶证原件\n  
+2、机动车登记证书原件\n  
+3、身份证原件（处地人员需有效期内居住证）\n
+4、先领临时牌照，15个工作日后领正式牌照 \n 
+5、车要到现场\n
+
+代开委托书:\n
+１、行驶证（原件+复印件）\n 
+２、身份证（原件+复印件） \n
+３、有效期内交强险，需注明年审所在市车管所名称（下单前先把违章处理完）\n
+
+代领环保标志:\n
+1、身份证复印件\n  
+2、行驶证原件\n  
+3、车辆登记原件（公司车需要提供组织机构代码证且加盖公章）\n
+
+重打车架号:\n
+１、车主身份证原件\n  
+２、居住证（非本市）原件\n  
+３、行驶证原件 \n 
+４、登记证原件 \n 
+５、车要到现场，本人到场\n 
+
+补办行驶证:\n 
+１、行驶证（原件+复印件） \n 
+２、身份证（原件+复印件） \n 
+３、外地户口需要居住证原件  \n 
+４、车要到场，本人到场\n\n
+以上业务办理材料只作参考，业务办理时与各地服务商联系后按各地车管所要求提供。</string>
+    <string name="license_service_introduce">     驾证服务是什么？\n
+驾证服务是车当当为满足广大车主处理驾证一系列需求，而推出的一项全新代理服务。\n
+让您方便、快捷的办理驾证相关的年审，代开委托书，补办等。\n
+缴费安全么？\n
+车当当作为车主服务平台，严格考察服务提供商的资历、能力，并和对方签署严格的合作协议。\n
+百分百保证车当当用户的利益。\n
+我为什么要用？\n
+传统缴费方式不仅费时、还费力，处理一次排队叫号、东跑西跑算上油钱都不值当!\n
+而驾证服务门道众多，步骤繁琐，车主一般缺乏相关经验。。\n
+使用车当当办理车务，只需点几下手机屏幕，轻松完成缴费过程，享受有质量的服务。\n
+我该怎么使用？\n
+只需3步，驾证服务轻松搞定\n
+1 在车当当中选择服务商，同商家进行即时通讯，发起服务\n
+2 进入缴费页面，支付您和商家确定好的服务费\n
+3 等待处理(2-7个工作日)，完成\n
+在线缴费一般多久能够处理完毕？\n
+以国家规定工作日为准，会在2-7个工作日后处理完毕。\n
+如果处理过程中有任何情况，商家会第一时间与您沟通、确认。您有任何问题，随时与车当当客服联系。\n
+通过车当当平台缴费和去交管部门缴费的费用一样吗？\n
+是一样的。车务实际项目的标准由当地交管部门制定，所以无论在车当当平台还是交管部门，缴费的费用是一样的。\n
+但通过车当当平台缴费，第三方服务商需要收取一定的服务费。\n
+在车当当平台缴费为何要收取服务费？\n
+交通违章缴费是由车当当平台中第三方商家提供的线下服务，服务费是由第三方商家收取，并非车当当平台收取。\n
+现场罚单是什么？\n
+现场交通罚款，是指车辆驾驶员违反交通法规，交警现场开具交通违法罚款单，车辆驾驶员可直接到罚款所在地指定的交通罚款代收银行缴纳罚款。\n
+我不想缴费了怎么办？\n
+请直接在订单管理取消订单。\n
+已缴费如何退费？\n
+可在订单管理页面，提交该订单的退费申请，或与车叮当客服联系。\n
+车叮当客服热线：400-8333-955\n
+车叮当客服服务时间：8:00-18:00\n
+
+驾证相关各类服务，需要的资料如下：\n
+驾证年审:\n
+1、驾驶证原件  \n
+2、身份证原件  \n
+3、小一寸彩色相片1张  \n
+4、本人必须到场\n
+
+驾证注销:\n
+1、申请人的身份证明原件  \n
+2、行驶证（原件和复印件） \n
+3、驾驶证（原件和复印件） \n
+4、机动车驾驶人相片1张（相片要求为：申请人申请机动车驾驶证前6个月内的直边正面免冠彩色本人单人半身证件照。背景颜色为白色；不着制式服装；人像要清晰，层次丰富，神态自然，无明显畸变。照片尺寸为32mm×22mm相当于1英寸，头部宽度14mm～16mm，头部长度19mm～22mm）\n
+
+补办驾证:\n
+1、身份证原件  \n
+2、小一寸彩色白底相片3张和照片回执（如果刚好到期年审的话就要3张）\n
+3、外地户口需要居住证原件  \n
+4、副证遗失需提交驾驶证正本  \n
+5、需本人到场\n
+
+到期换证:\n
+1、驾驶证原件  \n
+2、身份证原件+身份证复印件  \n
+3、外地户口需居住原件  \n
+4、小一寸白底彩色相片5张，相片回执\n
+
+异地转入:\n
+1、驾使证原件  \n
+2、身份证原件  \n
+3、小一寸彩色白底相片3张和照片回执  \n
+4、外地户口需要居住原件  \n
+5、声明:黑名单城市的驾驶证不办理迁入，或被列入黑名单的、违章状态的、未归档的。请下单咨询（本人必须到场）\n
+
+驾证违章:\n
+1、行驶证（原件和复印件） \n
+2、驾驶证（原件和复印件） \n
+3、身份证（原件和复印件） \n
+4、驾驶违章罚单\n
+
+上岗证代办:\n
+1、合格证  \n
+2、购车发票  \n
+3、身份证  \n
+4、交强险  \n
+5、购置税  \n
+6、代理人身份证（原件和复印件） \n
+7、双方签字的委托书\n
+
+其他驾证:\n
+其他服务所需材料线下沟通\n\n以上业务办理材料只作参考，业务办理时与各地服务商联系后按各地车管所要求提供。</string>
+    <string name="app_tip">提示</string>
+    <string name="getting_prepayid">车当当正在加载微信支付</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="service">服务</string>
+    <string name="chat">消息</string>
+    <string name="friend">车圈</string>
+    <string name="title_activity_service_administration">ServiceAdministrationActivity</string>
+    <string name="title_activity_dfsrfds">dfsrfds</string>
+    <string name="title_activity_add_service">AddService</string>
+    <string name="title_activity_edit_service">EditService</string>
+    <string name="title_activity_mail_address_activtiy">MailAddressActivtiy</string>
+    <string name="title_activity_add_mailing_address">AddMailingAddress</string>
+    <string name="title_activity_edit_mail_adress_activtiy">EditMailAdressActivtiy</string>
+    <string name="title_activity_logistis_company_ativtiy">LogistisCompanyAtivtiy</string>
+    <string name="title_activity_logistics_details_activtiy">LogisticsDetailsActivtiy</string>
+    <string name="title_activity_logistics_company_activtiy">LogisticsCompanyActivtiy</string>
+
+
+    <!-- Gesture login activity -->
+    <string name="gesture_forget_gesture">忘记手势密码</string>
+    <string name="gesture_manager_gesture">手势密码管理</string>
+    <string name="gesture_check_gesture">验证登录密码</string>
+    <string name="gesture_default">请输入手势密码</string>
+    <string name="gesture_old">请输入原手势密码</string>
+    <string name="gesture_error">手势密码错误</string>
+    <string name="gesture_correct">输入正确</string>
+
+    <!-- Create gesture activity -->
+    <string name="create_gesture_activity">CreateGestureActivity</string>
+    <string name="create_gesture_default">绘制手势密码</string>
+    <string name="create_gesture_correct">再次绘制解锁图案</string>
+    <string name="create_gesture_less_error">至少连接4个点，请重新输入</string>
+    <string name="create_gesture_confirm_error">与上一次绘制不一致，请重新绘制</string>
+    <string name="create_gesture_confirm_correct">设置成功</string>
+    <string name="create_gesture_reset">重新设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_business_authentication_adopt">BusinessAuthenticationAdopt</string>
+    <string name="title_activity_idinfo">IDInfoActivity</string>
+    <string name="title_activity_enterprise_check">EnterpriseCheckActivity</string>
+    <string name="title_activity_enterprise_submit">EnterpriseSubmitActivity</string>
+    <string name="wzsm">本查询系统结果仅供参考，车辆违章信息依当地交通管理部门查询结果为准</string>
+    <string name="title_activity_abnormal_refund">AbnormalRefund</string>
+    <string name="title_activity_group_set_up_activtiy">GroupSetUpActivtiy</string>
+    <string name="title_activity_group_member_list_activtiy">GroupMemberListActivtiy</string>
+    <string name="title_activity_set_up_group_nick_namea_activtiy">SetUpGroupNickNameaActivtiy
+    </string>
+    <string name="title_activity_group_notice_activtiy">GroupNoticeActivtiy</string>
+    <string name="title_activity_group_nick_name_activtiy">GroupNickNameActivtiy</string>
+    <string name="title_activity_group_file_ativtiy">GroupFileAtivtiy</string>
+    <string name="title_activity_transfer_group_management_activtiy">
+        TransferGroupManagementActivtiy
+    </string>
+    <string name="title_activity_group_list_activtiy">GroupListActivtiy</string>
+    <string name="title_activity_group_search_activtiy">GroupSearchActivtiy</string>
+    <string name="title_activity_establish_group_first_step_activtiy">
+        EstablishGroupFirstStepActivtiy
+    </string>
+    <string name="title_activity_group_establish_second_activtiy">GroupEstablishSecondActivtiy
+    </string>
+    <string name="title_activity_add_group_members">AddGroupMembersActivity</string>
+    <string name="title_activity_group_head_portrait_activtiy">GroupHeadPortraitActivtiy</string>
+    <string name="title_activity_delete_group_member">DeleteGroupMember</string>
+    <string name="title_activity_whole_group_member">WholeGroupMember</string>
+
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">刷新</string>
+    <string name="processing">请稍候...</string>
+    <string name="download">下载</string>
+    <string name="download_fail">下载安装包失败</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="redo">重试</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+
+
+    <string name="cdd">车当当</string>
+    <string name="main_server">服务</string>
+    <string name="main_msg">消息</string>
+    <string name="main_rim">车圈</string>
+    <string name="main_my">我的</string>
+
+    <string name="my_id">ID :%1$s</string>
+    <string name="main_remind">截至yyyy年MM月dd日暂无提醒</string>
+    <string name="main_null_car">未设置车辆</string>
+    <string name="main_remind_1">%1$s有%2$d次违章</string>
+    <string name="main_remind_2">%1$s年检日期为%2$s</string>
+
+    <string name="msg_add_friend">添加好友</string>
+    <string name="msg_qr">扫一扫</string>
+    <string name="msg_more">更多</string>
+
+    <string name="setting">设置</string>
+    <string name="circle">圈子</string>
+    <string name="image_txt">图文</string>
+    <string name="activity">活动</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="account_security">账户安全保障中</string>
+    <string name="secretary_desk_top">秘书台</string>
+    <string name="work_desk">工作平台</string>
+    <string name="car_manager">车辆管理</string>
+    <string name="general_improvement">全面完善</string>
+    <string name="POINTS">积分商城</string>
+    <string name="recent_open">近期开放</string>
+    <string name="share_app">分享APP</string>
+    <string name="share_good">好东西值得一起分享</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_more">希望为您做得更多</string>
+    <string name="vip_server">会员服务</string>
+    <string name="Join_Us">期待您的加入</string>
+    <string name="about_us">关于我们</string>
+    <string name="lead_new_life">引领有车新生活</string>
+
+    <string name="my_order">我的订单</string>
+    <string name="look_all">查看全部</string>
+    <string name="ms_server">秘书服务</string>
+    <string name="img_text_share">图文分享</string>
+
+    <string name="haoyouchequan">好友车圈</string>
+    <string name="cheyouhuodong">车友活动</string>
+    <string name="fujincheyou">附近车友</string>
+    <string name="tongxicheyou">同系车友</string>
+    <string name="constellation">星座</string>
+    <string name="profession">职业</string>
+    <string name="city">城市</string>
+    <string name="no_setting">未设置</string>
+    <string name="qr">二维码</string>
+    <string name="mood">心情</string>
+    <string name="hobby">爱好</string>
+    <string name="love_car">爱车</string>
+    <string name="tu_wen">图文</string>
+    <string name="rim">圈子</string>
+    <string name="person_detail">个人信息</string>
+    <string name="more">更多</string>
+    <string name="he_in_black">您已把他加入黑名单，不能查看对方的动态~~~</string>
+    <string name="you_in_black">您被对方加入黑名单，不能查看对方的动态~~~</string>
+    <string name="jin_ri_hua_ti">今日话题: </string>
+    <string name="no_gao_su_ni">不告诉你</string>
+    <string name="data_format">yyyy年MM月dd日 HH:mm</string>
+    <string name="data_format_1">yyyyMMddHHmmss</string>
+    <string name="del">删除</string>
+    <string name="tu_size">共%1$d张</string>
+    <string name="gan_xing_qu">%1$d人感兴趣</string>
+    <string name="bang_zhu_mai_dan">邦主买单</string>
+    <string name="AA">大伙AA</string>
+    <string name="qing_ke">求请客</string>
+    <string name="near_car_friend">附近车友</string>
+    <string name="shaixuan">筛选</string>
+    <string name="sure">确定</string>
+    <string name="svip">SVIP</string>
+    <string name="vip">VIP</string>
+
+    <string name="my_work">秘书服务</string>
+    <string name="get_order">收到的订单</string>
+    <string name="to_order">发出的订单</string>
+    <string name="manager_gongju">管理工具</string>
+
+    <string name="red_count">红包个数</string>
+    <string name="red_count_hint">填写个数</string>
+    <string name="red_all_money">总金额</string>
+    <string name="red_money_hint">填写金额</string>
+    <string name="red_state_random">当前为随机红包，</string>
+    <string name="action_changeto_normalred">改为普通红包</string>
+    <string name="redpacket_remark_hint">恭喜发财，大吉大利！</string>
+    <string name="takein_redpacket">塞钱进红包</string>
+    <string name="redpacket_pay_detail">使用支付宝支付，</string>
+    <string name="action_change_paykind">更换</string>
+    <string name="default_red_money">¥0.00</string>
+    <string name="red_kind_use">使用</string>
+    <string name="red_kind_use_pay">"支付， "</string>
+    <string name="group_redpacket_title">发红包</string>
+    <string name="group_redpacket_righttitle">说明</string>
+    <string name="red_single_money">单个金额</string>
+    <string name="action_changto_random">改为随机红包</string>
+    <string name="red_state_nromal">"当前为普通红包， "</string>
+    <string name="rmb_sign">¥</string>
+    <string name="paykind">payKind</string>
+    <string name="max_single_redpacket">单次红包金额不能超过</string>
+    <string name="max_single_redpacket_normal">单个红包金额不能超过</string>
+    <string name="max_red_count">单次红包数量不能超过</string>
+    <string name="unit_count">个</string>
+    <string name="unit_money">元</string>
+    <string name="redconut_notzero">红包个数不能为0个</string>
+    <string name="redmoney_notzero">红包金额不能为0元</string>
+    <string name="decimal_format">#0.00</string>
+    <string name="cddhb">车当当红包</string>
+    <string name="rednum_limit">单次红包个数不少于1个</string>
+    <string name="rednum_limit2">单次红包个数不少于2个</string>
+    <string name="rednum_limit_max">单次红包个数不可超过</string>
+    <string name="redmoney_limit">单个红包金额不低于0.01元</string>
+    <string name="redmoney_limit_max">单次红包金额不可超过</string>
+    <string name="redmoneysingle_limit">单个红包金额不低于0.01元</string>
+    <string name="redmoneyday_limit">每日限额200元，今日发送限额还剩</string>
+
+    <string name="title_activity_hair_red_activtiy">HairRedActivtiy</string>
+    <string name="title_activity_personal_send_red_activtiy">PersonalSendRedActivtiy</string>
+    <string name="hair_red_kq">看看大家手气  </string>
+    <string name="hair_red_amount">总金额</string>
+
+    <string name="service_amount">请输入服务价格</string>
+
+    <string name="transfer_deatil_title">转账详情</string>
+    <string name="transfer_success">转账成功</string>
+    <string name="mywallet">我的钱包</string>
+    <string name="transfer_time">转账时间：</string>
+
+    <string name="login">登&#160;&#160;&#160;&#160;录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="telephone_input_error">电话号码输入不正确</string>
+    <string name="password_not_empty">密码不能为空</string>
+    <string name="pwd_length_error">密码长度不正确</string>
+    <string name="internet_error">请检查网络是否连接</string>
+    <string name="choose_payment">选择支付方式</string>
+
+    <!--群-->
+    <string name="group_lsit_title">群组</string>
+    <string name="establish_group">创建群</string>
+    <string name="wo_establish_group">我创建的群组(</string>
+    <string name="join_establish_group">我加入的群组(</string>
+
+    <string name="hair_red_money_empty">红包金额不能为空</string>
+    <string name="red_incorrect">单个红包金额不低于0.01元</string>
+    <string name="hair_red_title">发红包</string>
+    <string name="red_explain">说明</string>
+    <string name="input_money">输入金额保留两位小数</string>
+    <string name="load_in">加载中...</string>
+
+    <string name="group_kh">)</string>
+    <string name="hb">的红包</string>
+    <string name="red_overdue">该红包超过24小时已过期</string>
+    <string name="red_grab">手慢了，红包派完了</string>
+    <string name="binding_bank_card">请绑定本人的银行卡</string>
+    <string name="bank_name">姓名</string>
+    <string name="bank_number">卡号</string>
+    <string name="edittext_bank">请填写你本人的银行卡号</string>
+    <string name="xiayibu">下一步</string>
+
+    <string name="add_bank_title">添加银行卡</string>
+    <string name="bank_mobile">手机号</string>
+    <string name="bank_mobile_remarks">银行预留手机</string>
+    <string name="verification_code">已发送验证码至</string>
+    <string name="bank_sfz">身份证</string>
+
+    <string name="bank_full_name">本人姓名</string>
+    <string name="bank_remarks_sfz">本人身份证</string>
+    <string name="bank_obtain_verification">重新发送</string>
+    <string name="bank_obtain_miao">秒</string>
+
+</resources>

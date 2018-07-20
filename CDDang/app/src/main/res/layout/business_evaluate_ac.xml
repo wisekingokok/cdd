@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <com.chewuwuyou.app.widget.RadioGroup
+        android:id="@+id/pl_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/carservice_type_car_nianjian" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/hp_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/common_tab_bg"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="好评(0)"
+                android:textColor="@color/radiobutton_text_color"
+                android:textSize="@dimen/common_fiveth" />
+
+            <RadioButton
+                android:id="@+id/zp_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/common_tab_bg"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="中评(0)"
+                android:textColor="@color/radiobutton_text_color"
+                android:textSize="@dimen/common_fiveth" />
+
+            <RadioButton
+                android:id="@+id/cp_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/common_tab_bg"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="差评(0)"
+                android:textColor="@color/radiobutton_text_color"
+                android:textSize="@dimen/common_fiveth" />
+        </LinearLayout>
+    </com.chewuwuyou.app.widget.RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/pl_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/order_empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="您还没有评价记录!"
+            android:textColor="@color/orange_red"
+            android:textSize="18.0sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

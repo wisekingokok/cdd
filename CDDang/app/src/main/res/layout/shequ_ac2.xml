@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+         android:background="@color/new_blue"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/sub_header_bar_left_ibtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/header_bar_btn_xbg"
+            android:gravity="center"
+           
+            android:src="@drawable/backbutton"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/my_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:checkedButton="@+id/my_tie_btn"
+            android:orientation="horizontal"
+            android:padding="4.0dip" >
+
+            <RadioButton
+                android:id="@+id/my_tie_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shequ_left_radio_button_bg"
+                android:button="@null"
+                android:padding="6dip"
+                android:text="我的帖子"
+                android:textColor="@color/shequ_radio_color_selector"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/my_yue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shequ_right_radio_button_bg"
+                android:button="@null"
+                android:padding="6dip"
+                android:text="我的活动"
+                android:textColor="@color/shequ_radio_color_selector"
+                android:textSize="13sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <!--
+         <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commonHead"
+         />
+    -->
+
+    <com.chewuwuyou.app.widget.CurrentViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerbar"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

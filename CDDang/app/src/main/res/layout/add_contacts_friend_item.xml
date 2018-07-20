@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/user_head_iv"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_defaultimg"/>
+
+    <TextView
+        android:id="@+id/user_nick_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+
+        android:layout_toRightOf="@+id/user_head_iv"
+        android:textColor="@color/p_text1"
+        android:textSize="@dimen/common_num_four_textSize"
+        tools:text="黄天天 "/>
+
+    <TextView
+        android:id="@+id/user_nick_contact_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_nick_tv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/user_head_iv"
+        android:textColor="@color/lightgray"
+        android:textSize="13sp"
+        tools:text="通讯录好友：黄天天 "/>
+
+    <TextView
+        android:id="@+id/add_friend_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/common_blue_btn"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_four_textSize"/>
+
+    <!--
+         <Button
+        android:id="@+id/refuse_add_friend_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/common_blue_btn"
+        android:text="拒绝"
+        android:textColor="@color/white" />
+    -->
+
+</RelativeLayout>

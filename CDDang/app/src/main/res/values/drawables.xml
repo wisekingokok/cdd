@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="title_bar_btn_pressed_color" type="drawable">#1F5185</item>
+    <item name="back_btn_normal" type="drawable">#00000000</item>
+    <item name="pop_btn_normal" type="drawable">#00000000</item>
+    <item name="pop_btn_press" type="drawable">#e0000000</item>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_frame" >
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:text="车务无忧"
+        android:textColor="@color/common_text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/notification_is_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="已读"
+        android:textColor="@color/notification_read_color"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/notification_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="您发布的任务已付款"
+        android:padding="5dp"
+        android:textColor="@color/common_text_color"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

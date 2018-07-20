@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+    <include layout="@layout/network_request"/>
+
+    <LinearLayout
+        android:id="@+id/logintics_tab"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|center"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/message_logistics_praise"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/message"
+                style="@style/tab_rb_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/business_left_isservice"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="办理快递" />
+
+            <RadioButton
+                android:id="@+id/maillist"
+                style="@style/tab_rb_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:textColor="@color/new_blue"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="回寄快递" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/logistics_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流状态"/>
+            <TextView
+                android:id="@+id/logisics_start"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textColor="#f53704"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="承运来源"/>
+            <TextView
+                android:id="@+id/logisics_source"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运单编号"/>
+            <TextView
+                android:id="@+id/logisics_xq_numbers"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/logistics_mail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="6dp"
+            android:layout_height="match_parent" >
+
+            <com.chewuwuyou.app.widget.CustomNodeListView
+                android:id="@+id/logistics_listview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/logistics_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/chat_history_time_text"
+        android:textSize="14sp"/>
+</LinearLayout>

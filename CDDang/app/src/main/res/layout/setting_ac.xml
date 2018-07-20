@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/car_dingle_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_head"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/common_line_view"/>
+            <TextView
+                android:id="@+id/safe_setting_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/common_layout_bg"
+                android:drawableRight="@drawable/common_right"
+                android:padding="10dp"
+                android:text="安全设置"
+                android:textColor="@color/common_input_text_color"
+                android:textSize="@dimen/home_page_text_size"/>
+
+
+            <include layout="@layout/common_line_view"/>
+
+            <TextView
+                android:id="@+id/message_setting_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/common_layout_bg"
+                android:drawableRight="@drawable/common_right"
+                android:padding="10dp"
+                android:text="消息设置"
+                android:textColor="@color/common_input_text_color"
+                android:textSize="@dimen/home_page_text_size"/>
+
+            <include layout="@layout/common_line_view"/>
+
+            <TextView
+                android:id="@+id/heimingdan_setting_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/common_layout_bg"
+                android:drawableRight="@drawable/common_right"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:text="黑名单管理"
+                android:textColor="@color/common_input_text_color"
+                android:textSize="@dimen/home_page_text_size"/>
+
+            <include layout="@layout/common_line_view"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_line_color"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/version_detection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/common_layout_bg"
+                    android:padding="10dp"
+                    android:text="当前版本"
+                    android:textColor="@color/common_input_text_color"/>
+
+                <TextView
+                    android:id="@+id/version_update_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="已是最新版本"
+                    android:textColor="@color/common_text_color"/>
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_view"/>
+
+            <TextView
+                android:id="@+id/disclaimer_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:drawableEnd="@drawable/common_right"
+                android:padding="10dp"
+                android:text="免责声明"
+                android:textColor="@color/common_input_text_color"/>
+
+            <include layout="@layout/common_line_view"/>
+
+            <TextView
+                android:id="@+id/setting_yssm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:drawableEnd="@drawable/common_right"
+                android:padding="10dp"
+                android:text="版权&amp;隐私声明"
+                android:textColor="@color/common_input_text_color"/>
+
+            <include layout="@layout/common_line_view"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/exit_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/common_red_btn"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="退出当前登录"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

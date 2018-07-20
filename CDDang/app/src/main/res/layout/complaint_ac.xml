@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <com.chewuwuyou.app.widget.RadioGroup
+        android:id="@+id/ts_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/hp_btn" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/business_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pinlun_tab_bg"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="商家"
+                android:textColor="@color/common_text_color"
+                android:textSize="18.0sp" />
+
+            <RadioButton
+                android:id="@+id/kef_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pinlun_tab_bg"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="客服"
+                android:textColor="@color/common_text_color"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </com.chewuwuyou.app.widget.RadioGroup>
+
+    <EditText
+        android:id="@+id/phone_or_kfnum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_frame"
+        android:hint="商家电话"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/common_text_color"
+        android:textColorHint="@color/darkgray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/suggestion_text"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_frame"
+        android:gravity="top"
+        android:hint="投诉原因"
+        android:maxLength="200"
+        android:padding="5dp"
+        android:textColor="@color/common_text_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/common_green_btn"
+        android:onClick="onAction"
+        android:text="提 交"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="   *感谢您的建议，有了您的建议我们的平台将更加完善。\n*商家如有不法行为，请您告诉我们，我们将严肃处理!"
+        android:textColor="@color/common_text_color"
+        android:textSize="14.0sp" />
+
+</LinearLayout>

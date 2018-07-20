@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/common_head" />
+
+    <com.chewuwuyou.app.widget.PullToRefreshListView
+        android:id="@+id/quan_thumbnail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_bar"
+        android:layout_marginTop="-6.5dp"
+        android:divider="@color/pull_to_refresh_listview_divider"
+        android:dividerHeight="6dp"
+        android:scrollbars="none" >
+    </com.chewuwuyou.app.widget.PullToRefreshListView>
+
+</RelativeLayout>

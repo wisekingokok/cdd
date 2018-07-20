@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/common_layout_bg"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text_type_zong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textColor="#4c4c4c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_offer_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/text_type_zong"
+            android:layout_alignParentRight="true"
+            android:text="人报价"
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/text_offer_logo"
+            android:layout_toLeftOf="@id/text_offer_logo"
+            android:text="0"
+            android:textColor="#4aceea"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_sign_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/text_type_zong"
+            android:layout_toLeftOf="@id/text_offer"
+            android:text="人抢单,"
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/text_sign_logo"
+            android:layout_toLeftOf="@id/text_sign_logo"
+            android:text="0"
+            android:textColor="#4aceea"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/text_type_zong"
+            android:layout_marginTop="10dp"
+            android:text="城管违章"
+            android:textColor="#4aceea"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/make_offer_peoples_man_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/text_type_zong"
+            android:layout_marginTop="10dp"
+            android:text="接单人数已满"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text_type"
+            android:layout_below="@id/text_type"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="1天前 由车服务商: 车当当B类商家测试帐号发布"
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

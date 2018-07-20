@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/prompt_set_password_left"
+            android:text="@string/prompt_set_password_problemyi"
+            android:textColor="@color/set_password_problem"
+            android:textSize="@dimen/prompt_six_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/prompt_yi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prompt_click"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/common_layout_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/wallet_person_item_iv"
+                android:gravity="center_vertical"
+                android:onClick="onclick"
+                android:text="@string/prompt_set_password_problem_default"
+                android:textColor="@color/set_problem_title"
+                android:textSize="@dimen/prompt_input_size" />
+
+            <TextView
+                android:id="@+id/prompt_line_yi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prompt_set_password_line"
+                android:layout_below="@+id/prompt_yi"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:background="@color/wallet_background" />
+
+            <TextView
+                android:id="@+id/answer_yi"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/prompt_click"
+                android:layout_below="@+id/prompt_line_yi"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:gravity="center_vertical"
+                android:text="@string/prompt_set_password_answer"
+                android:textColor="@color/set_problem_title"
+                android:textSize="@dimen/prompt_input_size" />
+
+            <EditText
+                android:id="@+id/problem_ed_yi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/answer_yi"
+                android:layout_alignBottom="@+id/answer_yi"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/answer_yi"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/prompt_set_password_input_answer"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/prompt_input_size" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/prompt_set_password_left"
+            android:text="@string/prompt_set_password_problemer"
+            android:textColor="@color/set_password_problem"
+            android:textSize="@dimen/prompt_six_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/prompt_er"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prompt_click"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/common_layout_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/wallet_person_item_iv"
+                android:gravity="center_vertical"
+                android:onClick="onclick"
+                android:text="@string/prompt_set_password_problem_default"
+                android:textColor="@color/set_problem_title"
+                android:textSize="@dimen/prompt_input_size" />
+
+            <TextView
+                android:id="@+id/prompt_line_er"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prompt_set_password_line"
+                android:layout_below="@+id/prompt_er"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:background="@color/wallet_background" />
+
+            <TextView
+                android:id="@+id/answer_er"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/prompt_click"
+                android:layout_below="@+id/prompt_line_er"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:gravity="center_vertical"
+                android:text="@string/prompt_set_password_answer"
+                android:textColor="@color/set_problem_title"
+                android:textSize="@dimen/prompt_input_size" />
+
+            <EditText
+                android:id="@+id/problem_ed_er"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/answer_er"
+                android:layout_alignBottom="@+id/answer_er"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/answer_er"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/prompt_set_password_input_answer"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/prompt_input_size" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/prompt_set_password_left"
+            android:text="@string/prompt_set_password_problemsan"
+            android:textColor="@color/set_password_problem"
+            android:textSize="@dimen/prompt_six_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/prompt_san"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prompt_click"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/common_layout_bg"
+                android:clickable="true"
+                android:drawableRight="@drawable/wallet_person_item_iv"
+                android:gravity="center_vertical"
+                android:onClick="onclick"
+                android:text="@string/prompt_set_password_problem_default"
+                android:textColor="@color/set_problem_title"
+                android:textSize="@dimen/prompt_input_size" />
+
+            <TextView
+                android:id="@+id/prompt_line_san"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prompt_set_password_line"
+                android:layout_below="@+id/prompt_san"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:background="@color/wallet_background" />
+
+            <TextView
+                android:id="@+id/answer_san"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/prompt_click"
+                android:layout_below="@+id/prompt_line_san"
+                android:layout_marginLeft="@dimen/prompt_set_password_left"
+                android:gravity="center_vertical"
+                android:text="@string/prompt_set_password_answer"
+                android:textColor="@color/set_problem_title"
+                android:textSize="@dimen/prompt_input_size" />
+
+            <EditText
+                android:id="@+id/problem_ed_san"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/answer_san"
+                android:layout_alignBottom="@+id/answer_san"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/answer_san"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/prompt_set_password_input_answer"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/prompt_input_size" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/set_problen_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prompt_set_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_blue_btn"
+            android:text="@string/prompt_set_password_button_submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

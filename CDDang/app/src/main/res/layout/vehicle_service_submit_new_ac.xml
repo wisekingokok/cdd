@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/common_line_view" />
+
+            <RelativeLayout
+                android:id="@+id/vehicle_service_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/service_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="服务项目"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_num_four_textSize" />
+
+                <TextView
+                    android:id="@+id/service_project_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/service_title_tv"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_num_four_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="办理地区"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_num_four_textSize" />
+
+                <TextView
+                    android:id="@+id/vehcle_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_num_four_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="规费"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_num_four_textSize" />
+
+                <TextView
+                    android:id="@+id/service_project_price_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="￥0.00元"
+                    android:textColor="@color/illegal_service_price_color"
+                    android:textSize="@dimen/common_num_four_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="代理服务费"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_num_four_textSize" />
+
+                <TextView
+                    android:id="@+id/vehicle_service_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="￥0.00元"
+                    android:textColor="@color/illegal_service_price_color"
+                    android:textSize="@dimen/common_num_four_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/zrsmfw_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:text="上门服务"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_num_four_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:padding="10dp"
+                        android:text="车当当专人上门服务费"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_num_four_textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/is_visiting_service_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/notification_switch_bg"
+                        android:button="@null"
+                        android:checked="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:padding="10dp"
+                        android:text="￥0.00元"
+                        android:textColor="@color/illegal_service_price_color"
+                        android:textSize="@dimen/common_num_four_textSize" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/visiting_service_info_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/common_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/visiting_service_time_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/yysj_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="预约时间"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_num_four_textSize" />
+
+                    <TextView
+                        android:id="@+id/visiting_service_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/yysj_text"
+                        android:background="@drawable/login_frame"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/common_title_color"
+                        android:textSize="@dimen/common_num_four_textSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/yydz_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="预约地址"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_num_four_textSize" />
+
+                    <EditText
+                        android:id="@+id/visiting_service_address_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/yydz_text"
+                        android:background="@drawable/login_frame"
+                        android:maxLength="30"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/common_title_color"
+                        android:textSize="@dimen/common_num_four_textSize" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/common_line_color" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <RelativeLayout
+                android:id="@+id/visiting_service_price_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="上门费用"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_num_four_textSize" />
+
+                <TextView
+                    android:id="@+id/visiting_service_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="￥0.0元"
+                    android:textColor="@color/illegal_service_price_color"
+                    android:textSize="@dimen/common_num_four_textSize" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="预计总额"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_num_four_textSize" />
+
+                <TextView
+                    android:id="@+id/sum_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="￥0.00元"
+                    android:textColor="@color/illegal_service_price_color"
+                    android:textSize="@dimen/common_num_four_textSize" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="*申明：以上参考费用为商家对服务的预测费用，完成以上服务需与商家电话沟通协商最终定价。"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/is_agree_tk_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/add_ordear_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="同意和接受" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/cdd_fwtk_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="《车当当服务条款》"
+                    android:textColor="#0094EA" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/cdd_fwtk_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="《车当当关于第三方服务商违章代办声明》"
+                    android:textColor="#0094EA" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/comfrim_pay_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:background="@color/new_blue"
+                android:onClick="onAction"
+                android:text="确认发布"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

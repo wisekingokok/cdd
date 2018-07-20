@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/user_head_img"
+            android:layout_width="@dimen/quan_avatar_width"
+            android:layout_height="@dimen/quan_avatar_height"
+            android:src="@drawable/user_yuan_icon" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李國強"
+            android:textColor="@color/common_input_text_color"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/MyRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignTop="@+id/user_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/user_layout"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5" />
+
+    <TextView
+        android:id="@+id/user_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/user_layout"
+        android:maxLines="3"
+        android:text="商家态度很好，资料都是上门来取的"
+        android:textColor="@color/common_input_text_color"
+        android:textSize="14.0sp" />
+
+</RelativeLayout>

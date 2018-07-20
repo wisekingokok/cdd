@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/explain_yuan"
+            android:drawablePadding="7dp"
+            android:text="转出次数每日不得超过3次"
+            android:textColor="#909090"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/explain_yuan"
+            android:drawablePadding="7dp"
+            android:text="每笔金额不能超过5万元"
+            android:textColor="#909090"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/explain_yuan"
+            android:drawablePadding="7dp"
+            android:singleLine="true"
+            android:text="到账时间  1~3 个工作日  (如遇节假日顺延)"
+            android:textColor="#909090"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/explain_yuan"
+            android:drawablePadding="7dp"
+            android:singleLine="true"
+            android:text="提现手续费=提现金额*0.15%(每笔最低2块)"
+            android:textColor="#909090"
+            android:textSize="14sp" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

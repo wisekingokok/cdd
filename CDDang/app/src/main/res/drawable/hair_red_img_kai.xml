@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list  xmlns:android="http://schemas.android.com/apk/res/android"    android:oneshot="false">
+    <item android:drawable="@mipmap/hair_red_kai_er" android:duration="200"></item>
+    <item android:drawable="@mipmap/hair_red_kai_san" android:duration="200"></item>
+    <item android:drawable="@mipmap/hair_red_kai_si" android:duration="200"></item>
+    <item android:drawable="@mipmap/hair_red_kai_wu" android:duration="200"></item>
+    <item android:drawable="@mipmap/hair_red_kai_liu" android:duration="200"></item>
+</animation-list>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="54dp"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                            android:id="@+id/serviceviewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <com.viewpagerindicator.CirclePageIndicator
+                                android:id="@+id/circle_page_indicator"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:background="#00000000" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <com.chewuwuyou.app.extras.FancyCoverFlow
+                    android:id="@+id/driving_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/wallet_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/business_txt"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="图文分享"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.chewuwuyou.app.tools.MyListView
+                    android:id="@+id/friend_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </com.chewuwuyou.app.tools.MyListView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

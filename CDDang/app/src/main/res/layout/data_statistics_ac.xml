@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <com.chewuwuyou.app.widget.SegmentControl
+        xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/segment_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="13sp"
+        segmentcontrol:colors="#48C5FF"
+        segmentcontrol:cornerRadius="5dip"
+        segmentcontrol:direction="horizon"
+        segmentcontrol:horizonGap="8dip"
+        segmentcontrol:texts="业务概况|趋势图"
+        segmentcontrol:verticalGap="8dip" />
+
+    <LinearLayout
+        android:id="@+id/spread_pie_chart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已结算订单："
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/datasettlement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/new_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/spread_pie_chart"
+            android:layout_width="300dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lint_chart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lint_chart"
+            android:layout_width="340dp"
+            android:layout_height="340dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/commonHead"
+        layout="@layout/common_head" />
+
+    <LinearLayout
+        android:id="@+id/selectLL"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/yue_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="选择类型"
+            android:textColor="#c0c0c0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yue_type_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@drawable/yue_type_frame_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="车展"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/next_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/quan_padding"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tie_content_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/yue_details_describe_hint"
+            android:minHeight="100dp"
+            android:padding="10dip"
+            android:textColor="@color/common_input_text_color"
+            android:textSize="12sp"></EditText>
+
+        <LinearLayout
+            android:id="@+id/tie_tu_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:text="最多5张"
+                android:textColor="@color/grey_b2b2b2"
+                android:textSize="13sp" />
+
+            <com.chewuwuyou.app.widget.MyGridView
+                android:id="@+id/tie_tu_gv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_layout_bg"
+            android:drawableLeft="@drawable/location_gray"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/next_right"
+            android:gravity="left|center_vertical"
+            android:hint="不显示位置"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/new_blue">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/message_button_praise"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/message"
+                style="@style/tab_rb_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:checked="true"
+                android:gravity="center"
+                android:text="消息"/>
+
+            <RadioButton
+                android:id="@+id/maillist"
+                style="@style/tab_rb_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/business_right_isservice"
+                android:gravity="center"
+                android:text="通讯录"/>
+        </RadioGroup>
+
+
+        <View
+            android:id="@+id/tishi"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignTop="@id/radio_group"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@id/radio_group"
+            android:background="@drawable/tishi_bg"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="18dp"
+            android:paddingTop="14dp"
+            android:text="更多"
+            android:textColor="@color/white"
+            android:textSize="14.0sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

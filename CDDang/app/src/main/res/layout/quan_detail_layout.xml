@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/quan_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerbar"
+        layout="@layout/common_head"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quan_detail_to_ping_ll"
+        android:layout_below="@id/headerbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="13dip"
+            android:paddingLeft="@dimen/quan_padding"
+            android:paddingRight="@dimen/quan_padding"
+            android:paddingTop="13dip">
+
+            <ImageView
+                android:id="@+id/quan_detail_avatar_iv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/user_yuan_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quan_detail_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="静静"
+                        android:textColor="#5b6e82"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/quan_detail_zan_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iconhear"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/quan_detail_content_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6dip"
+                    android:text="讨厌人贩子"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:id="@+id/quan_detail_tus_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip">
+
+                    <com.chewuwuyou.app.widget.MyGridView
+                        android:id="@+id/quan_detail_tus_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dip"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:verticalSpacing="5dp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quan_detail_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="三天前"
+                        android:textColor="#c0c0c0"
+                        android:textSize="10sp"/>
+
+                    <TextView
+                        android:id="@+id/quan_detail_delete_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/quan_detail_date_tv"
+                        android:gravity="center"
+                        android:paddingLeft="6dip"
+                        android:paddingRight="6dip"
+                        android:text="@string/quan_item_delete_text"
+                        android:textColor="#5b6e82"
+                        android:textSize="10sp"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/quan_detail_ping_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/reply"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/quan_detail_ping_tv"
+                        android:layout_width="100dip"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center|right"
+                        android:paddingRight="2dip"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/reply"
+                        android:text="回复"
+                        android:textColor="#5b6e82"
+                        android:textSize="10sp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/zan_and_ping_detail_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/zan_and_ping_detail_frame"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/zan_detail_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="4dip">
+
+                        <ImageView
+                            android:id="@+id/zan_detail_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/zan_small"/>
+
+                        <TextView
+                            android:id="@+id/zan_detail_tv"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="#5b6e82"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/zan_detail_divider_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginTop="2dip"
+                        android:background="@color/gray"/>
+
+                    <LinearLayout
+                        android:id="@+id/ping_detail_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dip"
+                        android:paddingRight="4dip"
+                        android:visibility="visible">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/quan_detail_to_ping_ll"
+        layout="@layout/to_ping_layout"/>
+
+    <com.chewuwuyou.app.widget.HackyViewPager
+        android:id="@+id/quan_detail_expanded_image_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:visibility="invisible"/>
+</RelativeLayout>

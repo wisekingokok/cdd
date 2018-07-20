@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toquote_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <include layout="@layout/network_request"/>
+
+    <include layout="@layout/network_abnormal"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/order_status_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ordear_status_no"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <include layout="@layout/common_order_base_info_layout" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/dotted" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/tuquote_cancel_blue"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="取消订单"
+                    android:textColor="@color/new_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp" >
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="3dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/new_blue" />
+
+                <TextView
+                    android:id="@+id/text_shang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/view"
+                    android:gravity="center"
+                    android:text="接单商家"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_business_persons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/text_shang"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <com.chewuwuyou.app.tools.MyListView
+                android:id="@+id/toquote_mylist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.chewuwuyou.app.tools.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

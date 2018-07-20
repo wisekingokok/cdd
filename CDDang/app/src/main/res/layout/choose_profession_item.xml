@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_layout_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/industry_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="IT"
+        android:background="#81B0E4"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/common_seventh"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/profession_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="计算机/互联网/通信"
+        android:textSize="@dimen/common_seventh"
+        android:textColor="@color/common_input_text_color" />
+
+</LinearLayout>

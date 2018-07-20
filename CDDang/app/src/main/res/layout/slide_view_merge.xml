@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.barcode.view.SweepLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    myapp:holderwidth="100dp"
+    android:orientation="horizontal">
+
+    <include layout="@layout/account_withdrawals_item" />
+
+  
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="100dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff3300"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="删除"
+        android:textColor="#ffffff" />
+
+</com.barcode.view.SweepLayout>

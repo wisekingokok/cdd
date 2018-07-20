@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_layout_bg"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <com.chewuwuyou.app.widget.CustomImageView
+        android:id="@+id/car_friend_head_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/car_friend_head_iv"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/car_friend_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/car_friend_distance_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/car_friend_name_tv"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/car_friend_sex_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/man" />
+
+            <TextView
+                android:id="@+id/car_friend_nianling_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/car_friend_sex_iv"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/car_friend_sex_iv"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/car_friend_singture_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/common_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

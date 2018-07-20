@@ -1,0 +1,160 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.chewuwuyou.app"
+        minSdkVersion 15
+        targetSdkVersion 22
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            //正式
+            resValue 'string', 'BASE_URL', 'http://101.204.230.251/mhwcw/'
+            resValue 'string', 'XMPP_HOST_URL', '101.204.230.251'
+            resValue 'string', 'IMAGE_BASE_URL', 'http://120.55.138.140/spng/'
+            //与开发
+            resValue 'string', 'BASE_URL_TEST', 'http://120.55.138.140/mhwcw/'
+            resValue 'string', 'XMPP_HOST_URL_TEST', '114.55.187.21'
+            resValue 'string', 'IMAGE_BASE_URL_TEST', 'http://120.55.138.140/spng/'
+            //胡华
+            resValue 'string', 'BASE_URL_HU', 'http://192.168.8.45:8080/mhwcw/'
+            resValue 'string', 'XMPP_HOST_URL_HU', '121.40.87.16'
+            resValue 'string', 'IMAGE_BASE_URL_HU', 'http://120.55.138.140/spng/'
+            //李雪健
+            resValue 'string', 'BASE_URL_LI', 'http://192.168.8.32:8080/mhwcw/'
+            resValue 'string', 'XMPP_HOST_URL_LI', '121.40.87.16'
+            resValue 'string', 'IMAGE_BASE_URL_LI', 'http://120.55.138.140/spng/'
+            resValue 'string', 'IMHOST', 'http://192.168.8.48:88'
+
+            resValue 'string', 'isDebug', 'true'
+        }
+        //正式服务器
+        release {
+            resValue 'string', 'BASE_URL', 'http://101.204.230.251/mhwcw/'
+            resValue 'string', 'XMPP_HOST_URL', '101.204.230.251'
+            resValue 'string', 'IMAGE_BASE_URL', 'http://120.55.138.140/spng/'
+            resValue 'string', 'isDebug', 'false'
+            resValue 'string', 'IMHOST', 'http://192.168.8.48:88'
+        }
+        preview {
+            resValue 'string', 'isDebug', 'true'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_7
+    }
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs "src/main/jniLibs"
+//        }
+//    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+//        exclude 'META-INF/DEPENDENCIES'
+//        exclude 'META-INF/NOTICE'
+//        exclude 'META-INF/LICENSE.txt'
+//        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+
+    //New library begin
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-jackson:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.google.code.gson:gson:2.7'
+<<<<<<< HEAD
+    compile ('com.trello:rxlifecycle:0.8.0',{
+        exclude group:'com.google.code.findbugs', module:'jsr305'
+        exclude module: 'appcompat-v7'
+    })
+    compile ('com.trello:rxlifecycle-components:0.8.0',{
+        exclude group:'com.google.code.findbugs', module:'jsr305'
+        exclude module: 'appcompat-v7'
+    })
+    compile 'com.google.code.gson:gson:2.7'
+=======
+//    compile 'com.trello:rxlifecycle:0.8.0'
+//    compile 'com.trello:rxlifecycle-components:0.8.0'
+>>>>>>> 6bcf914a42a620ea378f43d9c9f5b1d06e9a25b4
+    //    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    //Old library end
+
+    //New library begin
+    compile 'com.android.support:multidex:1.0.0'
+    compile files('olibs/baidumapapi_v3_2_0.jar')
+    compile files('olibs/achartengine-1.1.0.jar')
+    compile files('olibs/afinal_0.5.1_bin.jar')
+    compile files('olibs/alipaySdk-20160516.jar')
+    compile files('olibs/android_api_3_5.jar')
+    compile files('olibs/bugly_1.2.8_release.jar')
+    compile files('olibs/core-2.3.0.jar')
+    compile files('olibs/dnsjava-2.1.6.jar')
+    compile files('olibs/eventbus.jar')
+    compile files('olibs/httpmime-4.1.1.jar')
+    compile files('olibs/imageloader.jar')
+    compile files('olibs/javabase64-1.3.1.jar')
+    compile files('olibs/jpush-android-2.1.5.jar')
+    compile files('olibs/libammsdk.jar')
+    compile files('olibs/locSDK_3.1.jar')
+    compile files('olibs/mid-sdk-2.10.jar')
+    compile files('olibs/mpandroidchartlibrary-2-1-6.jar')
+    compile files('olibs/nineoldandroids-2.4.0.jar')
+    compile files('olibs/pinyin4j-2.5.0.jar')
+    compile 'ch.ielse:switchbutton:1.0.0'
+    compile files('olibs/UPPayAssistEx.jar')
+    compile files('olibs/UPPayPluginExStd.jar')
+    compile files('olibs/weizhang_sdk.jar')
+    compile files('olibs/wup-1.0.0-SNAPSHOT.jar')
+    compile files('olibs/asmack-source.jar')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('olibs/Rong_IMLib_v2_7_0.jar')
+    compile files('olibs/SocialSDK_QQZone_3.jar')
+    compile files('olibs/SocialSDK_Sina.jar')
+    compile files('olibs/SocialSDK_WeiXin_2.jar')
+    compile files('olibs/umeng_social_sdk.jar')
+    compile files('olibs/mta-sdk-1.6.2.jar')
+    compile files('olibs/open_sdk_r5756.jar')
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile files('olibs/qiniu-android-sdk-7.2.3.jar')
+    compile files('olibs/happy-dns-0.2.10.jar')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //Old library end
+
+}
+

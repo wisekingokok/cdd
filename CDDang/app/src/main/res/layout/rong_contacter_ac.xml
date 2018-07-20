@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contacter_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="45dp"-->
+    <!--android:scrollbars="none">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="54dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/searchLL"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/editext_grey"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/searchET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="搜索"
+                    android:textColor="@color/darkgray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/new_friend_relayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1">
+
+                    <ImageView
+
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/contacter_new_friend" />
+
+
+                    <View
+                        android:id="@+id/tishi"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignTop="@id/image"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_toRightOf="@id/image"
+                        android:background="@drawable/tishi_bg"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/new_friend_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:text="新朋友" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/group_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/common_layout_bg"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/contacter_group"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="群组" />
+
+            <TextView
+                android:id="@+id/server_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/common_layout_bg"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/contacter_server"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="客服" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/empty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@color/white"
+                android:drawablePadding="16dp"
+                android:drawableTop="@drawable/no_friends"
+                android:gravity="center"
+                android:text="亲，您还没有好友哦"
+                android:textColor="#dddddd"
+                android:visibility="gone" />
+
+            <ExpandableListView
+                android:id="@+id/mail_list_friends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:childIndicatorLeft="0dp"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:groupIndicator="@null"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"></ExpandableListView>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

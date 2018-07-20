@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+    <include layout="@layout/network_request"/>
+
+    <include layout="@layout/network_abnormal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/group_search"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:background="@drawable/group_search_bg"
+            android:layout_height="34dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search"
+                android:gravity="center_vertical"
+                android:text="  搜索"
+                android:textColor="@color/gray_deep"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/country_lvcountry"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:divider="@null"/>
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/about_cdd_pic1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp" >
+
+                <ImageView
+                    android:id="@+id/cdd_logo_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/about_cdd_pic2" />
+
+                <TextView
+                    android:id="@+id/cdd_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cdd_logo_iv"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/cdd_logo_iv"
+                    android:text="车当当"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cdd_english_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cdd_name_tv"
+                    android:layout_toRightOf="@+id/cdd_logo_iv"
+                    android:text="CHEDANGDANG"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0sp"
+                android:layout_marginRight="16.0sp"
+                android:layout_marginTop="10dp"
+                android:text="车当当是一款移动互联网应用产品，产品功能主要围绕车辆服务为主题，给广大驾驶人提供违章提醒，各种车务事务代理。同时提供行业相关信息咨询服务及位置服务。以即时通讯关联车友互动生活。"
+                android:textColor="@color/common_input_text_color"
+                android:textSize="14.0sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/cdd_group_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/about_cdd_pic3" />
+
+                <TextView
+                    android:id="@+id/cdd_group_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cdd_group_iv"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/cdd_group_iv"
+                    android:text="车当当团队"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cdd_group_tv"
+                    android:layout_toRightOf="@+id/cdd_group_iv"
+                    android:text="OUR TEAM"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0sp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:text="公司核心成员有多年互联网从业经验，有多年汽车后服务市场从业经验，这次我们响应移动互联网+的号召，迈入移动领域，产品车当当带着激情和梦想，在起航的路上。面对中国1.5亿车主，3.5亿驾驶人，车当当以创造优质的服务和体验为使命，愿我们的努力能为广大驾驶人带来新的天空，车当当全体人员将不负使命，在路上。"
+                android:textColor="@color/common_input_text_color"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cdd_mentou_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/cdd_internal_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/about_cdd_pic4" />
+
+                <TextView
+                    android:id="@+id/cdd_internal_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cdd_internal_iv"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/cdd_internal_iv"
+                    android:text="官方网站"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cdd_internal_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cdd_internal_tv"
+                    android:layout_toRightOf="@+id/cdd_internal_iv"
+                    android:text="OFFICIAL WEBSITE"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="车当当官方网站："
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:autoLink="web"
+                    android:text="www.cddang.com"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/contact_fangs_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/about_cdd_pic5" />
+
+                <TextView
+                    android:id="@+id/contact_fangs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/contact_fangs_iv"
+                    android:layout_toRightOf="@+id/contact_fangs_iv"
+                    android:text="联系方式"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_fangs_tv"
+                    android:layout_toRightOf="@+id/contact_fangs_iv"
+                    android:text="CONTACT US"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="客服热线："
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:autoLink="phone"
+                    android:text="400-8333-955"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="官方QQ："
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:autoLink="email"
+                    android:text="3090545269"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="邮箱："
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="kf@cddang.com"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xieyi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="《成都车当当信息科技有限公司法律声明》"
+                android:textColor="@color/new_blue"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

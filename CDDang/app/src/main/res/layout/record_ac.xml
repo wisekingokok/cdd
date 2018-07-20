@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_car_bottom_ac"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/car_dingle_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 请输入消费信息 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/head_page_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head_car_book_page" />
+
+                <RelativeLayout
+                    android:id="@+id/category_sum_money_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_layout_bg" >
+
+                    <TextView
+                        android:id="@+id/category_hj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/record_ac_car_cost_details_tv"
+                        android:padding="10dp"
+                        android:text="  合计"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <TextView
+                        android:id="@+id/sum_money"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/category_hj"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/category_hj"
+                        android:padding="10dp"
+                        android:text="0.0元"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <ImageView
+                        android:id="@+id/right_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/record_ac_right_img"
+                        android:src="@drawable/btn_mingxi" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_line_color" />
+                <!-- 金额 -->
+
+                <RelativeLayout
+                    android:id="@+id/amount_of_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/amount_of_money_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/rmb"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/record_ac_car_cost_details_tv"
+                        android:padding="10dp"
+                        android:text="*金额"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <EditText
+                        android:id="@+id/input_rmb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/amount_of_money_tv"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="@string/record_ac_input_rmb_hint"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/common_text_color"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <TextView
+                        android:id="@+id/rmb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/input_rmb"
+                        android:text="@string/record_ac_rmb"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_line_color" />
+
+                <!-- 类别 -->
+
+                <RelativeLayout
+                    android:id="@+id/category_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_layout_bg" >
+
+                    <TextView
+                        android:id="@+id/category_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/record_ac_car_cost_details_tv"
+                        android:padding="10dp"
+                        android:text="*类型"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/category_tv"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/category_tv"
+                        android:hint="请选择"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/record_ac_right_img"
+                        android:src="@drawable/common_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_line_color" />
+
+                <!-- 日期 -->
+
+                <RelativeLayout
+                    android:id="@+id/date_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_layout_bg" >
+
+                    <TextView
+                        android:id="@+id/date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="*日期"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/date_tv"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/date_tv"
+                        android:hint="请选择"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/record_ac_right_img"
+                        android:src="@drawable/common_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_line_color" />
+
+                <!-- 备注 -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/common_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/remark_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/remark_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="  备注"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_fiveth" />
+
+                    <EditText
+                        android:id="@+id/remark_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/remark_tv"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="@string/record_ac_remark_content"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/common_text_color"
+                        android:textColorHint="@color/darkgray"
+                        android:textSize="@dimen/common_fiveth" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/common_line_color" />
+
+            <!-- 保存 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/common_blue_btn_bg"
+            android:text="@string/record_ac_btn_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_seventh"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

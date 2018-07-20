@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hot_tie_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/hot_tie_item_avatar_iv"
+            android:layout_width="@dimen/quan_avatar_width"
+            android:layout_height="@dimen/quan_avatar_height"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user_yuan_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hot_tie_item_avatar_iv"
+            android:orientation="vertical"
+            android:paddingLeft="10dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/hot_tie_item_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="58同城怎么审核通过"
+                    android:textColor="#5b6e82"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/hot_tie_item_sex_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dip"
+                    android:layout_toRightOf="@id/hot_tie_item_name_tv"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/hot_tie_item_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="三天前"
+                    android:textColor="#c0c0c0"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <com.chewuwuyou.app.widget.DrawableCenterTextView
+                android:id="@+id/hot_tie_item_area_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:drawableLeft="@drawable/business_details_sjdz"
+                android:text="不告诉你"
+                android:textColor="#c0c0c0"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hot_tie_item_content_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:text="累惨了"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/hot_tie_item_tu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quan_tus_gridview_padding_top"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/hot_tie_item_tu_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/hot_tie_item_tu_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hot_tie_item_tu_info_frame"
+                android:drawablePadding="8dip"
+                android:drawableRight="@drawable/photos"
+                android:paddingBottom="4dip"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/hot_tie_item_del_share_zan_ping_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <ImageView
+                android:id="@+id/hot_tie_item_edit_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/item_edit_icon" />
+
+            <com.chewuwuyou.app.widget.DrawableCenterTextView
+                android:id="@+id/hot_tie_item_ping_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/reply"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="(99+)"
+                android:textColor="#b9b9b9"
+                android:textSize="10sp" />
+
+            <com.chewuwuyou.app.widget.DrawableCenterTextView
+                android:id="@+id/hot_tie_item_zan_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/iconhear"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="(99+)"
+                android:textColor="#b9b9b9"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+</LinearLayout>

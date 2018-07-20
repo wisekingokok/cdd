@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/transparent_black"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_personl_friend_group"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="好友分组"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_fiveth"
+            android:visibility="gone"/>
+
+        <include layout="@layout/common_line_view"/>
+
+
+        <TextView
+            android:id="@+id/item_personl_friend_delete"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="删除好友"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_fiveth"
+            android:visibility="gone"/>
+
+        <include layout="@layout/common_line_view"/>
+
+        <TextView
+            android:id="@+id/item_personl_friend_lahei"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="加入黑名单"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_fiveth"/>
+
+        <include layout="@layout/common_line_view"/>
+
+        <TextView
+            android:id="@+id/item_personl_friend_jubao"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="举报"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_fiveth"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="12dip"
+    android:paddingLeft="@dimen/quan_padding"
+    android:paddingRight="@dimen/quan_padding"
+    android:paddingTop="@dimen/quan_padding" >
+
+    <ImageView
+        android:id="@+id/ping_avatar_iv"
+        android:layout_width="@dimen/quan_ping_avatar_width"
+        android:layout_height="@dimen/quan_ping_avatar_height"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/user_yuan_icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/quan_padding"
+        android:layout_toRightOf="@id/ping_avatar_iv"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dip" >
+
+            <TextView
+                android:id="@+id/ping_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="静静"
+                android:textColor="#5b6e82"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ping_reply_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:text="回复"
+                android:textColor="#5b6e82"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ping_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dip"
+            android:text="dfdsfdf"
+            android:textColor="#c0c0c0"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ping_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="发送佛山地方还是低哦"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

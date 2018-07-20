@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/new_blue"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/barTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/leftBarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:minWidth="45dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/leftBarTV"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@+id/leftBarBtn"
+        android:background="@null"
+        android:gravity="center"
+        android:minWidth="45dp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rightBarTV"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="45dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/rightBarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:minWidth="45dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/pull_to_refresh_listview_divider" />
+
+    <RelativeLayout
+        android:id="@+id/quan_bg_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/quan_bg_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_defaultbg"></ImageView>
+
+        <LinearLayout
+            android:layout_width="@dimen/quan_big_avatar_width"
+            android:layout_height="@dimen/quan_big_avatar_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/quan_bg_iv"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="-30dip"
+            android:background="@drawable/quan_big_avatar_frame">
+
+            <ImageView
+                android:id="@+id/quan_bg_my_avatar_iv"
+                android:layout_width="@dimen/quan_big_avatar_width"
+                android:layout_height="@dimen/quan_big_avatar_height"
+                android:padding="2dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/icons_58"></ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nullTV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="暂时没有动态~~"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="13dip"
+        android:paddingLeft="@dimen/quan_padding"
+        android:paddingRight="@dimen/quan_padding"
+        android:paddingTop="13dip">
+
+        <ImageView
+            android:id="@+id/quan_item_avatar_iv"
+            android:layout_width="@dimen/quan_avatar_width"
+            android:layout_height="@dimen/quan_avatar_height"
+            android:src="@drawable/user_yuan_icon" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/quan_item_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="静静"
+                    android:textColor="#5b6e82"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/quan_item_zan_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="2dip"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/zan_yes" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/quan_item_content_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dip"
+                android:text="讨厌人贩子"
+                android:textColor="@color/main_text_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/quan_item_tus_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip">
+
+                <FrameLayout
+                    android:id="@+id/quan_item_tus_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/quan_item_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="三天前"
+                    android:textColor="#c0c0c0"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/quan_item_delete_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/quan_item_date_tv"
+                    android:gravity="center"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="6dip"
+                    android:text="@string/quan_item_delete_text"
+                    android:textColor="#5b6e82"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/quan_item_jubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/quan_item_delete_tv"
+                    android:gravity="center"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="6dip"
+                    android:text="举报"
+                    android:textColor="#5b6e82"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/quan_item_ping_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/reply"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/quan_item_ping_tv"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center|right"
+                    android:paddingRight="2dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/reply"
+                    android:text="回复"
+                    android:textColor="#5b6e82"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/zan_and_ping_detail_ll"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/zan_and_ping_detail_frame"
+                android:orientation="vertical"
+                android:paddingBottom="4dip"
+                android:paddingTop="2dip"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/zan_detail_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="1dip"
+                    android:paddingRight="4dip">
+
+                    <ImageView
+                        android:id="@+id/zan_detail_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/zan_small" />
+
+                    <TextView
+                        android:id="@+id/zan_detail_tv"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#5b6e82"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/zan_detail_divider_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:id="@+id/ping_detail_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="4dip"
+                    android:visibility="visible"></LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- <include layout="@layout/search_bar" /> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/today_shixun_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_layout_bg"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/main_message_today_shixun"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="当日时讯"
+                    android:textColor="@color/common_text_color" />
+
+                <TextView
+                    android:id="@+id/server_help_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_layout_bg"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/main_message_server_help"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="客服帮助"
+                    android:textColor="@color/common_text_color" />
+
+                <TextView
+                    android:id="@+id/my_collect_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_layout_bg"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/main_message_my_collect"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="收藏商家"
+                    android:textColor="@color/common_text_color" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <com.barcode.view.SweepListView
+                android:id="@+id/main_invite_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:divider="@color/common_line_color"
+                android:dividerHeight="1px"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/main_msg_notify_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            layout="@layout/main_msg_layout"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

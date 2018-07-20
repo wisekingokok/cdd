@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.barcode.view.SweepLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              xmlns:myapp="http://schemas.android.com/apk/res-auto"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="horizontal"
+                              myapp:holderwidth="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/common_layout_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="14dp">
+
+            <LinearLayout
+                android:id="@+id/linear_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="曲中人"
+                        android:textColor="#000000"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/text_balance_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_name"
+                        android:text=""
+                        android:textColor="#2fbce0"
+                        android:textSize="14sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0.00"
+                android:textColor="#ff4e00"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/linear_message"
+                android:layout_below="@id/linear_message"
+                android:text="2016-04-27"
+                android:textColor="#d9d9d9"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="#ff3300"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="删除"
+        android:textColor="#ffffff"/>
+
+</com.barcode.view.SweepLayout>

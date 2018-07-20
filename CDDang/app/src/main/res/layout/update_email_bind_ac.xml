@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <EditText
+        android:id="@+id/new_email_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_frame"
+        android:hint="请输入您新的邮箱地址"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/common_input_text_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp" >
+
+        <EditText
+            android:id="@+id/update_email_phone_code"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/login_frame"
+            android:hint="请输入手机验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/common_input_text_color" />
+
+        <Button
+            android:id="@+id/email_bind_code_btn"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_orange_btn"
+            android:padding="5dp"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/update_email_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/common_green_btn"
+        android:padding="5dp"
+        android:text="修改绑定"
+        android:textColor="@color/white" />
+
+</LinearLayout>

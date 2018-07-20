@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chartHead"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/login_frame"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="所有"
+            android:textColor="@color/common_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/consumption_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/category"
+            android:layout_alignBottom="@+id/category"
+            android:layout_toLeftOf="@+id/category"
+            android:text="消费类别:"
+            android:textColor="@color/common_text_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.50" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pillow_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.50" >
+    </RelativeLayout>
+
+</LinearLayout>

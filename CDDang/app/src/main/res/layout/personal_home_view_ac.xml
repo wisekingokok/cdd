@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_head"
+        layout="@layout/common_head" />
+
+    <LinearLayout
+        android:id="@+id/chat_and_add_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/to_chat_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_blue_btn"
+            android:text="@string/to_chat"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/add_car_friend_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_green_btn"
+            android:text="@string/add_car_friend"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_and_add_ll"
+        android:layout_below="@id/common_head"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/person_pic_pull_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_defaultbg"
+                android:gravity="bottom" >
+
+                <ImageView
+                    android:id="@+id/person_pic_pull_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+                <com.chewuwuyou.app.widget.MyGridView
+                    android:id="@+id/person_pic_pull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/common_layout_bg" >
+
+                <TextView
+                    android:id="@+id/car_friend_mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/car_friend_mood"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/car_friend_mood_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/car_friend_mood"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/car_friend_mood"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/car_jingle_number"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_car_dingle_number_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </LinearLayout>
+
+            <include layout="@layout/common_betweem_line_view" />
+
+            <RelativeLayout
+                android:id="@+id/barcode_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/barcode_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="二  维 码"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <ImageView
+                    android:id="@+id/barcode_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/right_iv"
+                    android:src="@drawable/personal_data_ac_qrcode" />
+
+                <ImageView
+                    android:id="@+id/right_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/common_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/nick_name"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_nickname_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </LinearLayout>
+
+            <include layout="@layout/common_betweem_line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_sex"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_sex_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </LinearLayout>
+
+            <include layout="@layout/common_betweem_line_view" />
+
+            <LinearLayout
+                android:id="@+id/user_age_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_age"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_age_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </LinearLayout>
+
+            <include layout="@layout/common_betweem_line_view" />
+
+            <LinearLayout
+                android:id="@+id/user_star_seat_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_star_seat"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_star_seat_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </LinearLayout>
+
+            <include layout="@layout/common_betweem_line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_work"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_work_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </LinearLayout>
+
+            <include layout="@layout/common_betweem_line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_address"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_address_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="@color/common_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/user_love_car_brand_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_love_car_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/user_love_car"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/prompt_textSize" />
+
+                <TextView
+                    android:id="@+id/user_love_car_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/user_love_car_title"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/information_textSize" />
+
+                <ImageView
+                    android:id="@+id/user_love_car_iv"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_luncher" />
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="@color/common_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_layout_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_hobbies"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/prompt_textSize" />
+
+                    <TextView
+                        android:id="@+id/user_hobbies_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/common_input_text_color"
+                        android:textSize="@dimen/information_textSize" />
+                </LinearLayout>
+
+                <include layout="@layout/common_betweem_line_view" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/common_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_layout_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_register_time"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/prompt_textSize" />
+
+                    <TextView
+                        android:id="@+id/user_register_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/common_input_text_color"
+                        android:textSize="@dimen/information_textSize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.chewuwuyou.app.widget.HackyViewPager
+        android:id="@+id/expanded_image_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:visibility="invisible" />
+
+</RelativeLayout>

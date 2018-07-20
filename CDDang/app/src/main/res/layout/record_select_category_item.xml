@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categoryName"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="10dp"
+    android:text="加油"
+    android:background="@color/white"
+    android:textColor="@color/common_text_color"
+    android:textSize="20sp" />

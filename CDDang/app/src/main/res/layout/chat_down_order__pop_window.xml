@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/popwindow_btn_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pupwindow_frame_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/down_order_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pupwindow_button_bg"
+        android:gravity="center"
+        android:text="给TA下单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6F6F73" />
+
+    <Button
+        android:id="@+id/phone_contact_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pupwindow_button_bg"
+        android:gravity="center"
+        android:text="电话联系"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" />
+
+   <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6F6F73" />
+
+    <Button
+        android:id="@+id/relation_order_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pupwindow_delete_btn_bg"
+        android:gravity="center"
+        android:text="相关订单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" /> -->
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+ 	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c3c3c" />
+
+    <Button
+        android:id="@+id/business_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center"
+        android:text="商家信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_num_three_textSize" />
+    -->
+
+</LinearLayout>

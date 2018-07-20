@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_head" />
+
+    <com.chewuwuyou.app.tools.MyListView
+        android:id="@+id/mail_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none" >
+    </com.chewuwuyou.app.tools.MyListView>
+
+    <Button
+        android:id="@+id/add_address_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/new_blue"
+        android:text="添加新地址"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

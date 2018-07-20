@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.chewuwuyou.app.ui.SearchContactActivity">
+
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/search_light"
+                android:drawablePadding="8dp"
+                android:hint="搜索"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="取消"
+
+                android:textColor="@color/new_blue"
+                android:textSize="16dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/commen_paddding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="好友"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="@color/common_line_color">
+        </View>
+
+        <com.chewuwuyou.app.widget.ListViewForScrollView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.chewuwuyou.app.widget.ListViewForScrollView>
+
+        <TextView
+            style="@style/commen_paddding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="群"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="@color/common_line_color">
+        </View>
+
+        <com.chewuwuyou.app.widget.ListViewForScrollView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.chewuwuyou.app.widget.ListViewForScrollView>
+
+
+    </LinearLayout>
+</ScrollView>

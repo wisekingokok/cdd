@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- common_head -->
+    <dimen name="common_head_main">48dp</dimen>
+    <dimen name="common_head_back">60dp</dimen>
+    <dimen name="common_head_sub_header_bar_right_ibtn">10dp</dimen>
+    <!-- 字体 -->
+    <dimen name="common_head_title_textSize">18.0sp</dimen>
+    <dimen name="common_head_sub_header_bar_right_ibtn_textSize">15sp</dimen>
+    <dimen name="common_button_width">140dp</dimen>
+    <dimen name="common_button_height">40dp</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="slidingmenu_offset">50.0dip</dimen>
+    <dimen name="header_bar_height">48.0dip</dimen>
+    <!-- 记一笔 -->
+    <dimen name="record_ac_car_cost_details_layout">20dp</dimen>
+    <dimen name="record_ac_car_cost_details_tv">10dp</dimen>
+    <dimen name="record_ac_right_img">20dp</dimen>
+    <dimen name="record_ac_remark_content">170dp</dimen>
+    <dimen name="body_progressbar_width">50dip</dimen>
+    <dimen name="button_height">45.0dip</dimen>
+    <dimen name="bottom_tab_font_size">20dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+    <dimen name="common_vehicle_width">90dp</dimen>
+    <dimen name="common_vehicle_height">67.5dp</dimen>
+    <dimen name="main_viewpager_height">206dp</dimen>
+    <dimen name="hot_tie_tu_height">200dp</dimen>
+    <dimen name="business_image_width">120dp</dimen>
+    <dimen name="business_chewu_image_width">40dp</dimen>
+    <dimen name="down_order_image_width">60dp</dimen>
+    <dimen name="popwindow_width">300dp</dimen>
+    
+    <dimen name="friend_quan_mar_bottom">15dp</dimen>
+    <dimen name="zengti_mar_bottom">20dp</dimen>
+</resources>

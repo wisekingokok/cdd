@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/common_head" />
+
+    <TextView
+        android:id="@+id/vehicle_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_bar"
+        android:gravity="center"
+        android:text="亲、车库空空如也！"
+        android:textColor="#cccccc"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.chewuwuyou.app.widget.PullToRefreshListView
+        android:id="@+id/vehicle_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_bar"
+        android:divider="@color/pull_to_refresh_listview_divider"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" >
+    </com.chewuwuyou.app.widget.PullToRefreshListView>
+
+</RelativeLayout>

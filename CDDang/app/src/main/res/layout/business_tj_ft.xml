@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scorll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/image_one_desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e9f3f7"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/common_text_color"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/image_title_one_tv"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/message_proname_x"
+                android:gravity="center"
+                android:text="商家总数:0"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:id="@+id/image_two_desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#e9f3f7"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/common_text_color"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:id="@+id/province_title_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="区域"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/detail_desc_one_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="品牌商家"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/detail_desc_two_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="会员商家"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <com.chewuwuyou.app.tools.MyListView
+                android:id="@+id/statistics_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.chewuwuyou.app.tools.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

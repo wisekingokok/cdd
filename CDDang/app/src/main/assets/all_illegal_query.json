@@ -1,0 +1,44 @@
+[
+  {
+    "province": "四川省",
+    "city": "四川省",
+    "name": "四川交警公共服务平台",
+    "url": "http://www.scjj.gov.cn"
+  },
+  {
+    "province": "湖北省",
+    "city": "",
+    "name": "湖北省交管网",
+    "url": "http://www.hbsjg.gov.cn/mobile"
+  },
+  {
+    "province": "广东省",
+    "city": "广州市",
+    "name": "广州市公安局网上车管所",
+    "url": "http://www.gzjd.gov.cn/cgs/html/includes/submain_visitor.html"
+  },
+  {
+    "province": "福建省",
+    "city": "福建省",
+    "name": "福建公安公众服务网",
+    "url": "http://msjw.fjgat.gov.cn/wsbs/zjbs.jsp"
+  },
+  {
+    "province": "江苏省",
+    "city": "南京市",
+    "name": "南京市交通管理局在线查询系统",
+    "url": "http://www.njjg.gov.cn:81/simplequery/simplequery.aspx"
+  },
+  {
+    "province": "江西省",
+    "city": "江西省",
+    "name": "江西省公安厅交通管理局互联网交通安全服务管理平台",
+    "url": "http://jx.122.gov.cn/views/inquiry.html"
+  },
+  {
+    "province": "浙江省",
+    "city": "浙江省",
+    "name": "浙江省公安厅全省机动车违法查询",
+    "url": "http://www.zjsgat.gov.cn:8080/was/portals/car_lllegal_query.jsp"
+  }
+]

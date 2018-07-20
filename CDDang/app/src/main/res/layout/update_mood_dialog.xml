@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/updata_mood"
+            android:hint="请输入心情（最多30字）"
+            android:minHeight="100dp"
+            android:padding="15dp"
+            android:maxLength="30"
+            android:gravity="top|left"
+            android:textColor="@color/common_text_color"
+            android:textColorHint="#c0c0c0"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

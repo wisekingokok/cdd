@@ -1,0 +1,310 @@
+[
+  {
+    "commpanyCode": "ANE",
+    "commpanyName": "安能物流"
+  },
+  {
+    "commpanyCode": "AXD",
+    "commpanyName": "安信达快递"
+  },
+  {
+    "commpanyCode": "BFDF",
+    "commpanyName": "百福东方"
+  },
+  {
+    "commpanyCode": "BQXHM",
+    "commpanyName": "北青小红帽"
+  },
+  {
+    "commpanyCode": "CCES",
+    "commpanyName": "CCES快递"
+  },
+  {
+    "commpanyCode": "CITY100",
+    "commpanyName": "城市100"
+  },
+  {
+    "commpanyCode": "COE",
+    "commpanyName": "COE东方快递"
+  },
+  {
+    "commpanyCode": "CSCY",
+    "commpanyName": "长沙创一"
+  },
+  {
+    "commpanyCode": "DBL",
+    "commpanyName": "德邦"
+  },
+  {
+    "commpanyCode": "DHL",
+    "commpanyName": "DHL"
+  },
+  {
+    "commpanyCode": "DSWL",
+    "commpanyName": "D速物流"
+  },
+  {
+    "commpanyCode": "DTWL",
+    "commpanyName": "大田物流"
+  },
+  {
+    "commpanyCode": "EMS",
+    "commpanyName": "EMS"
+  },
+  {
+    "commpanyCode": "FAST",
+    "commpanyName": "快捷速递"
+  },
+  {
+    "commpanyCode": "FEDEX",
+    "commpanyName": "FedEx联邦快递"
+  },
+  {
+    "commpanyCode": "FKD",
+    "commpanyName": "飞康达"
+  },
+  {
+    "commpanyCode": "GDEMS",
+    "commpanyName": "广东邮政"
+  },
+  {
+    "commpanyCode": "GSD",
+    "commpanyName": "共速达"
+  },
+  {
+    "commpanyCode": "GTO",
+    "commpanyName": "国通快递"
+  },
+  {
+    "commpanyCode": "GTSD",
+    "commpanyName": "高铁速递"
+  },
+  {
+    "commpanyCode": "HFWL",
+    "commpanyName": "汇丰物流"
+  },
+  {
+    "commpanyCode": "HHTT",
+    "commpanyName": "天天快递"
+  },
+  {
+    "commpanyCode": "HLWL",
+    "commpanyName": "恒路物流"
+  },
+  {
+    "commpanyCode": "HOAU",
+    "commpanyName": "天地华宇"
+  },
+  {
+    "commpanyCode": "hq568",
+    "commpanyName": "华强物流"
+  },
+  {
+    "commpanyCode": "HTKY",
+    "commpanyName": "百世汇通"
+  },
+  {
+    "commpanyCode": "HXLWL",
+    "commpanyName": "华夏龙物流"
+  },
+  {
+    "commpanyCode": "HYLSD",
+    "commpanyName": "好来运快递"
+  },
+  {
+    "commpanyCode": "JD",
+    "commpanyName": "京东快递"
+  },
+  {
+    "commpanyCode": "JGSD",
+    "commpanyName": "京广速递"
+  },
+  {
+    "commpanyCode": "JJKY",
+    "commpanyName": "佳吉快运"
+  },
+  {
+    "commpanyCode": "JTKD",
+    "commpanyName": "捷特快递"
+  },
+  {
+    "commpanyCode": "JXD",
+    "commpanyName": "急先达"
+  },
+  {
+    "commpanyCode": "JYKD",
+    "commpanyName": "晋越快递"
+  },
+  {
+    "commpanyCode": "JYM",
+    "commpanyName": "加运美"
+  },
+  {
+    "commpanyCode": "JYWL",
+    "commpanyName": "佳怡物流"
+  },
+  {
+    "commpanyCode": "LB",
+    "commpanyName": "龙邦快递"
+  },
+  {
+    "commpanyCode": "LHT",
+    "commpanyName": "联昊通速递"
+  },
+  {
+    "commpanyCode": "MHKD",
+    "commpanyName": "民航快递"
+  },
+  {
+    "commpanyCode": "MLWL",
+    "commpanyName": "明亮物流"
+  },
+  {
+    "commpanyCode": "NEDA",
+    "commpanyName": "能达速递"
+  },
+  {
+    "commpanyCode": "QCKD",
+    "commpanyName": "全晨快递"
+  },
+  {
+    "commpanyCode": "QFKD",
+    "commpanyName": "全峰快递"
+  },
+  {
+    "commpanyCode": "QRT",
+    "commpanyName": "全日通快递"
+  },
+  {
+    "commpanyCode": "SAWL",
+    "commpanyName": "圣安物流"
+  },
+  {
+    "commpanyCode": "SDWL",
+    "commpanyName": "上大物流"
+  },
+  {
+    "commpanyCode": "SF",
+    "commpanyName": "顺丰快递"
+  },
+  {
+    "commpanyCode": "SFWL",
+    "commpanyName": "盛丰物流"
+  },
+  {
+    "commpanyCode": "SHWL",
+    "commpanyName": "盛辉物流"
+  },
+  {
+    "commpanyCode": "ST",
+    "commpanyName": "速通物流"
+  },
+  {
+    "commpanyCode": "STO",
+    "commpanyName": "申通快递"
+  },
+  {
+    "commpanyCode": "SURE",
+    "commpanyName": "速尔快递"
+  },
+  {
+    "commpanyCode": "TSSTO",
+    "commpanyName": "唐山申通"
+  },
+  {
+    "commpanyCode": "UAPEX",
+    "commpanyName": "全一快递"
+  },
+  {
+    "commpanyCode": "UC",
+    "commpanyName": "优速快递"
+  },
+  {
+    "commpanyCode": "WJWL",
+    "commpanyName": "万家物流"
+  },
+  {
+    "commpanyCode": "WXWL",
+    "commpanyName": "万象物流"
+  },
+  {
+    "commpanyCode": "XBWL",
+    "commpanyName": "新邦物流"
+  },
+  {
+    "commpanyCode": "XFEX",
+    "commpanyName": "信丰快递"
+  },
+  {
+    "commpanyCode": "XYT",
+    "commpanyName": "希优特"
+  },
+  {
+    "commpanyCode": "YADEX",
+    "commpanyName": "源安达快递"
+  },
+  {
+    "commpanyCode": "YCWL",
+    "commpanyName": "远成物流"
+  },
+  {
+    "commpanyCode": "YD",
+    "commpanyName": "韵达快递"
+  },
+  {
+    "commpanyCode": "YFEX",
+    "commpanyName": "越丰物流"
+  },
+  {
+    "commpanyCode": "YFHEX",
+    "commpanyName": "原飞航物流"
+  },
+  {
+    "commpanyCode": "YFSD",
+    "commpanyName": "亚风快递"
+  },
+  {
+    "commpanyCode": "YTKD",
+    "commpanyName": "运通快递"
+  },
+  {
+    "commpanyCode": "YTO",
+    "commpanyName": "圆通速递"
+  },
+  {
+    "commpanyCode": "YZPY",
+    "commpanyName": "邮政平邮/小包"
+  },
+  {
+    "commpanyCode": "ZENY",
+    "commpanyName": "增益快递"
+  },
+  {
+    "commpanyCode": "ZHQKD",
+    "commpanyName": "汇强快递"
+  },
+  {
+    "commpanyCode": "ZJS",
+    "commpanyName": "宅急送"
+  },
+  {
+    "commpanyCode": "ZTE",
+    "commpanyName": "众通快递"
+  },
+  {
+    "commpanyCode": "ZTKY",
+    "commpanyName": "中铁快运"
+  },
+  {
+    "commpanyCode": "ZTO",
+    "commpanyName": "中通速递"
+  },
+  {
+    "commpanyCode": "ZTWL",
+    "commpanyName": "中铁物流"
+  },
+  {
+    "commpanyCode": "ZYWL",
+    "commpanyName": "中邮物流"
+  }
+]

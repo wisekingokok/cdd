@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/user_fang_icon"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/head"
+        android:textSize="14sp"
+        tools:text="采蘑菇的小姑娘"/>
+
+    <TextView
+        android:id="@+id/jine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        tools:text="100元"/>
+
+
+    <TextView
+        android:id="@+id/most"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/time"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/shouqi_most"
+        android:drawablePadding="4dp"
+        android:visibility="gone"
+        android:text="手气最佳"
+        android:textColor="@color/color_fadc8a"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/head"
+        android:textColor="@color/color_d1d1d1"
+        android:textSize="12sp"
+        tools:text="09-14 16:30:01"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/head"
+        android:layout_marginTop="12dp"
+        android:background="@color/line_color"/>
+
+
+</RelativeLayout>

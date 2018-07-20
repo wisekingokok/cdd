@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:background="@drawable/common_layout_bg"
+    android:gravity="center"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/work_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="今日新订单"
+        android:textColor="@color/common_text_color"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/work_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/work_content_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textColor="@color/common_input_text_color"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

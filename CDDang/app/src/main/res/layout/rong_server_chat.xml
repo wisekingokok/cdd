@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/car_dingle_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_height"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/new_blue"
+        android:gravity="bottom">
+
+
+        <ImageButton
+            android:id="@+id/sub_header_bar_left_ibtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/header_bar_btn_xbg"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/sub_header_bar_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/sub_header_bar_left_ibtn"
+            android:background="@drawable/header_bar_btn_xbg"
+            android:gravity="center"
+            android:paddingLeft="9dip"
+            android:paddingRight="9dip"
+            android:scaleType="fitCenter"
+            android:textColor="@color/white"
+            android:textSize="15.0sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sub_header_bar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="15.0sp" />
+
+
+        <TextView
+            android:id="@+id/sub_header_bar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="2dip"
+            android:scaleType="fitCenter"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="15.0sp" />
+
+        <ImageButton
+            android:id="@+id/sub_header_bar_right_ibtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/sub_header_bar_tv"
+            android:background="@drawable/header_bar_btn_xbg"
+            android:gravity="center"
+            android:paddingLeft="9dip"
+            android:paddingRight="9dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_add"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.chewuwuyou.app.widget.XSwipeRefreshLayout
+        android:id="@+id/swipe_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_fl"
+        android:layout_below="@+id/title_height">
+
+
+        <ListView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:listSelector="#00000000"
+            android:scrollbarStyle="outsideOverlay"
+            android:transcriptMode="normal" />
+    </com.chewuwuyou.app.widget.XSwipeRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/input_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/change_server_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/change_input_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_view"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/rc_ic_menu_keyboard" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line_view"
+                android:layout_toRightOf="@id/change_input_iv"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/change_person_service_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/change_input_iv"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="转人工客服" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/input_server_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.chewuwuyou.rong.view.chatview.EaseChatInputMenu
+                android:id="@+id/input_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:id="@+id/change_server_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/rc_ic_text_selected" />
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+    <com.chewuwuyou.rong.view.chatview.EaseVoiceRecorderView
+        android:id="@+id/voice_recorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+</RelativeLayout>

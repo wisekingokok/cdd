@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_layout_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_line_view" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/shop_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_jxcx" />
+
+        <TextView
+            android:id="@+id/shop_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shop_icon_iv"
+            android:text="汽车4S店" />
+
+        <TextView
+            android:id="@+id/shop_distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="5.0km" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shop_address_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:drawableEnd="@drawable/common_right"
+        android:drawableLeft="@drawable/vehicle_violation_ac_location"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        android:text="成都市双流航空港"
+        android:textColor="@color/common_input_text_color" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_login_bg"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivityEr">
+
+    <ImageView
+        android:id="@+id/iv_login_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:padding="14dp"
+        android:src="@drawable/login_back_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/login_frame_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/register_phone_icon" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/common_text_color" />
+
+        <com.chewuwuyou.app.widget.EditTextWithDelete
+            android:id="@+id/et_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableRight="@drawable/search_clear"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="@color/color_a1a3a6"
+            android:textColorHint="@color/color_929292"
+            android:textSize="@dimen/tf_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_frame_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/register_phone_icon" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/common_text_color" />
+
+        <com.chewuwuyou.app.widget.EditTextWithDelete
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableRight="@drawable/search_clear"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="10dp"
+            android:textColor="@color/color_a1a3a6"
+            android:textColorHint="@color/color_929292"
+            android:textSize="@dimen/tf_size_14" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:padding="16dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/new_blue"
+            android:textSize="@dimen/tf_size_14" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tf_size_16" />
+
+</LinearLayout>

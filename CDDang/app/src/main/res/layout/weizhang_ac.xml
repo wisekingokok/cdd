@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/headerbar"
+        layout="@layout/common_head" />
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/weizhang_pager_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerbar" />
+
+    <com.chewuwuyou.app.widget.CurrentViewPager
+        android:id="@+id/weizhang_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weizhang_pager_tab"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

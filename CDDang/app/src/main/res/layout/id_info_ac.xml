@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="真实姓名"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/real_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入真实姓名"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/common_input_text_color"
+                        android:textColorHint="@color/common_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/common_betweem_line_view" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="身份证号码"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/idcard_num_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="ABCDEFGHIJGKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                        android:singleLine="true"
+                        android:hint="请输入身份证号码"
+                        android:maxLength="18"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/common_input_text_color"
+                        android:textColorHint="@color/common_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/common_betweem_line_view" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="详细地址"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+
+                    <!--
+                           <TextView
+                        android:id="@+id/address_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请选择所在城市"
+                        android:maxLength="20"
+                        android:maxLines="3"
+                        android:text=""
+                        android:textColor="@color/common_input_text_color"
+                        android:textColorHint="@color/common_text_color"
+                        android:textSize="16sp" />
+                    -->
+
+                    <EditText
+                        android:id="@+id/address_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入您的详细地址"
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:text=""
+                        android:textColor="@color/common_input_text_color"
+                        android:textColorHint="@color/common_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/common_betweem_line_view" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="服务地区"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/service_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableRight="@drawable/common_go"
+                        android:maxLength="20"
+                        android:maxLines="3"
+                        android:text="请选择您的服务地区"
+                        android:textColor="@color/common_input_text_color"
+                        android:textColorHint="@color/common_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/common_authentication"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:text="上传您的真实头像"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/enterprise_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/certification_border_icon"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/business_id_other1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="bottom"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="0.6">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="示例:"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="14sp" />
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="18dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/businesss_hold_x"
+                        android:layout_height="30dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_authentication"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:text="上传身份证照片(正面)"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/id_card_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/certification_border_icon"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/id_personal_img_enlarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:drawableBottom="@drawable/merchantphoto"
+                        android:text="示例:"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/common_authentication"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:text="上传身份证照片(反面)"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/head_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/certification_border_icon"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/id_identity_img_enlarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:drawableBottom="@drawable/merchantphotoback"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/common_authentication"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:text="上传手持证件照"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/portrait"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/certification_border_icon"
+                        android:scaleType="fitXY"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/id_portrait_img_enlarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:drawableBottom="@drawable/reality_portrait"
+                        android:text="示例:"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/commit_ver_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_blue_btn"
+                android:gravity="center"
+                android:text="提交验证"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

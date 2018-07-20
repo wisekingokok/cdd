@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="商家名称:没有数据"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="受理地区:没有数据"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/top_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/nian_jian_bg" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/business_type_bg"
+                            android:padding="2dp"
+                            android:text="没有数据"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feesLL"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="国家规费"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/fees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:text="没有数据"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="服务费用"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/serverFees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:text="没有数据"
+                       android:textColor="@color/black"
+                
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="合计费用"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/totalFees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:text="没有数据"
+                    android:textColor="#F36E36"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="请在双方业务订单生成前达成票据确认"
+                    android:textColor="#939393"
+                    android:background="@color/gray"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="32dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_height="44dp">
+
+                    <RadioButton
+                        android:id="@+id/release_need"
+                        style="@style/danxn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="  需要票据"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/release_no_need"
+                        style="@style/danxn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="  不需要票据"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+               <LinearLayout
+                   android:id="@+id/release_option"
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="4dp"
+                   android:orientation="vertical"
+                   android:gravity="center_vertical"
+                   android:visibility="gone"
+                   android:background="@color/gray"
+                   android:layout_height="28dp">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="10dp"
+                       android:layout_height="match_parent"
+                       android:drawableLeft="@drawable/business_cw"
+                       android:gravity="center_vertical"
+                       android:text=" 你未完成票据选项"
+
+                       android:textColor="@color/red"
+                       android:textSize="14sp" />
+               </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="所需材料"
+                android:textColor="#63BBE5"
+                android:textSize="14sp" />
+
+            <include layout="@layout/common_line_view" />
+
+            <TextView
+                android:id="@+id/material"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:lineSpacingExtra="5dp"
+                android:minHeight="80dp"
+                android:padding="15dp"
+                android:text="没有数据"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="客户评价"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/evaluateSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="(0)"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/business_comment_portrait"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:padding="4dp"
+                    android:src="@drawable/user_yuan_icon" />
+
+                <TextView
+                    android:id="@+id/business_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <RatingBar
+                        android:id="@+id/business_ratingbar"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:rating="1.5" />
+
+                    <TextView
+                        android:id="@+id/business_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:text="TextView"
+                        android:textColor="#fcac00"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/business_context"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="60dp"
+                android:paddingRight="12dp"
+                android:text="TextView"
+                android:textColor="#5d5c5c" />
+
+            <TextView
+                android:id="@+id/business_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              
+                android:background="@color/white"
+                android:gravity="right"
+                android:paddingLeft="48dp"
+                android:paddingRight="12dp"
+                android:textColor="#b3b3b3" />
+ <include layout="@layout/common_line_view" 
+     android:layout_marginTop="6dp"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/business_sub_bg"
+                    android:padding="5dp"
+                    android:text="查看更多评价"
+                    android:textColor="@color/new_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/add_ordear_yes"
+                    android:drawablePadding="5dp"
+                    android:text="同意和接受"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/cddServe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《车当当服务条款》"
+                    android:textColor="#53D1EB"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cddillegalServe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="6dp"
+                android:text="《车当当关于第三方服务商违章代缴声明》"
+                android:textColor="#53D1EB"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/common_line_view" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="预计金额:"
+            android:textColor="#F36E36"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/picTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right|center_vertical"
+            android:text="没有数据"
+            android:textColor="#F36E36"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#F36E36"
+            android:gravity="center"
+            
+            android:paddingLeft="15dp"
+            android:text="提交订单"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

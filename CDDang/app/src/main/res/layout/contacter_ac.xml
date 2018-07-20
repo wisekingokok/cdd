@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contacter_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="45dp"-->
+    <!--android:scrollbars="none">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/searchLL"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/searchET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="搜索"
+                    android:textColor="@color/gray_deep"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/service_number_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/common_layout_bg" >
+
+            <ImageView
+                android:id="@+id/new_service_img"
+                android:layout_width="@dimen/common_other_service_img"
+                android:layout_height="@dimen/common_other_service_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/service_bg" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/new_service_img"
+                android:drawableRight="@drawable/common_right"
+                android:paddingRight="10dp"
+                android:text="收藏商家"
+                android:textColor="@color/common_input_text_color"
+                android:textSize="@dimen/home_page_text_size" />
+        </RelativeLayout> -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp">
+
+            <com.chewuwuyou.app.widget.PullToRefreshExpandableListView
+                android:id="@+id/main_expand_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@null"
+                android:divider="@color/common_line_color"
+                android:groupIndicator="@drawable/expand_group"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/nullText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="您还没有好友，快去添加好友吧..."
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

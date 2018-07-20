@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/car_dingle_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_head"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_frame"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/username_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/usernameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/headimage"
+                        android:layout_toRightOf="@+id/headimage"
+                        android:text="王小明"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/headimage"
+                        android:layout_alignLeft="@+id/usernameText"
+                        android:singleLine="true"
+                        android:text="江苏 苏州"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="14sp"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/headimage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/qr_code_img"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dip"
+                    android:background="@android:color/white"
+                    android:padding="2dip"
+                    android:scaleType="fitXY">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="扫描二维码图案，加我为好友"
+                    android:textColor="@color/darkgray"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/scan_qr_code_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_blue_btn"
+                android:text="扫描二维码"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

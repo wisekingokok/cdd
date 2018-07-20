@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="想看到的用户"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.chewuwuyou.app.widget.SegmentControl
+            xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/filter_segment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            segmentcontrol:colors="#48C5FF"
+            segmentcontrol:cornerRadius="5dip"
+            segmentcontrol:direction="horizon"
+            segmentcontrol:horizonGap="38dip"
+            segmentcontrol:texts="全部|男|女"
+            segmentcontrol:verticalGap="13dip" />
+
+        <LinearLayout
+            android:id="@+id/linear_CarMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:text="选择车系"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/choose_car_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/common_blue_btn_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="选择车系品牌"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="年龄范围"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.chewuwuyou.app.widget.CycleWheelView
+                android:id="@+id/cycleWheelView_one"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/view" >
+            </com.chewuwuyou.app.widget.CycleWheelView>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/black" />
+
+            <com.chewuwuyou.app.widget.CycleWheelView
+                android:id="@+id/cycleWheelView_two"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/view" >
+            </com.chewuwuyou.app.widget.CycleWheelView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

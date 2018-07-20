@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    
+    
+    <TextView
+        android:id="@+id/choose_district_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_layout_bg"
+        android:drawableRight="@drawable/listbtn"
+        android:padding="10dp"
+        android:text="江苏省  南京市"
+        android:textColor="@color/common_text_color"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80.0dip"
+        android:gravity="center"
+        android:text="@string/no_traffic_broker_txt"
+        android:textColor="#cccccc"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <com.chewuwuyou.app.widget.PullToRefreshListView
+        android:id="@+id/traffic_brokers_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" >
+   </com.chewuwuyou.app.widget.PullToRefreshListView>
+</LinearLayout>

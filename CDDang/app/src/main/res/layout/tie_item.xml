@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tie_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tie_bankuai_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="6dip"
+            android:paddingLeft="@dimen/quan_padding"
+            android:paddingRight="@dimen/quan_padding"
+            android:paddingTop="6dip" >
+
+            <RelativeLayout
+                android:id="@+id/tie_bankuai_rl"
+                android:layout_width="37dip"
+                android:layout_height="@dimen/quan_avatar_height"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/tie_bankuai_iv"
+                    android:layout_width="37dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tie_bankuai_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tie_bankuai_rl"
+                android:gravity="center"
+                android:paddingLeft="@dimen/quan_padding"
+                android:singleLine="true"
+                android:text="今日话题: "
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tie_bankuai_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tie_bankuai_title_tv"
+                android:gravity="center"
+                android:paddingLeft="4dip"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/pull_to_refresh_listview_divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <ImageView
+                android:id="@+id/tie_item_avatar_iv"
+                android:layout_width="@dimen/quan_avatar_width"
+                android:layout_height="@dimen/quan_avatar_height"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/user_yuan_icon" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tie_item_avatar_iv"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tie_item_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="58同城怎么审核通过"
+                        android:textColor="#5b6e82"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/tie_item_sex_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dip"
+                        android:layout_toRightOf="@id/tie_item_name_tv"
+                        android:src="@drawable/man" />
+
+                    <TextView
+                        android:id="@+id/tie_item_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="三天前"
+                        android:textColor="#c0c0c0"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <com.chewuwuyou.app.widget.DrawableCenterTextView
+                    android:id="@+id/tie_item_area_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/business_details_sjdz"
+                    android:paddingTop="6dip"
+                    android:text="成都市"
+                    android:textColor="#c0c0c0"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tie_item_content_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="累惨了"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/tie_item_tu_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f8f8"
+                android:fadingEdge="none"
+                android:padding="10dip"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/tie_item_tus_inner_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tie_item_del_share_zan_ping_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <ImageView
+                android:id="@+id/tie_item_edit_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/item_edit_icon" />
+
+            <com.chewuwuyou.app.widget.DrawableCenterTextView
+                android:id="@+id/tie_item_ping_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/reply"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="(99+)"
+                android:textColor="#b9b9b9"
+                android:textSize="10sp" />
+
+            <com.chewuwuyou.app.widget.DrawableCenterTextView
+                android:id="@+id/tie_item_zan_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/iconhear"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="(99+)"
+                android:textColor="#b9b9b9"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

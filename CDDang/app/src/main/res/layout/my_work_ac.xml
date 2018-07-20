@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+<!--     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" > -->
+
+            <com.chewuwuyou.app.widget.SegmentControl
+                xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segment_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                segmentcontrol:colors="#48C5FF"
+                segmentcontrol:cornerRadius="5dip"
+                segmentcontrol:direction="horizon"
+                segmentcontrol:horizonGap="8dip"
+                segmentcontrol:texts="收到的订单|发出的订单"
+                segmentcontrol:verticalGap="8dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/car_dingle_bg" >
+
+                <com.chewuwuyou.app.widget.MyGridView
+                    android:id="@+id/my_work_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="2px"
+                    android:listSelector="@drawable/common_layout_bg"
+                    android:numColumns="3"
+                    android:scrollbars="@null"
+                    android:verticalSpacing="2px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="管理工具"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_view" />
+
+            <com.chewuwuyou.app.widget.MyGridView
+                android:id="@+id/worak_manager_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="2px"
+                android:listSelector="@drawable/common_layout_bg"
+                android:numColumns="4"
+                android:scrollbars="@null"
+                android:verticalSpacing="2px" />
+ <!--        </LinearLayout>
+    </ScrollView> -->
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/network_abnormal_layout"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/order_abnormal_img"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#a0a0a0"
+            android:text="获取数据失败"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#a0a0a0"
+            android:text="请检查一下网络是否畅通"/>
+        <TextView
+            android:id="@+id/network_again"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/new_blue"
+            android:text="点击重新加载"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

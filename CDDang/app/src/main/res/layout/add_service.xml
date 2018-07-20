@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+    <include layout="@layout/network_request"/>
+
+    <include layout="@layout/network_abnormal"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_marginBottom="54dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="请选择服务"
+                        android:textColor="#474747"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/service_on_illegal"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:background="@drawable/message_proname_z"
+                            android:gravity="center"
+                            android:text="违章代缴"
+                            android:textSize="14sp"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/illegal_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/sanjiao_icon" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/point" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/service_on_vehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:textSize="14sp"
+                            android:background="@drawable/message_proname_h"
+                            android:gravity="center"
+                            android:text="车辆服务" />
+
+                        <ImageView
+                            android:id="@+id/vehicle_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/sanjiao_icon"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/point" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/service_on_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:textSize="14sp"
+                            android:background="@drawable/message_proname_h"
+                            android:gravity="center"
+                            android:text="驾证服务" />
+
+                        <ImageView
+                            android:id="@+id/anount_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/sanjiao_icon"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wallet_background"
+                    android:orientation="vertical">
+
+                    <com.chewuwuyou.app.widget.MyGridView
+                        android:id="@+id/service_project_list"
+                        android:layout_width="match_parent"
+                        android:numColumns="3"
+                        android:background="@color/wallet_background"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="规费"
+                        android:textColor="#474747"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/service_fees"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="服务费"
+                        android:textColor="#474747"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edit_service"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:hint="@string/service_amount"
+                            android:textSize="@dimen/tf_size_14"
+                            android:textColorHint="@color/darkgray"
+                            android:background="@drawable/business_add_service"
+                            android:maxLength="4"
+                            android:padding="6dp"
+                            android:inputType="numberDecimal"
+                            android:layout_height="32dp"/>
+                        <TextView
+                            android:id="@+id/red_mondel"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@drawable/service_error_mondel"
+                            android:text="金额错误"
+                            android:visibility="invisible"
+                            android:textColor="@color/red"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/wallet_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/service_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="服务费范围2元-4000元之间"
+                        android:textColor="#cacaca"
+                        android:textSize="@dimen/tf_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="总价"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/total_service"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/new_blue"
+            android:layout_gravity="bottom"
+            android:layout_height="48dp">
+
+            <TextView
+                android:id="@+id/submint_service"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="确定"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_head" />
+
+    <RadioGroup
+        android:id="@+id/handle_Rgp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/title"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/peccancy_Rbn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/message_radio"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="违章代缴"
+            android:textColor="@color/radio_button_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eaeaea" />
+
+        <RadioButton
+            android:id="@+id/accreditation_Rbn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="车辆服务"
+            android:textColor="@color/radio_button_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eaeaea" />
+
+        <RadioButton
+            android:id="@+id/ticket_Rbn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="驾证服务"
+            android:textColor="@color/radio_button_color"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_business_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/handle_Rgp"
+        android:layout_margin="10dp"
+        android:background="@drawable/business_hall_shape"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="服务城市获取中..."
+        android:textColor="@color/common_text_color"
+        android:textSize="16sp" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <FrameLayout
+           android:id="@+id/frameLayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </FrameLayout>
+   </LinearLayout>
+</LinearLayout>

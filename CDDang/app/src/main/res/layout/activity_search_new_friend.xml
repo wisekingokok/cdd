@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color"
+    android:orientation="vertical"
+    tools:context="com.chewuwuyou.app.ui.CompanySearchActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_search"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/editext_grey"-->
+        <!--android:drawableLeft="@drawable/search_light"-->
+        <!--android:drawablePadding="8dp"-->
+        <!--android:hint="搜索"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textColorHint="#aaaaaa"-->
+        <!--android:textSize="14sp"/>-->
+
+        <com.chewuwuyou.app.widget.EditTextWithDelete
+            android:id="@+id/editext_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/editext_grey"
+            android:drawableRight="@drawable/search_clear"
+            android:hint="手机号/昵称"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#a1a3a6"
+            android:textColorHint="#929292"
+            android:textSize="14.0sp"/>
+
+        <TextView
+
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="取消"
+
+            android:textColor="@color/deep_name_gray"
+            android:textSize="16dp"
+
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/common_line_color">
+
+
+    </View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@color/white"
+            android:drawableTop="@drawable/search_no_result"
+            android:text="抱歉，没有查询到您想要的结果"
+            android:textColor="#dddddd"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/empty_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:background="@color/white"
+            android:text="提示：请输入正确的手机号或完整昵称进行查询"
+            android:textColor="#dddddd"
+            android:visibility="visible"/>
+
+        <com.chewuwuyou.app.widget.PullToRefreshListView
+            android:id="@id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"></com.chewuwuyou.app.widget.PullToRefreshListView>
+
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/zaner_item_avatar_iv"
+        android:layout_width="@dimen/quan_avatar_width"
+        android:layout_height="@dimen/quan_avatar_height"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/user_yuan_icon" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/quan_avatar_height"
+        android:layout_toRightOf="@id/zaner_item_avatar_iv"
+        android:orientation="vertical"
+        android:paddingLeft="10dip" 
+        android:paddingTop="2dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/zaner_item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#5b6e82"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/zaner_item_sex_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="16dip"
+                android:layout_toRightOf="@id/zaner_item_name_tv"
+                android:src="@drawable/man" />
+
+            <TextView
+                android:id="@+id/zaner_item_mood_tv"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#c0c0c0"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

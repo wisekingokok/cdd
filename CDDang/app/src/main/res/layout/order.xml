@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <include layout="@layout/network_request"/>
+
+    <include layout="@layout/network_abnormal"/>
+
+
+    <FrameLayout
+        android:id="@+id/business_order_framen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <ScrollView
+            android:id="@+id/order_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/order_status_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ordear_status_no"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/common_order_detail_top_layout" />
+                        <include layout="@layout/order_logistics"/>
+
+                        <TextView
+                            android:id="@+id/business_order_huise"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/wallet_background" />
+
+                        <include layout="@layout/common_order_base_info_layout" />
+
+                        <ImageView
+                            android:id="@+id/order_img_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/white"
+                            android:src="@drawable/dotted"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/order_gao"
+                            android:layout_width="match_parent"
+                            android:background="@color/wallet_background"
+                            android:layout_height="6dp"/>
+                        <include
+                            android:id="@+id/common_order_time"
+                            layout="@layout/common_order_status_time_layout" />
+
+                        <LinearLayout
+                            android:id="@+id/apply_refund"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="退款理由:"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/order_state_reason"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="2dp"
+                                android:text=""
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="6dp"
+                                android:src="@drawable/dotted" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/refund_agreement_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/refund_agreement_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="《车当当退款协议》"
+                        android:textColor="@color/new_blue"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/order_confirm_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/order_pending_payment_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/new_blue"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

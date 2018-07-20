@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <com.chewuwuyou.app.widget.SegmentControl
+        xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/segment_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        segmentcontrol:colors="#48C5FF"
+        segmentcontrol:cornerRadius="5dip"
+        segmentcontrol:direction="horizon"
+        segmentcontrol:horizonGap="8dip"
+        segmentcontrol:texts="违章服务|车辆服务|驾证服务"
+        segmentcontrol:verticalGap="8dip" />
+
+    <EditText
+        android:id="@+id/order_price_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_frame"
+        android:hint="请输入订单价格"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/order_description_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_frame"
+        android:gravity="top"
+        android:hint="请输入订单描述"
+        android:lines="5"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/record_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/common_blue_btn_bg"
+        android:text="确认录入"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

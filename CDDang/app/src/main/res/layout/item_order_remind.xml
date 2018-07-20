@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="13dp">
+
+    <TextView
+        android:id="@+id/timestamp_tv"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_chat_activity">
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:scaleType="fitXY"
+            android:src="@drawable/order_remind_icon" />
+
+        <LinearLayout
+            android:id="@+id/item_order_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:background="@drawable/rc_ic_bubble_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_status_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/orange"
+                android:text="待付款" />
+
+            <RelativeLayout
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/project_iv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher" />
+                <TextView
+                    android:id="@+id/order_number_tv"
+                    android:layout_toRightOf="@id/project_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_alignTop="@+id/project_iv"
+                    android:text="订单号:CDD1231232132"/>
+                <TextView
+                    android:id="@+id/project_name_tv"
+                    android:layout_toRightOf="@id/project_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/new_blue_bg"
+                    android:textColor="@color/white"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignBottom="@+id/project_iv"
+                    android:text="车辆年审"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order_price_tv"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="订单金额：150元"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/common_input_text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/iv_userhead"
+            android:textSize="@dimen/common_num_five_textSize" />
+    </RelativeLayout>
+
+</LinearLayout>

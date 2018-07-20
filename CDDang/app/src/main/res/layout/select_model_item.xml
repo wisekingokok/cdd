@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sectionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:minHeight="30dip"
+        android:paddingLeft="5dip"
+        android:text="aa"
+        android:textColor="@color/common_text_color"
+        android:textSize="18.0sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/textImage"
+            android:layout_width="90dip"
+            android:layout_height="67.5dip"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/a1_audi" />
+
+        <TextView
+            android:id="@+id/textValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textImage"
+            android:layout_toRightOf="@+id/textImage"
+            android:gravity="center"
+            android:text="奥迪Q3"
+            android:textColor="@color/common_text_color"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textImage"
+            android:layout_below="@+id/textValue"
+            android:layout_toRightOf="@+id/textImage"
+            android:gravity="center"
+            android:text="20.30万~57.80万"
+            android:textColor="#D30000"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

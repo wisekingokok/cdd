@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_background"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/nian_jian_bg"
+                        android:id="@+id/service_img" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/linefees"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="规    费"
+                            android:textColor="#737373"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="4dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:text="￥"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/feen_mondel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:text="规费"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="服务费"
+                            android:textColor="#737373"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="4dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:text="￥"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/service_mondel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:text="规费"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/service_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/business_type_bg"
+                            android:padding="2dp"
+                            android:text="车辆年审"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="right"
+                           android:orientation="horizontal">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="14sp"
+                               android:layout_marginRight="8dp"
+                               android:text="合计"
+                               android:textColor="#a0a0a0"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="12sp"
+                               android:text="￥"
+                               android:textColor="@color/black"/>
+
+                           <TextView
+                               android:id="@+id/service_mondel_total"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="14sp"
+                               android:text="规费"
+                               android:layout_marginRight="10dp"
+                               android:textColor="@color/black"/>
+                       </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#e3e3e3"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/service_edit"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:textSize="14sp"
+                android:background="@drawable/business_jiuwu"
+                android:gravity="center"
+                android:text="编辑"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/service_delete"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:textSize="14sp"
+                android:background="@drawable/business_red"
+                android:text="删除"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

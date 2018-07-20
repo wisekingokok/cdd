@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bankuai_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/bankuai_photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/bg_defaultimg" />
+
+    <TextView
+        android:id="@+id/bankuai_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bankuai_photo_iv"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="聊聊生活"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>

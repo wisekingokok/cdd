@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="@dimen/control_300"
+        android:layout_height="@dimen/control_400">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/control_14"
+            android:background="@mipmap/hair_red_bg"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/control_56"
+                    android:background="@drawable/hair_red_img_fillet"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/hair_red_img"
+                        android:layout_width="@dimen/control_56"
+                        android:layout_marginTop="@dimen/control_4"
+                        android:layout_marginLeft="@dimen/control_4"
+                        android:layout_marginRight="@dimen/control_4"
+                        android:layout_marginBottom="@dimen/control_4"
+                        android:src="@drawable/user_fang_icon"
+                        android:layout_height="@dimen/control_56" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hair_red_name"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/color_fff5bc"
+                    android:gravity="center"
+                    android:text="老李"
+                    android:textSize="@dimen/tf_size_14"
+                    android:layout_height="@dimen/control_28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/hair_red_title"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/color_fff5bc"
+                    android:text="发了一个随机红包"
+                    android:gravity="center"
+                    android:textSize="@dimen/tf_size_14"
+                    android:layout_height="@dimen/control_28" />
+                <TextView
+                    android:id="@+id/hair_red_language"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/color_fdae8e"
+                    android:layout_marginTop="@dimen/control_4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/tf_size_14"
+                    android:gravity="center"
+                    android:layout_height="@dimen/control_32" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:layout_height="0dp">
+
+                    <ImageView
+                        android:id="@+id/hair_red_kai"
+                        android:layout_width="92dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@mipmap/hair_red_kai_yi"
+                        android:layout_height="84dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hair_red_luck"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/hair_red_kq"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_fff5bc"
+                        android:gravity="center"
+                        android:drawableRight="@mipmap/red_arrow"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/hair_red_bu_delete"
+            android:layout_width="@dimen/control_28"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/hair_red_img_delete"
+            android:layout_height="@dimen/control_28" />
+    </FrameLayout>
+</LinearLayout>

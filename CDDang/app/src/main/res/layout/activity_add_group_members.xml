@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/group_search"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:background="@drawable/group_search_bg"
+            android:layout_height="34dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search"
+                android:gravity="center_vertical"
+                android:text="  搜索"
+                android:textColor="@color/gray_deep"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.chewuwuyou.app.widget.PullToRefreshListView
+        android:id="@+id/business_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/pull_to_refresh_listview_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:background="@color/car_dingle_bg"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" >
+    </com.chewuwuyou.app.widget.PullToRefreshListView>
+
+
+</LinearLayout>

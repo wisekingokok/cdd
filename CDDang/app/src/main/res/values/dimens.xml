@@ -1,0 +1,226 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="side_letter_bar_letter_size">12sp</dimen>
+
+    <!-- common_head -->
+    <dimen name="common_head_main">48dp</dimen>
+    <dimen name="common_head_back">60dp</dimen>
+    <dimen name="common_head_sub_header_bar_right_ibtn">10dp</dimen>
+    <!-- 字体 -->
+    <dimen name="common_head_title_textSize">18.0sp</dimen>
+    <dimen name="common_head_sub_header_bar_right_ibtn_textSize">15sp</dimen>
+    <dimen name="common_button_width">140dp</dimen>
+    <dimen name="common_button_height">40dp</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="slidingmenu_offset">50.0dip</dimen>
+    <dimen name="header_bar_height">48.0dip</dimen>
+    <!-- 记一笔 -->
+    <dimen name="record_ac_car_cost_details_layout">20dp</dimen>
+    <dimen name="record_ac_car_cost_details_tv">10dp</dimen>
+    <dimen name="record_ac_right_img">20dp</dimen>
+    <dimen name="record_ac_remark_content">170dp</dimen>
+    <dimen name="body_progressbar_width">50dip</dimen>
+    <dimen name="button_height">45.0dip</dimen>
+    <dimen name="bottom_tab_font_size">20dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+    <dimen name="common_vehicle_width">90dp</dimen>
+    <dimen name="common_vehicle_height">67.5dp</dimen>
+    <dimen name="main_viewpager_height">236dp</dimen>
+    <dimen name="capture_width">240px</dimen>
+    <dimen name="capture_height">400px</dimen>
+    <dimen name="quan_big_avatar_width">60dp</dimen>
+    <dimen name="quan_big_avatar_height">60dp</dimen>
+    <!--
+    	统一字体大小   
+   	 	分为一号字体：20sp用于特大标识
+    	二号字体：18sp用于标题
+    	三号字体：16sp用于类中某项的开头栏
+    	四号字体：14sp
+
+
+
+
+
+
+
+
+    -->
+
+
+    <!-- 设置密码 -->
+
+    <dimen name="prompt_input_size">16sp</dimen>
+    <dimen name="prompt_six_size">14sp</dimen>
+    <dimen name="prompt_click">40dp</dimen>
+    <dimen name="prompt_set_password_left">10dp</dimen>
+    <dimen name="prompt_set_button">40dp</dimen>
+    <dimen name="prompt_set_password_line">1dp</dimen>
+    <dimen name="common_num_one_textSize">20sp</dimen>
+    <dimen name="common_num_two_textSize">18sp</dimen>
+    <dimen name="common_num_three_textSize">16sp</dimen>
+    <dimen name="common_seventh">17sp</dimen>
+    <dimen name="common_fiveth">15sp</dimen>
+    <dimen name="common_num_four_textSize">14sp</dimen>
+    <dimen name="common_thirteen">13sp</dimen>
+    <dimen name="common_num_five_textSize">12sp</dimen>
+    <dimen name="common_twenty_two">22sp</dimen>
+    <!-- 车友邦 -->
+    <dimen name="tu_padding">2dp</dimen>
+    <!-- 主页 车助手 -->
+    <!-- 三大服务选项的高度 -->
+    <dimen name="common_service_height">45dp</dimen>
+    <dimen name="common_other_service_height">40dp</dimen>
+    <dimen name="common_service_img">32dp</dimen>
+    <dimen name="common_other_service_img">26dp</dimen>
+    <!-- 车友邦 -->
+    <dimen name="yue_photo_width">128px</dimen>
+    <dimen name="yue_photo_padding">5dp</dimen>
+    <dimen name="tie_photo_padding">2dp</dimen>
+    <dimen name="yue_photo_ll_padding">10dp</dimen>
+    <dimen name="tie_photo_ll_padding">10dp</dimen>
+
+    <!-- 朋友圈 -->
+    <dimen name="quan_padding">10dp</dimen>
+    <dimen name="quan_tu_interval">5dp</dimen>
+    <dimen name="quan_text_padding_top_bottom">8dp</dimen>
+    <dimen name="quan_avatar_width">38dp</dimen>
+    <dimen name="quan_avatar_height">38dp</dimen>
+    <dimen name="quan_ping_avatar_width">30dp</dimen>
+    <dimen name="quan_ping_avatar_height">30dp</dimen>
+    <dimen name="quan_zan_avatar_width">24dp</dimen>
+    <dimen name="quan_zan_avatar_height">24dp</dimen>
+    <dimen name="bankuai_tu_height">74dp</dimen>
+    <dimen name="bankuai_tu_width">74dp</dimen>
+    <dimen name="quan_small_tu_margin">5dp</dimen>
+    <dimen name="quan_detail_small_tu_height">84dp</dimen>
+    <dimen name="quan_detail_small_tu_width">84dp</dimen>
+    <dimen name="quan_tus_gridview_padding_top">10dp</dimen>
+    <dimen name="quan_zan_avatar_padding">4dp</dimen>
+
+    <!-- 论坛 -->
+
+    <dimen name="tie_zan_avatar_width">24dp</dimen>
+    <dimen name="tie_zan_avatar_height">24dp</dimen>
+    <dimen name="popwindow_btn_width">100.0dip</dimen>
+
+    <!-- 个人中心 -->
+    <dimen name="prompt_textSize">14sp</dimen>
+    <dimen name="information_textSize">14sp</dimen>
+
+    <!-- 帖子 -->
+    <dimen name="tie_padding">10dp</dimen>
+    <dimen name="tie_text_padding_top_bottom">8dp</dimen>
+    <dimen name="tie_avatar_width">38dp</dimen>
+    <dimen name="tie_avatar_height">38dp</dimen>
+    <dimen name="tie_small_tu_height">109dp</dimen>
+    <dimen name="tie_small_tu_width">109dp</dimen>
+    <dimen name="tie_small_tu_margin">1dp</dimen>
+    <dimen name="tie_tus_gridview_padding_top">10dp</dimen>
+    <dimen name="tie_detail_small_tu_height">84dp</dimen>
+    <dimen name="tie_detail_small_tu_width">84dp</dimen>
+    <dimen name="tie_zan_avatar_padding">2dp</dimen>
+
+    <!-- 我的item高度 -->
+    <dimen name="mine_item_height">50dp</dimen>
+    <dimen name="mine_image_width">53dp</dimen>
+    <dimen name="mine_image_height">52dp</dimen>
+
+    <!-- 首页 -->
+    <dimen name="home_page_text_size">14sp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <!-- 活动 -->
+    <dimen name="yue_padding">10dp</dimen>
+    <dimen name="yue_text_padding_top_bottom">8dp</dimen>
+    <dimen name="yue_avatar_width">38dp</dimen>
+    <dimen name="yue_avatar_height">38dp</dimen>
+    <dimen name="yue_small_tu_height">84dp</dimen>
+    <dimen name="yue_small_tu_width">84dp</dimen>
+    <dimen name="yue_small_tu_margin">1dp</dimen>
+    <dimen name="yue_zan_avatar_width">24dp</dimen>
+    <dimen name="yue_zan_avatar_padding">2dp</dimen>
+    <dimen name="yue_zan_avatar_height">24dp</dimen>
+    <dimen name="yue_detail_small_tu_height">84dp</dimen>
+    <dimen name="yue_detail_small_tu_width">84dp</dimen>
+    <dimen name="yue_tus_gridview_padding_top">10dp</dimen>
+
+    <!-- 聊天 -->
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">47dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="show_pic_width">150dp</dimen>
+    <dimen name="show_pic_height">200dp</dimen>
+    <dimen name="hot_tie_tu_height">280dp</dimen>
+    <dimen name="yue_item_info_iv_width">128dp</dimen>
+    <dimen name="yue_item_info_iv_height">128dp</dimen>
+    <dimen name="person_info_crop_x">540dp</dimen>
+    <dimen name="person_info_crop_y">480dp</dimen>
+    <dimen name="csy_pd">10.0dp</dimen>
+    <dimen name="csy_mg">15.0dp</dimen>
+    <dimen name="csy_label_w">70.0dp</dimen>
+    <dimen name="csy_icon_w">40.0dp</dimen>
+    <dimen name="csy_row_h">64.0dp</dimen>
+    <dimen name="csy_item_h">52.0dp</dimen>
+    <dimen name="csy_tip_h">30.0dp</dimen>
+    <dimen name="csy_btn_h">46.0dp</dimen>
+    <dimen name="csy_label_ts">13.0sp</dimen>
+    <dimen name="csy_tip_ts">14.0sp</dimen>
+    <dimen name="csy_text_ts">16.0sp</dimen>
+    <dimen name="csy_title_ts">18.0sp</dimen>
+    <dimen name="key_height">59dip</dimen>
+    <dimen name="width_input_tv_cutline">1dip</dimen>
+
+
+    <!--字体大小-->
+    <dimen name="tf_size_12">12sp</dimen>
+    <dimen name="tf_size_14">14sp</dimen>
+    <dimen name="tf_size_16">16sp</dimen>
+    <dimen name="tf_size_18">18sp</dimen>
+    <dimen name="tf_size_20">20sp</dimen>
+    <dimen name="tf_size_22">22sp</dimen>
+    <dimen name="tf_size_48">48sp</dimen>
+
+    <!--控件高宽-->
+    <dimen name="control_4">4dp</dimen>
+    <dimen name="control_300">300dp</dimen>
+    <dimen name="control_400">400dp</dimen>
+    <dimen name="control_14">14dp</dimen>
+    <dimen name="control_10">10dp</dimen>
+    <dimen name="control_56">56dp</dimen>
+    <dimen name="control_30">30dp</dimen>
+    <dimen name="control_26">26dp</dimen>
+    <dimen name="control_60">60dp</dimen>
+    <dimen name="control_62">62dp</dimen>
+    <dimen name="control_28">28dp</dimen>
+    <dimen name="control_64">64dp</dimen>
+
+
+    <!--控件高宽-->
+    <dimen name="control_12">12dp</dimen>
+    <dimen name="control_16">16dp</dimen>
+    <dimen name="control_48">48dp</dimen>
+    <dimen name="control_8">8dp</dimen>
+
+    <dimen name="control_54">54dp</dimen>
+    <dimen name="control_32">32dp</dimen>
+    <dimen name="tf_size_32">32sp</dimen>
+</resources>

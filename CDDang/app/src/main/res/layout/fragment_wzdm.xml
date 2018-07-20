@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_frame" >
+
+        <SearchView
+            android:id="@+id/wzdm_search_iv"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:queryHint="请输入违章查询代码" >
+        </SearchView>
+    </LinearLayout>
+    <!--
+         <com.chewuwuyou.app.widget.EditTextWithDelete
+        android:id="@+id/illegal_code_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_frame"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/icon_clear"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="请输入违章地区代码"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/common_input_text_color" />
+    -->
+
+    <ListView
+        android:id="@+id/illegal_code_query_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+
+</LinearLayout>

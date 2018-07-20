@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <include layout="@layout/common_line_view" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/business_head_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="1.5dp"
+                    android:src="@drawable/cdd_default_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_input_text_color"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/business_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_input_text_color"
+
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center"
+                        android:orientation="horizontal" >
+
+                        <RatingBar
+                            android:id="@+id/business_ratingbar"
+                            style="@style/MyRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:isIndicator="true"
+                             android:clickable="false"
+                            android:rating="1.5" />
+
+                        <TextView
+                            android:id="@+id/business_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:text="0.0分"
+                            android:textColor="#fcac00"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/img_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cdd_default_icon" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/common_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="门店地址"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_fiveth" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_fiveth" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="服务地区"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_fiveth" />
+
+                <TextView
+                    android:id="@+id/business_service_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_fiveth" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="联系电话"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_fiveth" />
+
+                <EditText
+                    android:id="@+id/business_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="@dimen/common_fiveth" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

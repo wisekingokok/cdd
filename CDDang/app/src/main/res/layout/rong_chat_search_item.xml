@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/swipe"
+              android:layout_width="fill_parent"
+              android:layout_height="57dp">
+
+    <RelativeLayout
+        android:id="@+id/re_item_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_line"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/child_item_head"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_yuan_icon"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/child_item_head"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/child_item_head"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="name"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/username"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/username"
+            android:textColor="@color/list_divider"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="beizhu"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_toRightOf="@+id/child_item_head"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/actionsheet_gray"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/actionsheet_gray"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/mood"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_line_color"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+
+
+    <include layout="@layout/network_request"/>
+
+    <include layout="@layout/network_abnormal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/group_search"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editext_grey"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="搜索"
+                android:textColor="@color/darkgray"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/forward_group"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="@color/darkgray"
+            android:text="转发到群"
+            android:drawableRight="@drawable/next_right"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/establish_group_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childIndicatorLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:cacheColorHint="@null"
+        android:dividerHeight="0dip"
+        android:scrollbarAlwaysDrawHorizontalTrack="true" >
+    </ExpandableListView>
+
+</LinearLayout>

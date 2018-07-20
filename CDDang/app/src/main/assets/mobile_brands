@@ -1,0 +1,1235 @@
+[
+  {
+    "first_letter": "#",
+    "slug": "hot",
+    "logo_img": "a0_hot.png",
+    "name": "热门车",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "A",
+    "slug": "audi",
+    "logo_img": "a1_audi.png",
+    "name": "奥迪",
+    "baike_link": "http://baike.baidu.com/view/13873.htm",
+    "country_type": "2",
+    "intro": "82.html"
+  },
+  {
+    "first_letter": "A",
+    "slug": "astonmartin",
+    "logo_img": "a2_astonmartin.png",
+    "name": "阿斯顿马丁",
+    "baike_link": "http://baike.baidu.com/view/83114.htm",
+    "country_type": "5",
+    "intro": "101.html"
+  },
+  {
+    "first_letter": "A",
+    "slug": "alfaromeo",
+    "logo_img": "a3_alfaromeo.png",
+    "name": "阿尔法·罗密欧",
+    "baike_link": "http://baike.baidu.com/view/2173268.html",
+    "country_type": "4",
+    "intro": "96.html"
+  },
+  {
+    "first_letter": "A",
+    "slug": "abt",
+    "logo_img": "a4_abt.png",
+    "name": "ABT",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "B",
+    "slug": "bmw",
+    "logo_img": "b1_bmw.png",
+    "name": "宝马",
+    "baike_link": "http://baike.baidu.com/view/2450.htm",
+    "country_type": "2",
+    "intro": "81.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "buick",
+    "logo_img": "b2_buick.png",
+    "name": "别克",
+    "baike_link": "http://baike.baidu.com/view/29774.htm",
+    "country_type": "6",
+    "intro": "107.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "honda",
+    "logo_img": "b3_honda.png",
+    "name": "本田",
+    "baike_link": "http://baike.baidu.com/view/23292.htm",
+    "country_type": "1",
+    "intro": "68.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "byd",
+    "logo_img": "b4_byd.png",
+    "name": "比亚迪",
+    "baike_link": "http://baike.baidu.com/view/427696.htm",
+    "country_type": "0",
+    "intro": "4.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "benz",
+    "logo_img": "b5_benz.png",
+    "name": "奔驰",
+    "baike_link": "http://baike.baidu.com/view/2455.htm",
+    "country_type": "2",
+    "intro": "80.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "biaozhi",
+    "logo_img": "b6_biaozhi.png",
+    "name": "标致",
+    "baike_link": "http://baike.baidu.com/view/1763605.htm",
+    "country_type": "3",
+    "intro": "88.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "porsche",
+    "logo_img": "b7_porsche.png",
+    "name": "保时捷",
+    "baike_link": "http://baike.baidu.com/view/5523.htm",
+    "country_type": "2",
+    "intro": "79.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "benteng",
+    "logo_img": "b8_benteng.png",
+    "name": "奔腾",
+    "baike_link": "http://baike.baidu.com/view/47924.htm",
+    "country_type": "0",
+    "intro": "11.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "beijingqiche",
+    "logo_img": "b9_beijingqiche.png",
+    "name": "北京汽车",
+    "baike_link": "http://baike.baidu.com/view/4481901.htm",
+    "country_type": "0",
+    "intro": "57.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "baojun",
+    "logo_img": "b10_baojun.png",
+    "name": "宝骏",
+    "baike_link": "http://baike.baidu.com/view/3885762.htm",
+    "country_type": "0",
+    "intro": "32.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "beiqizhizao",
+    "logo_img": "b11_beiqizhizao.png",
+    "name": "北汽制造",
+    "baike_link": "http://baike.baidu.com/view/606210.htm",
+    "country_type": "0",
+    "intro": "59.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "bentley",
+    "logo_img": "b12_bentley.png",
+    "name": "宾利",
+    "baike_link": "http://baike.baidu.com/view/6887.htm",
+    "country_type": "5",
+    "intro": "98.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "bugatti",
+    "logo_img": "b13_bugatti.png",
+    "name": "布加迪",
+    "baike_link": "http://baike.baidu.com/view/6847.htm",
+    "country_type": "3",
+    "intro": "90.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "beiqiweiwang",
+    "logo_img": "b14_beiqiweiwang.png",
+    "name": "北汽威旺",
+    "baike_link": "http://baike.baidu.com/view/4481901.htm",
+    "country_type": "0",
+    "intro": "30.html"
+  },
+  {
+    "first_letter": "B",
+    "slug": "barbus",
+    "logo_img": "b15_barbus.png",
+    "name": "巴博斯",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "C",
+    "slug": "changcheng",
+    "logo_img": "c1_changcheng.png",
+    "name": "长城",
+    "baike_link": "http://baike.baidu.com/view/4396.htm",
+    "country_type": "0",
+    "intro": "5.html"
+  },
+  {
+    "first_letter": "C",
+    "slug": "changan",
+    "logo_img": "c2_changan.png",
+    "name": "长安汽车",
+    "baike_link": "http://baike.baidu.com/view/89630.htm",
+    "country_type": "0",
+    "intro": "27.html"
+  },
+  {
+    "first_letter": "C",
+    "slug": "changanshangyong",
+    "logo_img": "c3_changanshangyong.png",
+    "name": "长安商用",
+    "baike_link": "http://baike.baidu.com/view/89630.htm",
+    "country_type": "0",
+    "intro": "19.html"
+  },
+  {
+    "first_letter": "C",
+    "slug": "changhe",
+    "logo_img": "c4_changhe.png",
+    "name": "昌河",
+    "baike_link": "http://baike.baidu.com/view/190570.htm",
+    "country_type": "0",
+    "intro": "24.html"
+  },
+  {
+    "first_letter": "D",
+    "slug": "dazhong",
+    "logo_img": "d1_dazhong.png",
+    "name": "大众",
+    "baike_link": "http://baike.baidu.com/view/29823.htm",
+    "country_type": "2",
+    "intro": "83.html"
+  },
+  {
+    "first_letter": "D",
+    "slug": "dongnan",
+    "logo_img": "d2_dongnan.png",
+    "name": "东南",
+    "baike_link": "http://baike.baidu.com/view/156772.htm",
+    "country_type": "0",
+    "intro": "44.html"
+  },
+  {
+    "first_letter": "D",
+    "slug": "dongfeng",
+    "logo_img": "d3_dongfeng.png",
+    "name": "东风",
+    "baike_link": "http://baike.baidu.com/view/240100.htm",
+    "country_type": "0",
+    "intro": "49.html"
+  },
+  {
+    "first_letter": "D",
+    "slug": "daoqi",
+    "logo_img": "d4_daoqi.png",
+    "name": "道奇",
+    "baike_link": "http://baike.baidu.com/view/79496.htm",
+    "country_type": "6",
+    "intro": "113.html"
+  },
+  {
+    "first_letter": "D",
+    "slug": "ds",
+    "logo_img": "d5_ds.png",
+    "name": "DS(谛艾仕)",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "D",
+    "slug": "dafa",
+    "logo_img": "d6_dafa.png",
+    "name": "大发",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "D",
+    "slug": "dacia",
+    "logo_img": "d7_dacia.png",
+    "name": "Dacia",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "F",
+    "slug": "ford",
+    "logo_img": "f1_ford.png",
+    "name": "福特",
+    "baike_link": "http://baike.baidu.com/view/5539.htm",
+    "country_type": "6",
+    "intro": "106.html"
+  },
+  {
+    "first_letter": "F",
+    "slug": "toyota",
+    "logo_img": "f2_toyota.png",
+    "name": "丰田",
+    "baike_link": "http://baike.baidu.com/view/19530.htm",
+    "country_type": "1",
+    "intro": "67.html"
+  },
+  {
+    "first_letter": "F",
+    "slug": "fiat",
+    "logo_img": "f3_fiat.png",
+    "name": "菲亚特",
+    "baike_link": "http://baike.baidu.com/view/13853.htm",
+    "country_type": "4",
+    "intro": "97.html"
+  },
+  {
+    "first_letter": "F",
+    "slug": "ferrari",
+    "logo_img": "f4_ferrari.png",
+    "name": "法拉利",
+    "baike_link": "http://baike.baidu.com/view/4490.htm",
+    "country_type": "4",
+    "intro": "92.html"
+  },
+  {
+    "first_letter": "F",
+    "slug": "futian",
+    "logo_img": "f5_futian.png",
+    "name": "福田",
+    "baike_link": "http://baike.baidu.com/view/89631.htm",
+    "country_type": "0",
+    "intro": "40.html"
+  },
+  {
+    "first_letter": "F",
+    "slug": "fudi",
+    "logo_img": "f6_fudi.png",
+    "name": "福迪",
+    "baike_link": "http://baike.baidu.com/view/1879029.htm",
+    "country_type": "0",
+    "intro": "25.html"
+  },
+  {
+    "first_letter": "F",
+    "slug": "fqtmotor",
+    "logo_img": "f7_fqtmotor.png",
+    "name": "福汽启腾",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "G",
+    "slug": "guangqichuanqi",
+    "logo_img": "g1_guangqichuanqi.png",
+    "name": "广汽传祺",
+    "baike_link": "http://baike.baidu.com/view/1567721.htm",
+    "country_type": "0",
+    "intro": "1.html"
+  },
+  {
+    "first_letter": "G",
+    "slug": "gacgonow",
+    "logo_img": "g2_gacgonow.png",
+    "name": "广汽吉奥",
+    "baike_link": "http://baike.baidu.com/view/660344.htm",
+    "country_type": "0",
+    "intro": "10.html"
+  },
+  {
+    "first_letter": "G",
+    "slug": "gmc",
+    "logo_img": "g3_gmc.png",
+    "name": "GMC",
+    "baike_link": "http://baike.baidu.com/view/6346692.html",
+    "country_type": "6",
+    "intro": "110.html"
+  },
+  {
+    "first_letter": "G",
+    "slug": "qoros",
+    "logo_img": "g4_qoros.png",
+    "name": "观致",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "G",
+    "slug": "galue",
+    "logo_img": "g5_galue.png",
+    "name": "光冈",
+    "baike_link": "http://baike.baidu.com/view/2950179.html",
+    "country_type": "1",
+    "intro": "77.html"
+  },
+  {
+    "first_letter": "G",
+    "slug": "gumpert",
+    "logo_img": "g6_gumpert.png",
+    "name": "Gumpert",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "H",
+    "slug": "hafu",
+    "logo_img": "h1_hafu.png",
+    "name": "哈弗",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "H",
+    "slug": "haima",
+    "logo_img": "h2_haima.png",
+    "name": "海马",
+    "baike_link": "http://baike.baidu.com/view/606268.htm",
+    "country_type": "0",
+    "intro": "45.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "hongqi",
+    "logo_img": "h3_hongqi.png",
+    "name": "红旗",
+    "baike_link": "http://baike.baidu.com/view/73021.htm",
+    "country_type": "0",
+    "intro": "36.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "huatai",
+    "logo_img": "h4_huatai.png",
+    "name": "华泰",
+    "baike_link": "http://baike.baidu.com/view/442404.htm",
+    "country_type": "0",
+    "intro": "42.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "hanma",
+    "logo_img": "h5_hanma.png",
+    "name": "悍马",
+    "baike_link": "http://baike.baidu.com/view/19478.htm",
+    "country_type": "6",
+    "intro": "109.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "haimazhengzhou",
+    "logo_img": "h6_haimazhengzhou.png",
+    "name": "海马郑州",
+    "baike_link": "http://baike.baidu.com/view/606268.htm",
+    "country_type": "0",
+    "intro": "18.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "hafei",
+    "logo_img": "h7_hafei.png",
+    "name": "哈飞",
+    "baike_link": "http://baike.baidu.com/view/89637.htm",
+    "country_type": "0",
+    "intro": "38.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "huanghai",
+    "logo_img": "h8_huanghai.png",
+    "name": "黄海",
+    "baike_link": "http://baike.baidu.com/view/650063.htm",
+    "country_type": "0",
+    "intro": "53.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "haige",
+    "logo_img": "h9_haige.png",
+    "name": "海格",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "H",
+    "slug": "huizhong",
+    "logo_img": "h10_huizhong.png",
+    "name": "汇众",
+    "baike_link": "http://baike.baidu.com/view/714062.html",
+    "country_type": "0",
+    "intro": "22.html"
+  },
+  {
+    "first_letter": "H",
+    "slug": "hengtian",
+    "logo_img": "h11_hengtian.png",
+    "name": "恒天",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "J",
+    "slug": "jianghuai",
+    "logo_img": "j1_jianghuai.png",
+    "name": "江淮",
+    "baike_link": "http://baike.baidu.com/view/52429.htm",
+    "country_type": "0",
+    "intro": "48.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jeep",
+    "logo_img": "j2_jeep.png",
+    "name": "Jeep",
+    "baike_link": "http://baike.baidu.com/view/6943.htm",
+    "country_type": "6",
+    "intro": "112.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jiliquanqiuying",
+    "logo_img": "j3_jiliquanqiuying.png",
+    "name": "吉利全球鹰",
+    "baike_link": "http://baike.baidu.com/view/468671.html",
+    "country_type": "0",
+    "intro": "54.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jilidihao",
+    "logo_img": "j4_jilidihao.png",
+    "name": "吉利帝豪",
+    "baike_link": "http://baike.baidu.com/view/4603051.htm",
+    "country_type": "0",
+    "intro": "47.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jiliyinglun",
+    "logo_img": "j5_jiliyinglun.png",
+    "name": "吉利英伦",
+    "baike_link": "http://baike.baidu.com/view/4315168.htm",
+    "country_type": "0",
+    "intro": "16.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jiebao",
+    "logo_img": "j6_jiebao.png",
+    "name": "捷豹",
+    "baike_link": "http://baike.baidu.com/view/13920.htm",
+    "country_type": "5",
+    "intro": "102.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jinbei",
+    "logo_img": "j7_jinbei.png",
+    "name": "金杯",
+    "baike_link": "http://baike.baidu.com/view/116459.htm",
+    "country_type": "0",
+    "intro": "50.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jiangling",
+    "logo_img": "j8_jiangling.png",
+    "name": "江铃",
+    "baike_link": "http://baike.baidu.com/view/89635.htm",
+    "country_type": "0",
+    "intro": "39.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jinlong",
+    "logo_img": "j9_jinlong.png",
+    "name": "金龙",
+    "baike_link": "http://baike.baidu.com/view/429392.htm",
+    "country_type": "0",
+    "intro": "15.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jiulong",
+    "logo_img": "j10_jiulong.png",
+    "name": "九龙",
+    "baike_link": "http://baike.baidu.com/view/3366548.htm",
+    "country_type": "0",
+    "intro": "52.html"
+  },
+  {
+    "first_letter": "J",
+    "slug": "jinlv",
+    "logo_img": "j11_jinlv.png",
+    "name": "金旅",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "K",
+    "slug": "cadillac",
+    "logo_img": "k1_cadillac.png",
+    "name": "凯迪拉克",
+    "baike_link": "http://baike.baidu.com/view/6878.htm",
+    "country_type": "6",
+    "intro": "104.html"
+  },
+  {
+    "first_letter": "K",
+    "slug": "chrysler",
+    "logo_img": "k2_chrysler.png",
+    "name": "克莱斯勒",
+    "baike_link": "http://baike.baidu.com/view/35085.htm",
+    "country_type": "6",
+    "intro": "108.html"
+  },
+  {
+    "first_letter": "K",
+    "slug": "kairui",
+    "logo_img": "k3_kairui.png",
+    "name": "开瑞",
+    "baike_link": "http://baike.baidu.com/view/1003504.htm",
+    "country_type": "0",
+    "intro": "55.html"
+  },
+  {
+    "first_letter": "K",
+    "slug": "kenisaige",
+    "logo_img": "k4_kenisaige.png",
+    "name": "柯尼赛格",
+    "baike_link": "http://baike.baidu.com/view/3690896.htm",
+    "country_type": "8",
+    "intro": "119.html"
+  },
+  {
+    "first_letter": "K",
+    "slug": "carlsson",
+    "logo_img": "k5_carlsson.png",
+    "name": "卡尔森",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "L",
+    "slug": "suzuki",
+    "logo_img": "l1_suzuki.png",
+    "name": "铃木",
+    "baike_link": "http://baike.baidu.com/view/35190.html",
+    "country_type": "1",
+    "intro": "74.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "landrover",
+    "logo_img": "l2_landrover.png",
+    "name": "路虎",
+    "baike_link": "http://baike.baidu.com/view/50271.htm",
+    "country_type": "5",
+    "intro": "103.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lexus",
+    "logo_img": "l3_lexus.png",
+    "name": "雷克萨斯",
+    "baike_link": "http://baike.baidu.com/view/50240.htm",
+    "country_type": "1",
+    "intro": "72.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lamborghini",
+    "logo_img": "l4_lamborghini.png",
+    "name": "兰博基尼",
+    "baike_link": "http://baike.baidu.com/view/9686.htm",
+    "country_type": "4",
+    "intro": "95.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lufeng",
+    "logo_img": "l5_lufeng.png",
+    "name": "陆风",
+    "baike_link": "http://baike.baidu.com/view/442993.htm",
+    "country_type": "0",
+    "intro": "9.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lifan",
+    "logo_img": "l6_lifan.png",
+    "name": "力帆",
+    "baike_link": "http://baike.baidu.com/view/392537.htm",
+    "country_type": "0",
+    "intro": "8.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "renault",
+    "logo_img": "l7_renault.png",
+    "name": "雷诺",
+    "baike_link": "http://baike.baidu.com/view/35295.htm",
+    "country_type": "3",
+    "intro": "91.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "liebaoqiche",
+    "logo_img": "l8_liebaoqiche.png",
+    "name": "猎豹汽车",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "L",
+    "slug": "rollsroyce",
+    "logo_img": "l9_rollsroyce.png",
+    "name": "劳斯莱斯",
+    "baike_link": "http://baike.baidu.com/view/6861.htm",
+    "country_type": "5",
+    "intro": "78.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "linian",
+    "logo_img": "l10_linian.png",
+    "name": "理念",
+    "baike_link": "http://baike.baidu.com/view/4980751.htm",
+    "country_type": "0",
+    "intro": "58.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lincoln",
+    "logo_img": "l11_lincoln.png",
+    "name": "林肯",
+    "baike_link": "http://baike.baidu.com/view/1264637.htm",
+    "country_type": "6",
+    "intro": "111.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lotus",
+    "logo_img": "l12_lotus.png",
+    "name": "莲花汽车",
+    "baike_link": "http://baike.baidu.com/view/3855608.htm",
+    "country_type": "0",
+    "intro": "21.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lotuscars",
+    "logo_img": "l13_lotuscars.png",
+    "name": "路特斯",
+    "baike_link": "http://baike.baidu.com/view/5833749.htm",
+    "country_type": "5",
+    "intro": "100.html"
+  },
+  {
+    "first_letter": "L",
+    "slug": "lorinser",
+    "logo_img": "l14_lorinser.png",
+    "name": "劳伦士",
+    "baike_link": "http://baike.baidu.com/view/1064941.htm",
+    "country_type": "2",
+    "intro": "84.html"
+  },
+  {
+    "first_letter": "M",
+    "slug": "mazda",
+    "logo_img": "m1_mazda.png",
+    "name": "马自达",
+    "baike_link": "http://baike.baidu.com/view/19411.htm",
+    "country_type": "1",
+    "intro": "69.html"
+  },
+  {
+    "first_letter": "M",
+    "slug": "mg",
+    "logo_img": "m2_mg.png",
+    "name": "MG",
+    "baike_link": "http://baike.baidu.com/view/35170.htm",
+    "country_type": "0",
+    "intro": "6.html"
+  },
+  {
+    "first_letter": "M",
+    "slug": "mini",
+    "logo_img": "m3_mini.png",
+    "name": "MINI(迷你)",
+    "baike_link": "http://baike.baidu.com/view/18853.htm",
+    "country_type": "5",
+    "intro": "99.html"
+  },
+  {
+    "first_letter": "M",
+    "slug": "maserati",
+    "logo_img": "m4_maserati.png",
+    "name": "玛莎拉蒂",
+    "baike_link": "http://baike.baidu.com/view/25554.htm",
+    "country_type": "4",
+    "intro": "94.html"
+  },
+  {
+    "first_letter": "N",
+    "slug": "nazhijie",
+    "logo_img": "n1_nazhijie.png",
+    "name": "纳智捷",
+    "baike_link": "http://baike.baidu.com/view/2053630.htm",
+    "country_type": "0",
+    "intro": "31.html"
+  },
+  {
+    "first_letter": "O",
+    "slug": "acura",
+    "logo_img": "o1_acura.png",
+    "name": "讴歌",
+    "baike_link": "http://baike.baidu.com/view/4363600.html",
+    "country_type": "1",
+    "intro": "73.html"
+  },
+  {
+    "first_letter": "O",
+    "slug": "opel",
+    "logo_img": "o2_opel.png",
+    "name": "欧宝",
+    "baike_link": "http://baike.baidu.com/view/35251.htm",
+    "country_type": "2",
+    "intro": "85.html"
+  },
+  {
+    "first_letter": "O",
+    "slug": "oley",
+    "logo_img": "y1_yiqi.png",
+    "name": "欧朗",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "P",
+    "slug": "pagani",
+    "logo_img": "p1_pagani.png",
+    "name": "帕加尼",
+    "baike_link": "http://baike.baidu.com/view/46334.htm",
+    "country_type": "4",
+    "intro": "93.html"
+  },
+  {
+    "first_letter": "Q",
+    "slug": "kia",
+    "logo_img": "q1_kia.png",
+    "name": "起亚",
+    "baike_link": "http://baike.baidu.com/view/94157.htm",
+    "country_type": "7",
+    "intro": "115.html"
+  },
+  {
+    "first_letter": "Q",
+    "slug": "chery",
+    "logo_img": "q2_chery.png",
+    "name": "奇瑞",
+    "baike_link": "http://baike.baidu.com/view/5118.htm",
+    "country_type": "0",
+    "intro": "2.html"
+  },
+  {
+    "first_letter": "Q",
+    "slug": "qichen",
+    "logo_img": "q3_qichen.png",
+    "name": "启辰",
+    "baike_link": "http://baike.baidu.com/view/4267623.htm",
+    "country_type": "0",
+    "intro": "20.html"
+  },
+  {
+    "first_letter": "R",
+    "slug": "richan",
+    "logo_img": "r1_richan.png",
+    "name": "日产",
+    "baike_link": "http://baike.baidu.com/view/29841.htm",
+    "country_type": "1",
+    "intro": "70.html"
+  },
+  {
+    "first_letter": "R",
+    "slug": "rongwei",
+    "logo_img": "r2_rongwei.png",
+    "name": "荣威",
+    "baike_link": "http://baike.baidu.com/view/600785.htm",
+    "country_type": "0",
+    "intro": "14.html"
+  },
+  {
+    "first_letter": "R",
+    "slug": "ruilin",
+    "logo_img": "r3_ruilin.png",
+    "name": "瑞麒",
+    "baike_link": "http://baike.baidu.com/view/1003495.htm",
+    "country_type": "0",
+    "intro": "51.html"
+  },
+  {
+    "first_letter": "R",
+    "slug": "ruf",
+    "logo_img": "r4_ruf.png",
+    "name": "如虎",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "S",
+    "slug": "skoda",
+    "logo_img": "s1_skoda.png",
+    "name": "斯柯达",
+    "baike_link": "http://baike.baidu.com/view/79468.htm",
+    "country_type": "8",
+    "intro": "118.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "mitsubishi",
+    "logo_img": "s2_mitsubishi.png",
+    "name": "三菱",
+    "baike_link": "http://baike.baidu.com/view/6929.htm",
+    "country_type": "1",
+    "intro": "76.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "subaru",
+    "logo_img": "s3_subaru.png",
+    "name": "斯巴鲁",
+    "baike_link": "http://baike.baidu.com/view/77301.htm",
+    "country_type": "1",
+    "intro": "71.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "shuanglong",
+    "logo_img": "s4_shuanglong.png",
+    "name": "双龙",
+    "baike_link": "http://baike.baidu.com/view/444716.htm",
+    "country_type": "7",
+    "intro": "116.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "shuanghuan",
+    "logo_img": "s5_shuanghuan.png",
+    "name": "双环",
+    "baike_link": "http://baike.baidu.com/view/351201.htm",
+    "country_type": "0",
+    "intro": "41.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "shijue",
+    "logo_img": "s6_shijue.png",
+    "name": "世爵",
+    "baike_link": "http://baike.baidu.com/view/56622.htm",
+    "country_type": "8",
+    "intro": "121.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "siming",
+    "logo_img": "s7_siming.png",
+    "name": "思铭",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "S",
+    "slug": "shangqidatong",
+    "logo_img": "s8_shangqidatong.png",
+    "name": "上汽大通",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "S",
+    "slug": "shanqitongjia",
+    "logo_img": "s9_shanqitongjia.png",
+    "name": "陕汽通家",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "S",
+    "slug": "shouwang",
+    "logo_img": "s10_shouwang.png",
+    "name": "首望",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "S",
+    "slug": "saab",
+    "logo_img": "s11_saab.png",
+    "name": "萨博",
+    "baike_link": "http://baike.baidu.com/view/277279.html",
+    "country_type": "8",
+    "intro": "122.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "smart",
+    "logo_img": "s12_smart.png",
+    "name": "Smart",
+    "baike_link": "http://baike.baidu.com/view/3351449.html",
+    "country_type": "2",
+    "intro": "87.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "scion",
+    "logo_img": "s13_scion.png",
+    "name": "Scion",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "S",
+    "slug": "spirra",
+    "logo_img": "s14_spirra.png",
+    "name": "SPIRRA",
+    "baike_link": "http://baike.baidu.com/view/3286086.html",
+    "country_type": "7",
+    "intro": "129.html"
+  },
+  {
+    "first_letter": "S",
+    "slug": "ssc",
+    "logo_img": "s15_ssc.png",
+    "name": "SSC",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "T",
+    "slug": "t1_denza",
+    "logo_img": "t1_denza.png",
+    "name": "腾势",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "T",
+    "slug": "t2_tesla",
+    "logo_img": "t2_tesla.png",
+    "name": "TESLA",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "T",
+    "slug": "t3_tvr",
+    "logo_img": "t3_tvr.png",
+    "name": "TVR",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "W",
+    "slug": "volvo",
+    "logo_img": "w1_volvo.png",
+    "name": "沃尔沃",
+    "baike_link": "http://baike.baidu.com/view/4303.htm",
+    "country_type": "8",
+    "intro": "123.html"
+  },
+  {
+    "first_letter": "W",
+    "slug": "wuling",
+    "logo_img": "w2_wuling.png",
+    "name": "五菱",
+    "baike_link": "http://baike.baidu.com/view/89653.htm",
+    "country_type": "0",
+    "intro": "26.html"
+  },
+  {
+    "first_letter": "W",
+    "slug": "weilin",
+    "logo_img": "w3_weilin.png",
+    "name": "威麟",
+    "baike_link": "http://baike.baidu.com/view/2290844.htm",
+    "country_type": "0",
+    "intro": "56.html"
+  },
+  {
+    "first_letter": "W",
+    "slug": "wiesmann",
+    "logo_img": "w4_wiesmann.png",
+    "name": "威兹曼",
+    "baike_link": "http://baike.baidu.com/view/1895759.html",
+    "country_type": "2",
+    "intro": "139.html"
+  },
+  {
+    "first_letter": "W",
+    "slug": "wushiling",
+    "logo_img": "w5_wushiling.png",
+    "name": "五十铃",
+    "baike_link": "http://baike.baidu.com/view/35196.html",
+    "country_type": "1",
+    "intro": "137.html"
+  },
+  {
+    "first_letter": "X",
+    "slug": "hyundai",
+    "logo_img": "x1_hyundai.png",
+    "name": "现代",
+    "baike_link": "http://baike.baidu.com/view/35310.htm",
+    "country_type": "7",
+    "intro": "117.html"
+  },
+  {
+    "first_letter": "X",
+    "slug": "chevrolet",
+    "logo_img": "x2_chevrolet.png",
+    "name": "雪佛兰",
+    "baike_link": "http://baike.baidu.com/view/79198.htm",
+    "country_type": "6",
+    "intro": "105.html"
+  },
+  {
+    "first_letter": "X",
+    "slug": "citroen",
+    "logo_img": "x3_citroen.png",
+    "name": "雪铁龙",
+    "baike_link": "http://baike.baidu.com/view/5557.htm",
+    "country_type": "3",
+    "intro": "89.html"
+  },
+  {
+    "first_letter": "X",
+    "slug": "xiyate",
+    "logo_img": "x4_xiyate.png",
+    "name": "西雅特",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "X",
+    "slug": "xinkai",
+    "logo_img": "x5_xinkai.png",
+    "name": "新凯",
+    "baike_link": "",
+    "country_type": "",
+    "intro": ""
+  },
+  {
+    "first_letter": "Y",
+    "slug": "yiqi",
+    "logo_img": "y1_yiqi.png",
+    "name": "一汽",
+    "baike_link": "http://baike.baidu.com/view/37969.htm",
+    "country_type": "0",
+    "intro": "3.html"
+  },
+  {
+    "first_letter": "Y",
+    "slug": "infiniti",
+    "logo_img": "y2_infiniti.png",
+    "name": "英菲尼迪",
+    "baike_link": "http://baike.baidu.com/view/433828.htm",
+    "country_type": "1",
+    "intro": "75.html"
+  },
+  {
+    "first_letter": "Y",
+    "slug": "yongyuanqiche",
+    "logo_img": "y3_yongyuanqiche.png",
+    "name": "永源汽车",
+    "baike_link": "http://baike.baidu.com/view/2266612.htm",
+    "country_type": "0",
+    "intro": "64.html"
+  },
+  {
+    "first_letter": "Y",
+    "slug": "iveco",
+    "logo_img": "y4_iveco.png",
+    "name": "依维柯",
+    "baike_link": "http://baike.baidu.com/view/169047.htm",
+    "country_type": "0",
+    "intro": "33.html"
+  },
+  {
+    "first_letter": "Y",
+    "slug": "yema",
+    "logo_img": "y5_yema.png",
+    "name": "野马汽车",
+    "baike_link": "http://baike.baidu.com/view/6601107.htm",
+    "country_type": "0",
+    "intro": "35.html"
+  },
+  {
+    "first_letter": "Z",
+    "slug": "zhonghua",
+    "logo_img": "z1_zhonghua.png",
+    "name": "中华",
+    "baike_link": "http://baike.baidu.com/view/89639.htm",
+    "country_type": "0",
+    "intro": "13.html"
+  },
+  {
+    "first_letter": "Z",
+    "slug": "zhongtai",
+    "logo_img": "z2_zhongtai.png",
+    "name": "众泰",
+    "baike_link": "http://baike.baidu.com/view/443082.htm",
+    "country_type": "0",
+    "intro": "12.html"
+  },
+  {
+    "first_letter": "Z",
+    "slug": "zhongxing",
+    "logo_img": "z3_zhongxing.png",
+    "name": "中兴",
+    "baike_link": "http://baike.baidu.com/view/660066.htm",
+    "country_type": "0",
+    "intro": "28.html"
+  }
+]

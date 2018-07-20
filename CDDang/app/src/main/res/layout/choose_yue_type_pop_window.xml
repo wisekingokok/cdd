@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_black"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+                android:layout_marginTop="60dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/pet_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/yue_type_pet_frame"
+                android:gravity="center"
+                android:text="@string/yue_pet_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/travell_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:background="@drawable/yue_type_travell_frame"
+                android:gravity="center"
+                android:text="@string/yue_travell_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/dinner_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:background="@drawable/yue_type_dinner_frame"
+                android:gravity="center"
+                android:text="@string/yue_dinner_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/movie_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:background="@drawable/yue_type_movie_frame"
+                android:gravity="center"
+                android:text="@string/yue_movie_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/shopping_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:background="@drawable/yue_type_shopping_frame"
+                android:gravity="center"
+                android:text="@string/yue_shopping_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/bar_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:background="@drawable/yue_type_bar_frame"
+                android:gravity="center"
+                android:text="@string/yue_bar_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/mahjong_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:background="@drawable/yue_type_majiang_frame"
+                android:gravity="center"
+                android:text="@string/yue_mahjong_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <Button
+                android:id="@+id/sports_type_btn"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/yue_type_sports_frame"
+                android:gravity="center"
+                android:text="@string/yue_sports_type"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recording_hint_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <ProgressBar
+            style="@style/loading_progressbar"
+            android:layout_width="19dip"
+            android:layout_height="19dip"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/loading_small" />
+
+        <TextView
+            android:id="@+id/waiting_dialog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/please_waite"
+            android:textColor="@color/white"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/default_bg_color"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/common_head"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg_color"
+        android:orientation="vertical">
+
+        <FrameLayout
+
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            >
+
+            <TextView
+                android:id="@+id/search_friend_phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/editext_grey"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="8dp"
+                android:hint="手机号/昵称"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColorHint="#898989"
+                android:textSize="14sp"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/layout_erweima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/search_my_ddh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/editext_grey"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/add_erweima"
+                android:gravity="center"
+                android:hint="我的二维码："
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/add_contacts_friend_sao"
+            style="@style/common_padding16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/add_saoyisao"
+            android:drawablePadding="16dp"
+
+            android:gravity="center_vertical"
+            android:text="扫一扫"
+            android:textColor="@color/business_h"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="@color/line_color"/>
+
+
+        <TextView
+            android:id="@+id/add_contacts_friend_ll"
+            style="@style/common_padding16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/add_phone"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+
+            android:text="添加手机联系人"
+            android:textColor="@color/business_h"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="@color/line_color"/>
+
+        <TextView
+            android:id="@+id/weixin"
+            style="@style/common_padding16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/add_weixin2"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+
+            android:text="添加微信好友"
+            android:textColor="@color/business_h"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="@color/line_color"/>
+
+        <TextView
+            android:id="@+id/qq"
+            style="@style/common_padding16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/add_qq2"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+
+            android:text="添加QQ好友"
+            android:textColor="@color/business_h"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

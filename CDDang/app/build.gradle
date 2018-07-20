@@ -1,0 +1,241 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'android-apt'
+android {
+    signingConfigs {
+        signingConfig {
+//            keyAlias '123456'
+//            keyPassword '123456'
+//            storeFile file('/Users/yogi/AndroidStudioProjects/123456.jks')
+//            storePassword '123456'
+        }
+    }
+
+    compileSdkVersion 24
+    buildToolsVersion '24.0.3'
+    defaultConfig {
+        applicationId "com.chewuwuyou.app"
+        minSdkVersion 15
+        targetSdkVersion 24
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+//            buildConfigField("String","BASE_URL","\"http://101.204.230.251/mhwcw/\"")
+//            buildConfigField("String","XMPP_HOST_URL","\"101.204.230.251\"")
+//            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+//            buildConfigField("String","BASE_URL","\"http://101.204.230.251/mhwcw/\"")
+//            buildConfigField("String","XMPP_HOST_URL","\"101.204.230.251\"")
+//            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+        }
+//
+//        debug {
+//            buildConfigField("String","BASE_URL","\"http://120.55.138.140/mhwcw/\"")
+//            buildConfigField("String","XMPP_HOST_URL","\"114.55.187.21\"")
+//            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+//            //正式
+////            resValue 'string', 'BASE_URL', 'http://101.204.230.251/mhwcw/'
+////            resValue 'string', 'XMPP_HOST_URL', '101.204.230.251'
+////            resValue 'string', 'IMAGE_BASE_URL', 'http://120.55.138.140/spng/'
+////            //与开发
+////            resValue 'string', 'BASE_URL_TEST', 'http://120.55.138.140/mhwcw/'
+////            resValue 'string', 'XMPP_HOST_URL_TEST', '114.55.187.21'
+////            resValue 'string', 'IMAGE_BASE_URL_TEST', 'http://120.55.138.140/spng/'
+////            //胡华
+////            resValue 'string', 'BASE_URL_HU', 'http://192.168.8.45:8080/mhwcw/'
+////            resValue 'string', 'XMPP_HOST_URL_HU', '121.40.87.16'
+////            resValue 'string', 'IMAGE_BASE_URL_HU', 'http://120.55.138.140/spng/'
+////            //李雪健
+////            resValue 'string', 'BASE_URL_LI', 'http://192.168.8.32:8080/mhwcw/'
+////            resValue 'string', 'XMPP_HOST_URL_LI', '121.40.87.16'
+////            resValue 'string', 'IMAGE_BASE_URL_LI', 'http://120.55.138.140/spng/'
+////            resValue 'string', 'IMHOST', 'http://192.168.8.48:88'
+//
+//            resValue 'string', 'isDebug', 'true'
+//        }
+//
+//        preview {
+//            buildConfigField("int","BuildType","1")
+//            resValue 'string', 'isDebug', 'true'
+//        }
+    }
+
+    productFlavors {
+        正式 {
+
+
+            buildConfigField("String","BASE_URL","\"http://120.55.138.140/mhwcw/\"")
+            buildConfigField("String","XMPP_HOST_URL","\"http://api.cddang.com/\"")
+            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+
+            applicationId 'com.chewuwuyou.app'
+//            signingConfig signingConfigs.signingConfig
+            manifestPlaceholders = [rong_cloud_app_key: "pwe86ga5ep7j6"]
+            resValue "string", "app_name", '"车当当"'
+        }
+        开发 {
+            buildConfigField("String","BASE_URL","\"http://101.204.230.251/mhwcw/\"")
+            buildConfigField("String","XMPP_HOST_URL","\"http://192.168.8.235:6080/\"")
+            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+
+            applicationId 'com.chewuwuyou.app'
+
+            manifestPlaceholders = [rong_cloud_app_key: "ik1qhw091i5gp"]
+            resValue "string", "app_name", '"车当当开发"'
+        }
+        测试{
+            buildConfigField("String","BASE_URL","\"http://101.204.230.251:8081/mhwcw/\"")
+            buildConfigField("String","XMPP_HOST_URL","\"http://192.168.8.236:6080/\"")
+            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+
+            manifestPlaceholders = [rong_cloud_app_key: "0vnjpoadn5voz"]
+            resValue "string", "app_name", '"车当当测试"'
+        }
+        预发布{
+
+            buildConfigField("String","BASE_URL","\"http://120.55.188.215/mhwcw/\"")
+            buildConfigField("String","XMPP_HOST_URL","\"http://apiyfb.cddang.com/\"")
+            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+
+            manifestPlaceholders = [rong_cloud_app_key: "ik1qhw091i5gp"]
+            resValue "string", "app_name", '"车当当预发布"'
+        }
+        李雪健{
+            buildConfigField("String","BASE_URL","\"http://192.168.8.47:8080/mhwcw/\"")
+            buildConfigField("String","XMPP_HOST_URL","\"http://apiyfb.cddang.com/\"")
+            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+
+            manifestPlaceholders = [rong_cloud_app_key: "ik1qhw091i5gp"]
+            resValue "string", "app_name", '"车当当预发布"'
+        }
+        曹正华{
+            buildConfigField("String","BASE_URL","\"http://192.168.8.48:8080/mhwcw/\"")
+            buildConfigField("String","XMPP_HOST_URL","\"http://apiyfb.cddang.com/\"")
+            buildConfigField("String","IMAGE_BASE_URL","\"http://120.55.138.140/spng/\"")
+            manifestPlaceholders = [rong_cloud_app_key: "ik1qhw091i5gp"]
+            resValue "string", "app_name", '"车当当开发"'
+        }
+
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_7
+    }
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs "src/main/jniLibs"
+//        }
+//    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+//        exclude 'META-INF/DEPENDENCIES'
+//        exclude 'META-INF/NOTICE'
+//        exclude 'META-INF/LICENSE.txt'
+//        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+
+    //New library begin
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.mylhyl:acp:1.1.7'
+    //权限管理
+    compile('com.trello:rxlifecycle:0.8.0', {
+        exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        exclude module: 'appcompat-v7'
+    })
+    compile('com.trello:rxlifecycle-components:0.8.0', {
+        exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        exclude module: 'appcompat-v7'
+    })
+    compile 'com.google.code.gson:gson:2.7'
+    //    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    //Old library end
+
+    //New library begin
+    compile 'com.android.support:multidex:1.0.0'
+    compile files('olibs/baidumapapi_v3_2_0.jar')
+    compile files('olibs/achartengine-1.1.0.jar')
+    compile files('olibs/afinal_0.5.1_bin.jar')
+    compile files('olibs/alipaySdk-20160516.jar')
+    compile files('olibs/android_api_3_5.jar')
+    compile files('olibs/bugly_1.2.8_release.jar')
+    compile files('olibs/core-2.3.0.jar')
+    compile files('olibs/dnsjava-2.1.6.jar')
+    compile files('olibs/eventbus.jar')
+    compile files('olibs/httpmime-4.1.1.jar')
+    compile files('olibs/imageloader.jar')
+    compile files('olibs/javabase64-1.3.1.jar')
+    compile files('olibs/jpush-android-2.1.5.jar')
+    compile files('olibs/libammsdk.jar')
+    compile files('olibs/locSDK_3.1.jar')
+    compile files('olibs/mid-sdk-2.10.jar')
+    compile files('olibs/mpandroidchartlibrary-2-1-6.jar')
+    compile files('olibs/nineoldandroids-2.4.0.jar')
+    compile files('olibs/pinyin4j-2.5.0.jar')
+    compile 'ch.ielse:switchbutton:1.0.0'
+    compile files('olibs/UPPayAssistEx.jar')
+    compile files('olibs/UPPayPluginExStd.jar')
+    compile files('olibs/weizhang_sdk.jar')
+    compile files('olibs/wup-1.0.0-SNAPSHOT.jar')
+    compile files('olibs/asmack-source.jar')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('olibs/Rong_IMLib_v2_7_0.jar')
+    compile files('olibs/SocialSDK_QQZone_3.jar')
+    compile files('olibs/SocialSDK_Sina.jar')
+    compile files('olibs/SocialSDK_WeiXin_2.jar')
+    compile files('olibs/umeng_social_sdk.jar')
+    compile files('olibs/mta-sdk-1.6.2.jar')
+    compile files('olibs/open_sdk_r5756.jar')
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile files('olibs/qiniu-android-sdk-7.2.3.jar')
+    compile files('olibs/happy-dns-0.2.10.jar')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    //Old library end
+    compile 'com.jakewharton:butterknife-compiler:8.4.0'
+}
+

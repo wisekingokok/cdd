@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/pro_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="违章服务"
+            android:textColor="@color/common_input_text_color"
+            android:textSize="@dimen/common_fiveth" />
+
+        <TextView
+            android:id="@+id/pro_fees_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="规费：200"
+            android:textColor="@color/common_text_color" />
+
+        <CheckBox
+            android:id="@+id/is_check_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/notification_switch_bg"
+            android:button="@null"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_service_price_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="我的服务费"
+            android:textColor="@color/common_text_color" />
+
+        <EditText
+            android:id="@+id/service_manager_item_et"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_frame"
+            android:inputType="number"
+            android:maxLength="10"
+            android:minWidth="150dp"
+            android:padding="10dp"
+            android:text="15"
+            android:textColor="@color/illegal_service_price_color" />
+    </LinearLayout>
+
+</LinearLayout>

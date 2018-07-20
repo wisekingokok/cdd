@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/illegal_details_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/handle_btn"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_head" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <include layout="@layout/weizhang_group_item" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/weizhang_empty_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80.0dip"
+                android:gravity="center"
+                android:text="暂未查到违章信息"
+                android:textColor="@color/empty_text_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/weizhang_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="5dp"
+                android:listSelector="#00000000"
+                android:scrollbarStyle="outsideOverlay"
+                android:transcriptMode="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+         <Button
+        android:id="@+id/handle_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/common_blue_btn_bg"
+        android:text="立即处理"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+    -->
+
+</RelativeLayout>

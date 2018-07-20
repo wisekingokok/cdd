@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/order_top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ordear_status_no"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/order_status_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="订单收入"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="¥"
+                android:textColor="@color/red"
+                android:textSize="36sp" />
+
+            <EditText
+                android:id="@+id/ordear_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:maxLength="8"
+                android:inputType="numberDecimal"
+                android:textColor="@color/red"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:id="@+id/ordet_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/ordet_button_price"
+                    android:layout_width="100dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/common_business_type_yes"
+                    android:text="修改价格"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ordear_start_name_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="订单金额"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ordear_transaction_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:textColor="@color/deep_name_gray"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ordear_service_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="平台服务费:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fuwufei_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="¥0.00"
+                android:textColor="@color/deep_name_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/dotted" />
+
+    <LinearLayout
+        android:id="@+id/order_contacts_contact_mode"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/order_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_fang_icon" />
+
+        <TextView
+            android:id="@+id/ordear_contact_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:singleLine="true"
+            android:text="联系人呢称"
+            android:textColor="@color/deep_name_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/order_news"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/common_drawable_order"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ordear_news" />
+
+            <ImageButton
+                android:id="@+id/order_telephone"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/common_drawable_order"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ordear_phone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

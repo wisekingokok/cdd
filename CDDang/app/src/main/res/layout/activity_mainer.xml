@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- 模块三:消息 -->
+
+            <fragment
+                android:id="@+id/fragment_news"
+                class="com.chewuwuyou.app.transition_view.fragment.RongChatFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- 车圈 -->
+
+            <fragment
+                android:id="@+id/fragment_query"
+                class="com.chewuwuyou.app.fragment.CyqFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <!-- 模块一:服务 -->
+
+            <fragment
+                android:id="@+id/fragment_service"
+                class="com.chewuwuyou.app.fragment.ServiceFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- 我的 -->
+
+            <fragment
+                android:id="@+id/fragment_my"
+                class="com.chewuwuyou.app.fragment.MyFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/fragment_search"
+                class="com.chewuwuyou.app.fragment.MainSearchFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/main_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/news_img"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_news_selected" />
+
+                    <TextView
+                        android:id="@+id/news_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="消息"
+                        android:textColor="@color/main_xuanz"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/msg_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/tip_bg"
+                    android:gravity="center"
+                    android:minWidth="20dp"
+                    android:padding="2dp"
+                    android:text="11"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main_rim"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rim_img"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_rim_no_selected" />
+
+                <TextView
+                    android:id="@+id/rim_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车圈"
+                    android:textColor="@color/main_huise"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_news_"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_service"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="24dp"
+                    android:layout_height="24dp">
+
+                    <ImageView
+                        android:id="@+id/service_img"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_service_no_selected" />
+                    <TextView
+                        android:id="@+id/remind_view"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right"
+                        android:visibility="gone"
+                        android:background="@drawable/dot_red" />
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/service_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务"
+                    android:textColor="@color/main_huise"
+
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/main_my"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/my_img"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_my_no_selected" />
+
+                <TextView
+                    android:id="@+id/my_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textColor="@color/main_huise"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="6dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_luanzi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_lunzi_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:textColor="#4ACEEA"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

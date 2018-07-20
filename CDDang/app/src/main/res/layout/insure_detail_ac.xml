@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="35.0dip"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_frame"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="新车保险指导价"
+                        android:textColor="@color/common_input_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvtotalprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:text="5,954"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="新车9折优惠价"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvtotalpricediscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:text="5,359"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="电话投保"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/phone_insure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:text=""
+                        android:textColor="@color/common_text_color"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="裸车售价(元)"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvspecprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:text="100000"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlcompulsorylayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="交强险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvcompulsoryrightgo"
+                        android:layout_width="11.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/common_go" />
+
+                    <TextView
+                        android:id="@+id/tvcompulsory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tvcompulsoryrightgo"
+                        android:text="950"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="商业保险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvbusinessinsuranceprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:text="100000"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:text="自定义选项"
+                android:textColor="@color/common_title_color"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_frame"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rlthirdpartlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="第三者责任险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvthirdpartgo"
+                        android:layout_width="11.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/common_go" />
+
+                    <CheckBox
+                        android:id="@+id/cbthirdpart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tvthirdpartgo"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="924"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="车辆损失险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cblost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="1547"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="全车盗抢险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbrob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="553"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlglasslayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="玻璃单独破碎险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvglassrightgo"
+                        android:layout_width="11.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/common_go" />
+
+                    <CheckBox
+                        android:id="@+id/cbglass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tvglassrightgo"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="250"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="自燃损失险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbnaturalloss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="553"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="不计免赔险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbnondeductible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="553"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="无过责任险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbnonehadliability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="553"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="车上人员责任险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbpassengerliability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="250"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlbodyscratcheslayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="车身划痕险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvbodyscratchesrightgo"
+                        android:layout_width="11.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/common_go" />
+
+                    <CheckBox
+                        android:id="@+id/cbbodyscratches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tvbodyscratchesrightgo"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="400"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="涉水险"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbwading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16.0dip"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableEnd="@drawable/notification_switch_bg"
+                        android:drawablePadding="5.0dip"
+                        android:text="1547"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:text="个人信息(提交保险信息时必填,以便保险商家联系)"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_frame"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/insure_buy_car_price_rlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/insure_contact1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="联系人姓名:"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/insure_contact"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/insure_contact1"
+                        android:background="@drawable/login_frame"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/insure_buy_car_price_rlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/insure_tel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="联系人电话:"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/insure_tel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/insure_tel1"
+                        android:background="@drawable/login_frame"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/common_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/insure_submit"
+                    android:layout_width="@dimen/common_button_width"
+                    android:layout_height="@dimen/common_button_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/common_green_btn"
+                    android:text="提交信息"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

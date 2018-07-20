@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_height"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/searchET"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入你要搜索的内容"
+                    android:textColorHint="@color/darkgray"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/clear"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@null"
+                    android:src="@drawable/search_clear_normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="取消"
+                android:textColor="@color/new_blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/group_context"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/darkgray"
+        android:text="未搜索到内容"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/group_member"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ser_null" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/group_searche_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

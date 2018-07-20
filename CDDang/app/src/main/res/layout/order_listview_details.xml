@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/order_qq_phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/order_phone"
+            android:text="  联系电话"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/service_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:autoLink="phone"
+            android:text="4008333955"
+            android:textColor="@color/new_blue"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/wallet_background" />
+
+    <LinearLayout
+        android:id="@+id/order_qq_mailbox"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/order_mailbox"
+            android:text="  官方邮箱" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:textColor="@color/new_blue"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="kf@cddang.com" />
+    </LinearLayout>
+
+</LinearLayout>

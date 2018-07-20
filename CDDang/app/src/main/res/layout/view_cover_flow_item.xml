@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_ll"
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+
+    <com.chewuwuyou.app.extras.RoundedImageView
+        android:id="@+id/item_img"
+        android:layout_width="46dp"
+        android:layout_height="64dp"
+        android:src="@drawable/automobile_parts" />
+
+</LinearLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/zong"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="总订单数"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="1084单"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <com.barcode.view.ProgressWheel
+                                android:id="@+id/progress_no_payment"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="top|center"
+                                app:back_color="@color/default_order"
+                                app:back_width="6dp"
+                                app:front_color1="@color/no_payment"
+                                app:front_width="6dp"
+                                app:is_need_content="true"
+                                app:total_engle="300" />
+
+                            <TextView
+                                android:id="@+id/no_payment_onclic"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:gravity="bottom|center"
+                                android:text="未付款"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <com.barcode.view.ProgressWheel
+                                android:id="@+id/progress_already_payment"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginTop="5dp"
+                                app:back_color="@color/default_order"
+                                app:back_width="6dp"
+                                app:front_color1="@color/already_payment"
+                                app:front_width="6dp"
+                                app:is_need_content="true"
+                                app:total_engle="300" />
+
+                            <TextView
+                                android:id="@+id/progress_already_onclic"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:text="已付款"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <com.barcode.view.ProgressWheel
+                                android:id="@+id/progress_in_service"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginTop="5dp"
+                                app:back_color="@color/default_order"
+                                app:back_width="6dp"
+                                app:front_color1="@color/in_service"
+                                app:front_width="6dp"
+                                app:is_need_content="true"
+                                app:total_engle="300" />
+
+                            <TextView
+                                android:id="@+id/in_service_onclic"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:text="服务中"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <com.barcode.view.ProgressWheel
+                                android:id="@+id/progress_completed"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginTop="5dp"
+                                app:back_color="@color/default_order"
+                                app:back_width="6dp"
+                                app:front_color1="@color/completed"
+                                app:front_width="6dp"
+                                app:is_need_content="true"
+                                app:total_engle="300" />
+
+                            <TextView
+                                android:id="@+id/completed_onclick"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:text="已完成"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <com.barcode.view.ProgressWheel
+                                android:id="@+id/progress_revoke_order"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginTop="5dp"
+                                app:back_color="@color/default_order"
+                                app:back_width="6dp"
+                                app:front_color1="@color/revoke_order"
+                                app:front_width="6dp"
+                                app:is_need_content="true"
+                                app:total_engle="300" />
+
+                            <TextView
+                                android:id="@+id/revoke_order_onclick"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:text="撤销订单"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <com.barcode.view.ProgressWheel
+                                android:id="@+id/progress_refund_order"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginTop="5dp"
+                                app:back_color="@color/default_order"
+                                app:back_width="6dp"
+                                app:front_color1="@color/refund_order"
+                                app:front_width="6dp"
+                                app:is_need_content="true"
+                                app:total_engle="300" />
+
+                            <TextView
+                                android:id="@+id/refund_order_onclick"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:text="退款订单"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="总收入趋势图"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

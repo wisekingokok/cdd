@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/common_layout_bg" >
+
+    <TextView
+        android:id="@+id/order_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="2015-09-25"
+        android:textColor="@color/common_text_color"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/order_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_time_tv"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="订单-车辆年检"
+        android:textColor="@color/common_input_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/order_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:layout_marginRight="10dp"
+        android:textColor="@color/illegal_service_price_color"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

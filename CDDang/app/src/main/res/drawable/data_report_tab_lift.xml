@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <shape>
+
+            <!-- from top to bottom -->
+            <solid android:color="#2C9BCB" />
+            <corners android:bottomLeftRadius="8px" android:topLeftRadius="8px" />
+            <stroke android:width="1px" android:color="#2C9BCB" />
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape>
+
+            <!-- from top to bottom -->
+            <solid android:color="@color/white" />
+            <corners android:bottomLeftRadius="8px" android:topLeftRadius="8px" />
+            <stroke android:width="1px" android:color="#2C9BCB" />
+        </shape>
+    </item>
+
+</selector>

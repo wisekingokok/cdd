@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chewuwuyou.app.ui.CompanyServiceActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0eff5"
+        android:orientation="vertical"
+        >
+
+
+        <include layout="@layout/common_head"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.chewuwuyou.app.widget.SegmentControl
+
+                xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segment_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="13sp"
+                segmentcontrol:colors="#48C5FF"
+                segmentcontrol:cornerRadius="5dip"
+                segmentcontrol:direction="horizon"
+                segmentcontrol:horizonGap="8dip"
+                segmentcontrol:texts="商家优势|业务求助"
+                segmentcontrol:verticalGap="8dip"/>
+
+        </FrameLayout>
+
+        <include layout="@layout/common_line_view"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/company_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/icon_arrow1"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="16dp"
+                    android:text="成都"/>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="1px"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_toRightOf="@id/company_address"
+
+                    android:background="@color/common_line_color"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/company_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/frame"
+                android:layout_toRightOf="@id/frame"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/company_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/search_light"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="14dp"
+                    android:text="搜索"
+                    android:textColor="#aaaaaa"/>
+            </FrameLayout>
+
+
+        </RelativeLayout>
+        <include layout="@layout/common_line_view"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

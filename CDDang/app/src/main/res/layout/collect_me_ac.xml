@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+    <RadioGroup
+        android:id="@+id/choose_collect_me_role_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/collect_me_business_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pinlun_tab_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="同行商家"
+            android:textColor="@color/radiobutton_choose_role_color" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/common_line_color" />
+
+        <RadioButton
+            android:id="@+id/collect_me_user_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pinlun_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="个人用户"
+            android:textColor="@color/radiobutton_choose_role_color" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/collect_me_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <RelativeLayout
+                android:id="@+id/no_date_rl"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="暂无记录" />
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/send_message_to_group_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_blue_btn"
+            android:text="群发给他们"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

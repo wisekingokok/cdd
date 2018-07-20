@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_layout_bg"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/payment_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/zhifubao" />
+
+    <TextView
+        android:id="@+id/payment_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/payment_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/payment_iv"
+        android:text="支付宝快捷支付"
+        android:textColor="@color/common_input_text_color"
+        android:textSize="@dimen/common_num_four_textSize" />
+
+    <TextView
+        android:id="@+id/payment_des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/payment_iv"
+        android:layout_alignLeft="@+id/payment_tv"
+        android:text="推荐有支付宝账号的用户使用"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/common_num_five_textSize" />
+
+    <RadioButton
+        android:id="@+id/payment_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/my_radio_button_xbg"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:padding="10dp" />
+
+</RelativeLayout>

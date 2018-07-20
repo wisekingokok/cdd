@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/pay_description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="订单金额"
+                    android:textSize="14.0sp" />
+
+                <EditText
+                    android:id="@+id/pay_money_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/login_frame"
+                    android:gravity="left"
+                    android:hint="￥0.00"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:padding="10dp"
+                    android:textColor="#ff7405"
+                    android:textColorHint="#ff7405"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/common_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="服务项目"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="14.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <GridView
+                        android:id="@+id/service_type_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3" >
+                    </GridView>
+
+                    <GridView
+                        android:id="@+id/choose_img_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/service_type_gv"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3" >
+                    </GridView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.chewuwuyou.app.widget.MyGridView
+                android:id="@+id/service_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:padding="5dp"
+                android:scrollbars="@null"
+                android:verticalSpacing="5dp" />
+
+<!--             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:text="办理地区"
+                    android:textColor="@color/common_input_text_color"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/order_location_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint=""
+                    android:padding="10dp"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="14.0sp" />
+            </LinearLayout> -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="请在双方业务订单生成前达成票据确认"
+                    android:textColor="#939393"
+                    android:background="@color/gray"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="32dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_height="44dp">
+
+                    <RadioButton
+                        android:id="@+id/release_need"
+                        style="@style/danxn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="  需要票据"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/release_no_need"
+                        style="@style/danxn"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="  不需要票据"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/release_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@drawable/business_cw"
+                    android:gravity="center_vertical"
+                    android:text=" 你未完成票据选项"
+                    android:visibility="gone"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/add_ordear_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="同意和接受"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/chedangdang_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《车当当服务条款》"
+                    android:textColor="@color/new_blue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wz_service_xieyi_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/xieyi_tv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="《车当当关于第三方服务商违章代办声明》"
+                    android:textColor="@color/new_blue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/service_release_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="确认发布"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

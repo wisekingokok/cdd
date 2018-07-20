@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/commonHead"
+        layout="@layout/common_head" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:id="@+id/yue_title_tv"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="标题"
+            android:textColor="#c0c0c0"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/yue_title_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/yue_type_btn"
+            android:layout_toRightOf="@id/yue_title_tv"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入标题(最大字数40)"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/yue_type_btn"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@drawable/yue_type_travell_frame"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/quan_item_divider"
+        android:gravity="left|bottom"
+        android:paddingBottom="4dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="4dip"
+        android:text="活动信息"
+        android:textColor="#c0c0c0"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:id="@+id/yue_limiting_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:id="@+id/yue_limiting_title_tv"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="参与人"
+            android:textColor="#c0c0c0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yue_limiting_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/yue_limiting_title_tv"
+            android:gravity="center_vertical"
+            android:text="不限男女"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/yue_limiting_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/listbtn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/quan_item_divider" />
+
+    <RelativeLayout
+        android:id="@+id/yue_participation_way_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:id="@+id/yue_participation_way_title_tv"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="费用"
+            android:textColor="#c0c0c0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yue_participation_way_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/yue_participation_way_title_tv"
+            android:gravity="center_vertical"
+            android:text="AA制"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/yue_participation_way_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/listbtn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/quan_item_divider" />
+
+    <RelativeLayout
+        android:id="@+id/yue_available_date_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:id="@+id/yue_available_date_title_tv"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="时间"
+            android:textColor="#c0c0c0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yue_available_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/yue_available_date_title_tv"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/yue_available_date_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/common_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/quan_item_divider" />
+
+    <RelativeLayout
+        android:id="@+id/yue_address_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+        <TextView
+            android:id="@+id/yue_address_title_tv"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="地点"
+            android:textColor="#c0c0c0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yue_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/yue_address_title_tv"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/yue_address_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/common_right" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/quan_item_divider"
+        android:gravity="left|bottom"
+        android:paddingBottom="4dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="4dip"
+        android:text="活动说明"
+        android:textColor="#c0c0c0"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/yue_content_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请说明活动内容（10-3000字）"
+            android:maxHeight="150dp"
+            android:maxLength="3000"
+            android:minLines="4"
+            android:paddingBottom="4dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="4dip"
+            android:textColor="#c0c0c0"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="@color/quan_item_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/yue_photo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="4dip"
+            android:paddingTop="4dip"
+            android:text="活动图片0/4"
+            android:textColor="#c0c0c0"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/yue_photo_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.chewuwuyou.app.widget.MyGridView
+                android:id="@+id/yue_photo_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

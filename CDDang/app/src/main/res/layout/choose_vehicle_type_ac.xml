@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_vehicle_type_ac"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <com.chewuwuyou.app.widget.RadioGroup
+        android:id="@+id/vehicle_type_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/car_dingle_bg"
+        android:checkedButton="@+id/carservice_type_car_transfer"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/xxqc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/small_vehile"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/dxqc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/big_vehicle"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/common_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/wjqc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/wj_vehile"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/lsl_mtc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/lsl_mtc"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/common_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/qb_mtc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/qb_mtc"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/gc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/guache"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/common_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/jnc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/teaching_vehicle"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/carservice_type_bxsz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/common_radio_button_bg"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/carservice_other_service"
+                android:textColor="@color/common_text_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.chewuwuyou.app.widget.RadioGroup>
+
+</LinearLayout>

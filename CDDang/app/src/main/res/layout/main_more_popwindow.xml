@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/popwindow_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/msg_add_friend_tv"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/main_msg_add_friend"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="添加好友"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_fiveth" />
+
+        <include layout="@layout/common_line_view" />
+
+        <TextView
+            android:id="@+id/msg_scan_tv"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/main_msg_scan"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="扫一扫"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_fiveth" />
+    </LinearLayout>
+
+</LinearLayout>

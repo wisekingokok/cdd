@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="@color/car_dingle_bg"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20.0dip"
+    
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/provinceText"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="20.0dip"
+        android:textColor="#868a86"
+        android:textSize="18.0sp" />
+
+    <!--
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="@color/car_dingle_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="20.0dip"
+        android:textColor="@color/common_text_color"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/provinceText"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="20.0dip"
+        android:textColor="#868a86"
+        android:textSize="18.0sp" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/car_dingle_bg"
+    android:orientation="vertical" >
+
+    <!--标题-->
+    <include layout="@layout/common_head" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/service_top_left_imaview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/jiazheng_top_left" />
+
+        <ImageView
+            android:id="@+id/service_top_right_imaview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/jiazheng_top_right" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--网络图片-->
+        <include layout="@layout/network_request"/>
+        <include layout="@layout/network_abnormal"/>
+
+    <com.chewuwuyou.app.widget.PullToRefreshGridView
+        android:id="@+id/bankuai_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/car_dingle_bg"
+        android:gravity="fill"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="@null"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    </LinearLayout>
+</LinearLayout>

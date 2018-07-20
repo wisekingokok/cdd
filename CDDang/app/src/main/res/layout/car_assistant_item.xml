@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_layout_bg"
+    android:gravity="center"
+    android:padding="20dp" >
+
+    <ImageView
+        android:id="@+id/car_service_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_luncher" />
+
+    <TextView
+        android:id="@+id/car_service_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_service_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="新车导购"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/common_num_five_textSize" />
+
+</RelativeLayout>

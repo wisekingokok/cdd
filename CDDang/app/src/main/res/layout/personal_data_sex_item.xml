@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sex"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/common_layout_bg"
+    android:checkMark="@drawable/wzcx_choice_city_bg"
+    android:gravity="center_vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="10dp"
+    android:text="男"
+    android:textColor="@color/common_text_color"
+    android:textSize="18sp" />

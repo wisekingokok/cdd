@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wallet_background">
+
+
+    <include layout="@layout/network_request"/>
+
+    <include layout="@layout/network_abnormal"/>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.chewuwuyou.app.widget.PullToRefreshListView
+            android:id="@+id/business_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/pull_to_refresh_listview_divider"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:background="@color/car_dingle_bg"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" >
+        </com.chewuwuyou.app.widget.PullToRefreshListView>
+        <TextView
+            android:id="@+id/business_no_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:text="@string/no_order_txt"
+            android:textColor="@color/black"
+            />
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.chewuwuyou.app.widget.MyGridView
+        android:id="@+id/business_my_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp" >
+    </com.chewuwuyou.app.widget.MyGridView>
+
+    <TextView
+        android:id="@+id/servcie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/message_list_item_footer_background"
+        android:text="暂无服务"/>
+
+</LinearLayout>

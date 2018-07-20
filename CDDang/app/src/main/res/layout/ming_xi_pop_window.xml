@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pupwindow_frame_bg"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <!--
+         <Button
+        android:id="@+id/beizhu_btn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pupwindow_button_bg"
+        android:gravity="center"
+        android:text="备注:(暂无)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_fiveth" />
+    -->
+
+
+    <!--
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6F6F73" />
+    -->
+
+
+    <!--
+    <Button
+        android:id="@+id/fenzu_btn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pupwindow_button_bg"
+        android:gravity="center"
+        android:text="分组"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_fiveth" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+    -->
+
+
+    <!--
+    <Button
+        android:id="@+id/his_quan_btn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pupwindow_button_bg"
+        android:gravity="center"
+        android:text="Ta的动态"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_fiveth" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6F6F73" />
+
+    <Button
+        android:id="@+id/his_tie_btn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pupwindow_button_bg"
+        android:gravity="center"
+        android:text="Ta的话题"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_fiveth" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6F6F73" />
+    <Button
+        android:id="@+id/his_yue_btn"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pupwindow_button_bg"
+        android:gravity="center"
+        android:text="Ta的活动"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_fiveth" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#6F6F73" />
+    -->
+
+<!--     <Button
+        android:id="@+id/friend_group"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/pop_item"
+        android:gravity="center"
+        android:text="好友分组"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_fiveth" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DEDEDE" />
+
+    <Button
+        android:id="@+id/black_him_btn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/pop_item"
+        android:gravity="center"
+        android:text="加入黑名单"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_fiveth" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DEDEDE" />
+
+    <Button
+        android:id="@+id/jubao_btn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/pop_item"
+        android:gravity="center"
+        android:text="举报"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_fiveth" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DEDEDE" /> -->
+
+    <Button
+        android:id="@+id/delete_friend_btn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/pop_item"
+        android:gravity="center"
+        android:text="删除好友"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_fiveth" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+diff a/CDDang/app/src/main/java/com/chewuwuyou/app/ui/ServiceAdministrationActivity.java b/CDDang/app/src/main/java/com/chewuwuyou/app/ui/ServiceAdministrationActivity.java	(rejected hunks)
+@@ -80,7 +80,7 @@
+                 finishActivity();
+                 break;
+             case R.id.sub_header_bar_right_tv://添加
+-                intent = new Intent(this,AddService.class);
++                intent = new Intent(this,PersonalSendRedActivtiy.class);
+                 intent.putExtra("min",min);
+                 intent.putExtra("max",max);
+                 startActivity(intent);

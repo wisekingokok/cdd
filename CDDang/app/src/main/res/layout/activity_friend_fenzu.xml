@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color"
+    android:orientation="vertical"
+    tools:context=".ui.FenzuManagerActivity">
+
+    <include layout="@layout/common_head"/>
+
+    <TextView
+        android:id="@+id/new_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/default_selector"
+        android:drawableLeft="@drawable/group_add"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="新建分组"/>
+
+    <ListView
+        android:id="@+id/group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:choiceMode="singleChoice"
+        android:divider="@null"></ListView>
+
+</LinearLayout>

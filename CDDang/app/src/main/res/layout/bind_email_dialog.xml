@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_dialog_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:maxEms="16"
+            android:paddingTop="20dp"
+            android:text="邮箱验证信息已发送到您的邮箱！请登录邮箱完成绑定。"
+            android:textColor="@color/common_text_color"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="@dimen/common_button_width"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_below="@+id/dialog_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/common_green_btn"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/btnok" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

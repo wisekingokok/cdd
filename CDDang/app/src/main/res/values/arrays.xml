@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="date">
+        <item>年</item>
+        <item>月</item>
+        <item>日</item>
+    </string-array>
+    <string-array name="wzcx_choice_city">
+        <item>南京市</item>
+        <item>无锡市</item>
+        <item>徐州市</item>
+        <item>常州市</item>
+        <item>苏州市</item>
+        <item>南通市</item>
+        <item>连云港市</item>
+        <item>淮安市</item>
+        <item>盐城市</item>
+        <item>扬州市</item>
+        <item>镇江市</item>
+        <item>泰州市</item>
+        <item>宿迁市</item>
+    </string-array>
+    <string-array name="wzcx_cph">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+    </string-array>
+    <string-array name="wzcx_hp_type">
+        <item>小型汽车（蓝牌）</item>
+        <item>大型汽车（黄牌）</item>
+        <item>外籍汽车（黑牌）</item>
+        <item>两三轮摩托车</item>
+        <item>轻便摩托车</item>
+        <item>挂车</item>
+        <item>教练汽车</item>
+    </string-array>
+    <string-array name="country">
+        <item>中国</item>
+        <item>日本</item>
+        <item>德国</item>
+        <item>法国</item>
+        <item>意大利</item>
+        <item>英国</item>
+        <item>美国</item>
+        <item>韩国</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="palte_location_code">
+        <item>京</item>
+        <item>沪</item>
+        <item>津</item>
+        <item>渝</item>
+        <item>鲁</item>
+        <item>豫</item>
+        <item>冀</item>
+        <item>晋</item>
+        <item>蒙</item>
+        <item>辽</item>
+        <item>吉</item>
+        <item>黑</item>
+        <item>苏</item>
+        <item>浙</item>
+        <item>皖</item>
+        <item>闽</item>
+        <item>赣</item>
+        <item>鄂</item>
+        <item>湘</item>
+        <item>桂</item>
+        <item>琼</item>
+        <item>川</item>
+        <item>云</item>
+        <item>贵</item>
+        <item>藏</item>
+        <item>陕</item>
+        <item>甘</item>
+        <item>宁</item>
+        <item>青</item>
+        <item>新</item>
+        <item>粤</item>
+    </string-array>
+    <string-array name="record_select_category">
+        <item>加油</item>
+        <item>洗车</item>
+        <item>停车</item>
+        <item>过路</item>
+        <item>保养</item>
+        <item>维修</item>
+        <item>违章</item>
+        <item>装饰</item>
+        <item>车贷</item>
+        <item>车险</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="personal_data_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="task_status">
+        <item>全部订单</item>
+        <item>已发布</item>
+        <item>已关闭</item>
+        <item>待付款</item>
+        <item>用户已付款</item>
+        <item>开始服务</item>
+        <item>服务完成</item>
+        <item>已完成</item>
+        <item>待派发</item>
+    </string-array>
+    <string-array name="vehicle_project">
+        <item>车辆年检</item>
+        <item>车辆过户</item>
+        <item>车辆上牌</item>
+        <item>提档转籍</item>
+        <item>补办登记证</item>
+        <item>补办牌照</item>
+        <item>代开委托书</item>
+        <item>代领环保标志</item>
+        <item>重打车架号</item>
+        <item>补办行驶证</item>
+    </string-array>
+    <string-array name="license_projects">
+        <item>驾证年审</item>
+        <item>驾证注销</item>
+        <item>补办驾证</item>
+        <item>到期换证</item>
+        <item>异地转入</item>
+        <item>驾证违章</item>
+        <item>上岗证代办</item>
+        <item>其他服务</item>
+    </string-array>
+    <string-array name="service_type">
+        <item>全部类型</item>
+        <item>违章服务</item>
+        <item>车辆服务</item>
+        <item>驾证服务</item>
+    </string-array>
+    <string-array name="service_status">
+        <item>所有</item>
+        <item>未完成</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="order_role">
+        <item>用户订单</item>
+        <item>商家订单</item>
+        <item>外派订单</item>
+    </string-array>
+    <string-array name="order_status">
+        <item>未完成</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="order_type">
+        <item>违章服务</item>
+        <item>车辆服务</item>
+        <item>驾证服务</item>
+    </string-array>
+    <string-array name="yue_participation_type">
+        <item>帮主请客</item>
+        <item>大家AA</item>
+        <item>求请客</item>
+    </string-array>
+    <string-array name="yue_limit_type">
+        <item>不限</item>
+        <item>妹子</item>
+        <item>汉子</item>
+    </string-array>
+    <string-array name="yue_type">
+        <item>遛宠</item>
+        <item>旅游</item>
+        <item>饭饭</item>
+        <item>观影</item>
+        <item>购物</item>
+        <item>泡吧</item>
+        <item>麻将</item>
+        <item>运动</item>
+    </string-array>
+    <string-array name="car_assistant_arr">
+        <item>新车导购</item>
+        <item>4S店查询</item>
+        <item>洗车美容</item>
+        <item>维修保养</item>
+        <item>汽车配件</item>
+        <item>保险助手</item>
+        <item>驾校服务</item>
+    </string-array>
+    <!-- 职业 -->
+    <string-array name="profession_arr">
+        <item>计算机/互联网/通信</item>
+        <item>生产/工艺/制造</item>
+        <item>医药/护理/制药</item>
+        <item>金融/银行/投资/保险</item>
+        <item>商业/服务业/个体经营</item>
+        <item>文化/广告/传媒</item>
+        <item>娱乐/艺术/表演</item>
+        <item>律师/法务</item>
+        <item>教育/培训</item>
+        <item>公务员/行政/事业单位</item>
+        <item>模特</item>
+        <item>空姐</item>
+        <item>学生</item>
+        <item>其他职业</item>
+    </string-array>
+    <!-- 行业 -->
+    <string-array name="industry_arr">
+        <item>IT</item>
+        <item>制造</item>
+        <item>医疗</item>
+        <item>金融</item>
+        <item>商业</item>
+        <item>文化</item>
+        <item>艺术</item>
+        <item>法律</item>
+        <item>教育</item>
+        <item>行政</item>
+        <item>模特</item>
+        <item>空姐</item>
+        <item>学生</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="illegal_service_group_arr">
+        <item>1.违章缴费是什么？</item>
+        <item>2.违章缴费安全么？</item>
+        <item>3.我为什么要用？</item>
+        <item>4.我该怎么使用？</item>
+        <item>5.在线缴费一般多久能够处理完毕？</item>
+        <item>6.我的违章已经缴费并处理，为什么还能查到？</item>
+        <item>7.我确定有违章，但在车当当平台查不到怎么办？</item>
+        <item>8.通过车当当平台缴费和去交管部门缴费的费用一样吗？</item>
+        <item>9.在车当当平台缴费为何要收取服务费？</item>
+        <item>10.“滞纳金”是什么？</item>
+        <item>11.滞纳金是如何计算的？</item>
+        <item>12.现场罚单是什么？</item>
+        <item>13.我不想缴费了怎么办？</item>
+        <item>14.已缴费如何退费？</item>
+    </string-array>
+    <string-array name="illegal_service_child_arr">
+        <item>违章缴费是车当当为满足广大车主处理车辆违章需求，而推出的一项全新代理服务。让您在家就可以完成车辆的违章处理，方便、快捷。</item>
+        <item>车当当作为车主服务平台，严格考察服务提供商的资历、能力，并和对方签署严格的合作协议。百分百保证车当当用户的利益。提供第三方担保支付</item>
+        <item>传统缴费方式不仅费时、还费力，处理一次排队叫号、东跑西跑算上油钱都不值当!使用车当当违章缴费，只需点几下手机屏幕，轻松完成缴费过程。</item>
+        <item>只需4步，违章缴费轻松搞定.\n1.在车当当中添加您的爱车，完成违章查询.\n2.进入缴费页面，选择您要缴费的违章.\n3.与商家沟通，完成缴费.\n4.等待处理(2-7个工作日)，完成</item>
+        <item>一般已经缴费的违章，会在2-7个工作日后处理完毕。如果处理过程中有任何情况，商家会第一时间与您沟通、确认。您有任何问题，随时与车当当客服联系。。</item>
+        <item>全国各地方交管局的数据录入和数据更新会有不同程度的延时。一般已经缴费的违章，需要在1-14个工作日后状态才能同步更新，请您耐心等待。</item>
+        <item>如果您已收到明确的违章信息提醒，但在车当当平台上查询不到，可能是交管局数据录入和同步存在延时。一般新违章的数据会在 1-14个工作日内录入并同步完毕。建议您到当地交管局网站进行核实。</item>
+        <item>是一样的。违章缴费的标准由当地交管部门制定，所以无论在车当当平台还是交管部门，缴费的费用是一样的。但通过车当当平台缴费，第三方服务商需要收取一定的服务费。</item>
+        <item>交通违章缴费是由车当当平台中第三方商家提供的线下服务，服务费是由第三方商家收取，并非车当当平台收取。</item>
+        <item>“滞纳金”是车主接到交罚处罚通知书后，超过规定缴费期限后产生的惩罚性质的款项。 现场违章：从车主收到处罚通知书当日算起，在 15天之内未缴纳违章罚款，会从第 16 天开始计算滞纳金- 非现场违章：如果车主主动到交管部门认领《公安交通管理简易程序处罚决定书》(即：罚单)，从当日算起，在 15 天之内未缴纳违章罚款，会从第 16 天开始计算滞纳金。如果您没有去交管部门认领“非现场违章”罚单，是不会产生滞纳金的。</item>
+        <item>1.现场罚单，15 天内未缴纳罚款.\n2.非现场罚单，到交通部门接受处罚后，15 天内未缴纳罚款\n3.逾期未缴纳，交通部门每天按罚款数额的 3% 加处罚款\n4.滞纳金上限为罚款数额的一倍</item>
+        <item>现场交通罚款，是指车辆驾驶员违反交通法规，交警现场开具交通违法罚款单，车辆驾驶员可直接到罚款所在地指定的交通罚款代收银行缴纳罚款。</item>
+        <item>请直接在订单管理取消订单。</item>
+        <item>可在订单管理页面，提交该订单的退费申请，或与车当当客服联系。车当当客服热线：400-8333-955车当当客服服务时间：8:00-18:00"</item>
+    </string-array>
+    <string-array name="vehicle_service_group_arr">
+        <item>1.车辆服务是什么？</item>
+        <item>2.缴费安全么？</item>
+        <item>3.我为什么要用？</item>
+        <item>4.我该怎么使用？</item>
+        <item>5.在线缴费一般多久能够处理完毕？</item>
+        <item>6.通过车当当平台缴费和去交管部门缴费的费用一样吗？</item>
+        <item>7.在车当当平台缴费为何要收取服务费？</item>
+        <item>8.现场罚单是什么？</item>
+        <item>9.我不想缴费了怎么办？</item>
+        <item>10.已缴费如何退费？</item>
+        <item>11.车辆年检所需资料</item>
+        <item>12.车辆过户所需资料</item>
+        <item>13.车辆上牌所需资料</item>
+        <item>14.提档转籍所需资料</item>
+        <item>15.补办登记证所需资料</item>
+        <item>16.补办牌照所需资料</item>
+        <item>17.代开委托书所需资料</item>
+        <item>18.代领环保标志所需资料</item>
+        <item>19.重打车架号所需资料</item>
+        <item>20.补办行驶证所需资料</item>
+        <item>21.补办进京证所需资料</item>
+        <item>22.补办上岗证所需资料</item>
+    </string-array>
+    <string-array name="vehicle_service_child_arr">
+        <item>车辆服务是车当当为满足广大车主处理车辆车务一系列需求，而推出的一项全新的车务代理服务。让您方便、快捷的办理车辆相关的年审，代开委托书，补办等。</item>
+        <item>车当当作为车主服务平台，严格考察服务提供商的资历、能力，并和对方签署严格的合作协议。百分百保证车当当用户的利益。提供第三方担保支付</item>
+        <item>自己办理不仅费时、还费力，处理一次排队叫号、东跑西跑，流程不熟悉，搭上一天半天功夫很正常!使用车当当车辆代办，只需点几下手机屏幕，轻松完成线上代理缴费，约定时间线下轻松等待办理。</item>
+        <item>只需3步，车辆服务轻松搞定\n1.在车当当中选择服务商，同商家进行即时通讯，发起服务\n2.进入缴费页面，支付您和商家确定好的服务费\n3.等待处理(2-7个工作日)，完成</item>
+        <item>以双方约定线下时间，正常事务当天完成，异地按不同事务与商家确定时间，如在办理过程中有任何问题，商家会第一时间与您沟通、确认。您有任何问题，随时也可以与车当当客服联系。</item>
+        <item>是一样的。违章缴费的标准由当地交管部门制定，所以无论在车当当平台还是交管部门，缴费的费用是一样的。但通过车当当平台缴费，第三方服务商需要收取一定的服务费。</item>
+        <item>车辆事务是由车当当平台中第三方商家提供的线下服务，服务费是由第三方商家收取，并非车当当平台收取。</item>
+        <item>现场交通罚款，是指车辆驾驶员违反交通法规，交警现场开具交通违法罚款单，车辆驾驶员可直接到罚款所在地指定的交通罚款代收银行缴纳罚款。</item>
+        <item>请直接在订单管理取消订单。</item>
+        <item>可在订单管理页面，提交该订单的退费申请，或与车当当客服联系。车当当客服热线：400-8333-955车当当客服服务时间：8:00-18:00</item>
+        <item>1.行驶证原件\n2.交强险第三联、三角架、灭火器\n3.车要到场（要领环保标志请带登记证书原件，违章必须要处理完）</item>
+        <item>1.行驶证、机动车登记证书原件、双方（新旧）车主身份证\n2.新车主非广州户口需要提供有效期内居住证（单位车还需要提供组织机构代码证原件，委托人证明（代办人如非广州户口琮需要居住证），IC卡或U盘，单位公章）\n3.新、旧车主都需要到现场\n4.牌照15工作日</item>
+        <item>1.车主身份证（居住证）；购车发票（第四联）\n2.合格证或进出口凭证（进口车） \n3.交强险（第三联） \n4.购置税本。需要车主到现场\n5.购置税本。需要车主到现场\n6.单位车：单位组织机构代码证+U盘（数字证书）及加盖公章的委托证明和代办人</item>
+        <item>1.行驶证（原件+复印件）\n2.驾驶证（原件+复印件）\n3.身份证（原+复印件）\n4.车辆档案</item>
+        <item>1.行驶证  原件+复印件\n2.身份证  原件+复印件\n3.外地户口需要居住证原件\n4.车要到场，本人到场</item>
+        <item>1.行驶证原件\n2.机动车登记证书原件\n3.身份证原件（处地人员需有效期内居住证）\n4.先领临时牌照，15个工作日后领正式牌照 \n5.车要到现场</item>
+        <item>1.行驶证（原件+复印件）\n2.身份证（原件+复印件） \n3.有效期内交强险，需注明年审所在市车管所名称（下单前先把违章处理完）</item>
+        <item>1.身份证复印件\n2.行驶证原件\n3.车辆登记原件（公司车需要提供组织机构代码证且加盖公章）</item>
+        <item>1.车主身份证原件\n2.居住证（非本市）原件\n3.行驶证原件 \n4.登记证原件 \n5.车要到现场，本人到场</item>
+        <item>1.行驶证（原件+复印件） \n2.身份证（原件+复印件） \n3.外地户口需要居住证原件  \n4.车要到场，本人到场\n以上业务办理材料只作参考，业务办理时与各地服务商联系后按各地车管所要求提供。</item>
+        <item>1.驾驶人的身份证明  \n2.驾驶人的机动车驾驶证  \n3.机动车行驶证  \n4.有效的机动车交通事故责任强制保险凭证  \n5.有效的机动车安全技术检验合格标志  \n6.经本市环境保护主管部门确认车辆符合环保要求的凭证</item>
+        <item>1.从事道路客运、货运经营业务的《道路运输经营许可证》或相关的批准文件；\n2.企业章程；机动车驾驶员上岗证 \n3.营业执照、法定代表人或负责人身份证明、身份证、经办人身份证、授权委托书； \n4.车辆行驶证；  \n5.车辆检测合格证明；  \n6.从事危险货物运输经营的车辆办理营运证，还须提供车辆通讯设备安装的证明材料。</item>
+    </string-array>
+    <string-array name="license_service_group_arr">
+        <item>1.驾证服务是什么？</item>
+        <item>2.缴费安全么？</item>
+        <item>3.我为什么要用？</item>
+        <item>4.我该怎么使用？</item>
+        <item>5.在线缴费一般多久能够处理完毕？</item>
+        <item>6.通过车当当平台缴费和去交管部门缴费的费用一样吗？</item>
+        <item>7.在车当当平台缴费为何要收取服务费？</item>
+        <item>8.现场罚单是什么？</item>
+        <item>9.我不想缴费了怎么办？</item>
+        <item>10.已缴费如何退费？</item>
+        <item>11.驾证年审所需资料</item>
+        <item>12.驾证注销所需资料</item>
+        <item>13.补办驾证所需资料</item>
+        <item>14.到期换证所需资料</item>
+        <item>15.异地转入所需资料</item>
+        <item>16.驾证违章所需资料</item>
+        <item>17.上岗证代办所需资料</item>
+    </string-array>
+    <string-array name="license_service_child_arr">
+        <item>驾证服务是车当当为满足广大车主处理驾证一系列需求，而推出的一项全新代理服务。\n让您方便、快捷的办理驾证相关的年审，代开委托书，补办等。</item>
+        <item>车当当作为车主服务平台，严格考察服务提供商的资历、能力，并和对方签署严格的合作协议。百分百保证车当当用户的利益。提供第三方担保支付</item>
+        <item>自己办理不仅费时、还费力，处理一次排队叫号、东跑西跑，流程不熟悉，搭上一天半天功夫很正常!使用车当当驾证代办，只需点几下手机屏幕，轻松完成线上代理缴费，约定时间线下轻松等待办理。</item>
+        <item>只需3步，驾证服务轻松搞定\n1.在车当当中选择服务商，同商家进行即时通讯，发起服务\n2.进入缴费页面，支付您和商家确定好的服务费\n3.等待处理(2-7个工作日)，完成</item>
+        <item>以双方约定线下时间，正常事务当天完成，异地按不同事务与商家确定时间，如在办理过程中有任何问题，商家会第一时间与您沟通、确认。您有任何问题，随时也可以与车当当客服联系。</item>
+        <item>是一样的。违章缴费的标准由当地交管部门制定，所以无论在车当当平台还是交管部门，缴费的费用是一样的。但通过车当当平台缴费，第三方服务商需要收取一定的服务费。</item>
+        <item>驾证事务是由车当当平台中第三方商家提供的线下服务，服务费是由第三方商家收取，并非车当当平台收取。</item>
+        <item>现场驾证罚款，是指车辆驾驶员违反交通法规，交警现场开具交通违法罚款单，车辆驾驶员可直接到罚款所在地指定的交通罚款代收银行缴纳罚款。</item>
+        <item>请直接在订单管理取消订单。</item>
+        <item>可在订单管理页面，提交该订单的退费申请，或与车当当客服联系。车当当客服热线：400-8333-955车当当客服服务时间：8:00-18:00</item>
+        <item>1.驾驶证原件  \n2.身份证原件  \n3.小一寸彩色相片1张  \n4.本人必须到场</item>
+        <item>1.申请人的身份证明原件  \n2.行驶证（原件和复印件） \n3.驾驶证（原件和复印件） \n4.机动车驾驶人相片1张（相片要求为：申请人申请机动车驾驶证前6个月内的直边正面免冠彩色本人单人半身证件照。背景颜色为白色；不着制式服装；人像要清晰，层次丰富，神态自然，无明显畸变。照片尺寸为32mm×22mm相当于1英寸，头部宽度14mm～16mm，头部长度19mm～22mm）</item>
+        <item>1.身份证原件  \n2.小一寸彩色白底相片3张和照片回执（如果刚好到期年审的话就要3张）\n3.外地户口需要居住证原件  \n4.副证遗失需提交驾驶证正本  \n5.需本人到场</item>
+        <item>1.驾驶证原件  \n2.身份证原件+身份证复印件  \n3.外地户口需居住原件  \n4.小一寸白底彩色相片5张，相片回执</item>
+        <item>1.驾使证原件  \n2.身份证原件  \n3.小一寸彩色白底相片3张和照片回执  \n4.外地户口需要居住原件  \n5.声明:黑名单城市的驾驶证不办理迁入，或被列入黑名单的、违章状态的、未归档的。请下单咨询（本人必须到场）</item>
+        <item>1.行驶证（原件和复印件） \n2.驾驶证（原件和复印件） \n3.身份证（原件和复印件） \n4.驾驶违章罚单\n\n上岗证代办:\n1、合格证  \n2、购车发票  \n3、身份证  \n4、交强险  \n5、购置税  \n6.代理人身份证（原件和复印件） \n7.双方签字的委托书\n其他驾证:\n其他服务所需材料线下沟通\n以上业务办理材料只作参考，业务办理时与各地服务商联系后按各地车管所要求提供。</item>
+        <item>1.从事道路客运、货运经营业务的《道路运输经营许可证》或相关的批准文件； \n2.企业章程；机动车驾驶员上岗证\n3.营业执照、法定代表人或负责人身份证明、身份证、经办人身份证、授权委托书；:\n4.车辆行驶证；\n5.车辆检测合格证明；  \n6.从事危险货物运输经营的车辆办理营运证，还须提供车辆通讯设备安装的证明材料。</item>
+    </string-array>
+    <string-array name="my_work_manager_arr">
+        <item>数据报表</item>
+        <item>订单查询</item>
+        <item>服务管理</item>
+        <item>我的名片</item>
+        <item>客户评价</item>
+        <item>客戶管理</item>
+        <item>门店录单</item>
+        <item>查询通道</item>
+        <item>代码查询</item>
+        <item>违章查询</item>
+        <item>邮寄地址</item>
+        <item>企业服务</item>
+    </string-array>
+    <string-array name="problem_arr">
+        <item>您最喜欢的球队是</item>
+        <item>您最喜欢的歌是</item>
+        <item>您最喜欢吃的是</item>
+        <item>您最喜欢的游戏是</item>
+        <item>您最喜欢的运动是</item>
+        <item>您最喜欢的车是</item>
+        <item>您最讨厌的人是</item>
+        <item>您最讨厌的食物是</item>
+        <item>您的第一个电话号码是</item>
+        <item>您的出生地是</item>
+        <item>您小学班主任的名字是</item>
+        <item>您配偶的生日是</item>
+        <item>您配偶的姓名是</item>
+        <item>您的初恋是</item>
+        <item>您家的宠物</item>
+    </string-array>
+
+    <!--
+    测试用的选择服务器
+    -->
+    <string-array name="all_service">
+        <item>正式服务器</item>
+        <item>预开发服务器</item>
+        <item>李雪健本地</item>
+        <item>胡华本地</item>
+    </string-array>
+    <string-array name="weixin">
+
+        <item>微信好友</item>
+        <item>朋友圈</item>
+
+    </string-array>
+
+    <string-array name="qq">
+
+        <item>QQ好友</item>
+        <item>QQ空间</item>
+
+    </string-array>
+    <string-array name="fenzu">
+
+        <item>分组管理</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="no_show_array">
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

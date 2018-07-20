@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5"
+    android:orientation="vertical"
+    tools:context="com.chewuwuyou.app.ui.NewAdvantageActivity">
+
+    <include layout="@layout/common_head"/>
+
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="填写标题 （4-30字）"
+        android:maxLength="30"
+        android:padding="16dp"
+        android:textColorHint="#aaaaaa"/>
+
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="填写内容 （4-150字）"
+        android:maxLength="150"
+        android:padding="16dp"
+        android:textColorHint="#aaaaaa"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/new_advantage_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/new_advantage_address"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="服务地址："
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/right_across"/>
+
+    </LinearLayout>
+
+</LinearLayout>

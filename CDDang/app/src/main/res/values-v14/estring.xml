@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="json_error">服务器返回数据错误</string>
+    <string name="time_out_error">连接超时</string>
+    <string name="connect_error">连接服务器失败</string>
+    <string name="server_response_error">服务器响应错误</string>
+    <string name="json_syntax_error">服务器响应错误</string>
+    <string name="null_point_exception">服务器内部错误</string>
+</resources>

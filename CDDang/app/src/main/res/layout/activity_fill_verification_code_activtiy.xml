@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fill_verification_code_activtiy"
+    android:layout_width="match_parent"
+    android:background="@color/wallet_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="@dimen/tf_size_14"
+        android:textColor="@color/darkgray"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/verification_code"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/mobile_phone"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/tf_size_14"
+        android:textColor="@color/darkgray"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/verification_code"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bank"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_mobile_phone"
+            android:layout_width="0dp"
+            android:layout_weight="3.4"
+            android:background="@null"
+
+            android:textSize="@dimen/tf_size_14"
+            android:textColor="@color/darkgray"
+            android:gravity="center|left"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/obtain_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/bank_obtain_verification"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_obtain"
+            android:layout_height="32dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_bank_next"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/xiayibu"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/login_btn_bg"
+        android:textColor="@color/white"
+        android:layout_height="44dp" />
+</LinearLayout>

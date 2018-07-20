@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/tabs"
+            android:layout_width="250dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tab_invitation"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/data_report_tab_lift"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="7日"
+                android:textColor="@drawable/data_report_str" />
+
+            <RadioButton
+                android:id="@+id/tab_ring"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/data_report_tab_center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="15日"
+                android:textColor="@drawable/data_report_str" />
+
+            <RadioButton
+                android:id="@+id/tab_activity"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/data_report_tab_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="30日"
+                android:textColor="@drawable/data_report_str" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>
